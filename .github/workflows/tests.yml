@@ -15,7 +15,7 @@ jobs:
         run: env
       - name: Commit files
         run: |
-          env
+          mkdir -p $HOME/.ssh
           echo "${{ secrets.SSH_PUB_KEY }}" > $HOME/.ssh/id_rsa
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
