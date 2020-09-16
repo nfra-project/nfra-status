@@ -1,4 +1,4 @@
-name: tests
+name: daily-security-scan
 
 on:
   [push]
@@ -12,7 +12,7 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
           ssh-key: ${{ secrets.SSH_PUB_KEY }}
       - name: Create local changes
-        run: env
+        run: ./kickstart.sh :scan
       - name: Commit files
         run: |
           ls -l
@@ -20,5 +20,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Add changes"
+          git commit -m "Auto update"
           git push

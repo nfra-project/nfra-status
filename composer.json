@@ -15,7 +15,8 @@
         "php": ">=7.2",
         "ext-pcre": "*",
         "phore/system": "^1.0",
-        "phore/filesystem": "^1.0.3"
+        "phore/filesystem": "^1.0.3",
+        "phore/hydrator": "dev-master"
     },
     "require-dev": {
 

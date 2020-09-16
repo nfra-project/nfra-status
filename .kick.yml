@@ -10,5 +10,5 @@ command:
 
   test:
 
-  demo:
-    - "bin/cloudtool --tpldir /opt/demo --target /tmp"
+  scan:
+    - "php bin/run.php"

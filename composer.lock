@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb0b9492b75cd1ad9cb392ea7296d65d",
+    "content-hash": "b80bbbcf7f0bb45ea9812fee1e3d32fb",
     "packages": [
         {
             "name": "phore/core",
@@ -105,6 +105,49 @@
             "time": "2020-06-02T22:14:28+00:00"
         },
         {
+            "name": "phore/hydrator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phore/phore-hydrator.git",
+                "reference": "96157b2aec19e66baae598ec24cba329884ea52b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phore/phore-hydrator/zipball/96157b2aec19e66baae598ec24cba329884ea52b",
+                "reference": "96157b2aec19e66baae598ec24cba329884ea52b",
+                "shasum": ""
+            },
+            "require": {
+                "phore/core": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phore\\Hydrator\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthias Leuffen",
+                    "email": "m@tth.es"
+                }
+            ],
+            "description": "Unserialize arrays into object structure",
+            "time": "2020-09-03T15:59:19+00:00"
+        },
+        {
             "name": "phore/system",
             "version": "v1.0",
             "source": {
@@ -202,7 +245,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "phore/hydrator": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
