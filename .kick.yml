@@ -11,4 +11,5 @@ command:
   test:
 
   scan:
+    - "ls -nla"
     - "php bin/run.php"
