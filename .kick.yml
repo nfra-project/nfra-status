@@ -1,0 +1,14 @@
+version: 1
+
+from: "nfra/kickstart-flavor-php:7.2"
+
+
+command:
+  build:
+    - "sudo apt-get update && sudo apt-get -y install docker.io"
+    - "composer update"
+
+  test:
+
+  demo:
+    - "bin/cloudtool --tpldir /opt/demo --target /tmp"

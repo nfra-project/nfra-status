@@ -1,0 +1,4 @@
+watch:
+  - name: nfra/kickstart-flavor-php
+    tags:
+      - 7.2

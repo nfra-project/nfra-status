@@ -1,0 +1,28 @@
+{
+    "name": "nfra/status",
+    "type": "project",
+    "description": "Script to update config files using template",
+    "keywords": ["text", "template", "config"],
+    "homepage": "http://infracamp.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Leuffen",
+            "email": "matthes@leuffen.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-pcre": "*",
+        "phore/system": "^1.0",
+        "phore/filesystem": "^1.0.3"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Nfra\\Status\\": "src/"
+        }
+    }
+}
