@@ -17,7 +17,8 @@ jobs:
         run: |
           mkdir -p $HOME/.ssh
           echo "${{ secrets.SSH_PUB_KEY }}" > $HOME/.ssh/id_rsa
+          echo "wurst" > test.file
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Add changes" -a
-
+          git push
