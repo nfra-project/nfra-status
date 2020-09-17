@@ -8,6 +8,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
+    <h1>Infracamp.org <small>Security Status</small> </h1>
 <template is="ka-tpl" id="tplTable01" auto>
     <script>
         ((self) => {
@@ -23,24 +25,34 @@
 
         })(KaTpl.self);
     </script>
-    <table class="table table-bordered">
+    <table class="table table-bordered table-highlight">
+        <thead>
+            <tr>
+                <td>Container</td>
+                <td>Tag</td>
+                <td>Risky packages</td>
+                <td>Since</td>
+
+            </tr>
+        </thead>
         <tbody>
             <tr *if="container.length === 0">
                 <td colspan="2">No data</td>
             </tr>
             <tr *for="let c of container indexby idx" [classlist.alert-primary]="c.update_required">
-                <td>{{c.name}}</td>
+                <td><b>{{c.name}}</b></td>
                 <td>{{c.tag}}</td>
                 <td>{{ c.update_required ? c.packages_affected.join(", ") : ""}}</td>
                 <td>{{ c.update_required ? c.date_open : "" }}</td>
             </tr>
         </tbody>
         <tfoot>
-        <tr>
-            <td>Last update: {{ last_check }}</td>
-        </tr>
+            <tr>
+                <td colspan="4">Last update: {{ last_check }}</td>
+            </tr>
         </tfoot>
     </table>
 </template>
+</div>
 </body>
 </html>
