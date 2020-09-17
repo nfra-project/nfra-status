@@ -1,4 +1,17 @@
 watch:
   - name: nfra/kickstart-flavor-php
     tags:
-      - 7.2
+      - "7.2"
+  - name: infracamp/mailtainer
+    tags:
+      - "1.0"
+  - name: infracamp/rudl-cloudfront
+    tags:
+      - latest
+  - name: infracamp/kickstart-flavor-gaia
+    tags:
+      - latest
+      - testing
+  - name: infracamp/kickstart-flavor-erebos
+    tags:
+      - latest

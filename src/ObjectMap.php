@@ -11,11 +11,12 @@ trait ObjectMap
             if ( ! $cur instanceof self)
                 throw new \InvalidArgumentException("property is required to be of type");
             foreach ($selector as $propName => $val) {
-                if ( ! $cur->$propName === $val)
+                if ($cur->$propName !== $val)
                     continue 2;
             }
             return $cur;
         }
+
         if ($default === null) {
             $instance = new self();
             foreach ($selector as $propName => $val)

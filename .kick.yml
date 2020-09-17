@@ -1,7 +1,7 @@
 version: 1
 
 from: "nfra/kickstart-flavor-php:7.2"
-
+apache_document_root: /opt/docs
 
 command:
   build:
@@ -11,5 +11,4 @@ command:
   test:
 
   scan:
-    - "ls -nla"
     - "php bin/run.php"

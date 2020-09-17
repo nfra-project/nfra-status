@@ -1,7 +1,9 @@
 name: daily-security-scan
 
 on:
-  [push]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: '0 4 * * *'
 
 jobs:
   scan_containers:
@@ -11,10 +13,10 @@ jobs:
         with:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
           ssh-key: ${{ secrets.SSH_PUB_KEY }}
-      - name: Create local changes
-        run: ls -nla
-      - name: Create local changes
+
+      - name: Scan images
         run: ./kickstart.sh :scan
+
       - name: Commit files
         run: |
           ls -l

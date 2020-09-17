@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript" src="/js/kasimir.full.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+<template is="ka-tpl" id="tplTable01" auto>
+    <script>
+        ((self) => {
+            let $scope = self.scopeInit({
+                container: [],
+                last_check: ""
+            });
+
+            ka_http_req("/security.json").json = (data) => {
+                $scope.container = data.container;
+                $scope.last_check = data.last_check;
+            }
+
+        })(KaTpl.self);
+    </script>
+    <table class="table table-bordered">
+        <tbody>
+            <tr *if="container.length === 0">
+                <td colspan="2">No data</td>
+            </tr>
+            <tr *for="let c of container indexby idx" [classlist.alert-primary]="c.update_required">
+                <td>{{c.name}}</td>
+                <td>{{c.tag}}</td>
+                <td>{{ c.update_required ? c.packages_affected.join(", ") : ""}}</td>
+                <td>{{ c.update_required ? c.date_open : "" }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>Last update: {{ last_check }}</td>
+        </tr>
+        </tfoot>
+    </table>
+</template>
+</body>
+</html>
