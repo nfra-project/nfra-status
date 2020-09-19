@@ -110,12 +110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phore/phore-hydrator.git",
-                "reference": "96157b2aec19e66baae598ec24cba329884ea52b"
+                "reference": "b6ebf3958d05eee9969869aff8f433d79229085e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phore/phore-hydrator/zipball/96157b2aec19e66baae598ec24cba329884ea52b",
-                "reference": "96157b2aec19e66baae598ec24cba329884ea52b",
+                "url": "https://api.github.com/repos/phore/phore-hydrator/zipball/b6ebf3958d05eee9969869aff8f433d79229085e",
+                "reference": "b6ebf3958d05eee9969869aff8f433d79229085e",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +145,7 @@
                 }
             ],
             "description": "Unserialize arrays into object structure",
-            "time": "2020-09-03T15:59:19+00:00"
+            "time": "2020-09-18T22:32:08+00:00"
         },
         {
             "name": "phore/system",
