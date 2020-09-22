@@ -1,6 +1,6 @@
 version: 1
 
-from: "nfra/kickstart-flavor-php:7.2"
+from: "nfra/kickstart-flavor-php:7.4"
 apache_document_root: /opt/docs
 
 command:
@@ -11,4 +11,4 @@ command:
   test:
 
   scan:
-    - "php bin/run.php"
+    - "sudo docker run -t  -v /var/run/docker.sock:/var/run/docker.sock -v /opt:/conf -v /opt/docs:/out -e CONFIG_FILE=/conf/watchlist.yml -e STATUS_FILE=/out/security.json nfra/secscanner"

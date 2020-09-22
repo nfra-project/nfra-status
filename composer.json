@@ -12,21 +12,13 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
-        "ext-pcre": "*",
-        "phore/system": "^1.0",
-        "phore/filesystem": "^1.0.3",
-        "phore/hydrator": "dev-master"
+
+        "rudl/vault": "dev-master"
     },
     "require-dev": {
 
     },
     "autoload": {
-        "psr-4": {
-            "Nfra\\Status\\": "src/"
-        },
-        "files": [
-            "src/functions.php"
-        ]
-    }
+    },
+    "minimum-stability": "dev"
 }

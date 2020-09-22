@@ -1,17 +1,19 @@
 watch:
   - name: nfra/kickstart-flavor-php
+    triggerUrl: https://hub.docker.com/api/build/v1/source/0b3d40f3-a84c-4fae-8a38-f908a7d38230/trigger/9921d951-b8eb-4fa1-b7ea-30d03d238a38/call/
     tags:
-      - "7.2"
+      - tag: "7.2"
+        source_branch: "7.2-stable"
   - name: infracamp/mailtainer
     tags:
-      - "1.0"
+      - tag: "1.0"
   - name: infracamp/rudl-cloudfront
     tags:
-      - latest
+      - tag: latest
   - name: infracamp/kickstart-flavor-gaia
     tags:
-      - latest
-      - testing
+      - tag: latest
+      - tag: testing
   - name: infracamp/kickstart-flavor-erebos
     tags:
-      - latest
+      - tag: latest

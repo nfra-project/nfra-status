@@ -1,0 +1,13 @@
+{
+  "version": "rudl-vault/1.0",
+  "keypairs": [
+    {
+      "key_id": "main",
+      "desc": "",
+      "private_key_enc": "E1-2X6+BvQOTzxfi6qhIZzgnORWbesD4hgvWffTKC5hNVtIsOude7JT47w57K0cJ6tWiK5hJ72VefC5CY7PBarMR8/rvhP6iSTHelT3G3Ot6cv90Bv5sHJsA+u7r4l4RGtI3/v4R9HOb4H/bZhZsb6GsRPOa+wW26i/mNAiAlv6ZMr6WEv0W/rT+cThN4ncX0q+",
+      "public_key": "6N5Hq2FRCOwwAFs3Gopc9iNyqrhZam/Ha7tU7Yd2jys="
+    }
+  ],
+  "secrets": [
+  ]
+}
