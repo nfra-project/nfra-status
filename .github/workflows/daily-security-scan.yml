@@ -15,7 +15,9 @@ jobs:
           ssh-key: ${{ secrets.SSH_PUB_KEY }}
 
       - name: Scan images
-        run: ./kickstart.sh :scan
+        run: ./doscan.sh
+        env:
+          RUDL_VAULT_SECRET_MAIN: ${{ secrets.RUDL_VAULT_SECRET_MAIN }}
 
       - name: Commit files
         run: |

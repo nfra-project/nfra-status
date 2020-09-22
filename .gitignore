@@ -3,3 +3,4 @@
 /test/output
 /build/logs/*
 /.env
+/watchlist.unsealed.yml

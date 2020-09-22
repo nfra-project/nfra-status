@@ -1,19 +1,11 @@
-watch:
+projects:
   - name: nfra/kickstart-flavor-php
-    triggerUrl: https://hub.docker.com/api/build/v1/source/0b3d40f3-a84c-4fae-8a38-f908a7d38230/trigger/9921d951-b8eb-4fa1-b7ea-30d03d238a38/call/
+    triggerUrl: {RSEC1.main.RUExLVhoai80eDIzeFZiT1NDR090TzJZcWRvZWJoeW1tUXNrbkQ0MjNtMWJSekhJRDh2V0V1UmsrakVHU2VqRVdsMDZxdmFrNlVBa3BRNENNZXcwZTZZVnM5ZUQybG13U3UvUEUvTDZPSmV6SnNoVFhEL1FobE1aVkpTRGJOSG1ic3lkc2VOUFRWczYvajkxR0tjcmM5cjZjdHV0aXQ5OHo1dDhqdjRlQ1YwQ3RlVlM4TnJZSnJkaDRodzN2cWV2MmI5QVF5STltZStIUHowdjYwYlBnRjI5U1dsTjd5cW12aGtYdXlhZHEySEE3S2pJajZiMmNCQ1hIdWw1UFFMMmxBaTd6QmRYc0s5RUQzZUtxTzR6Vk52bDZwb3FiUXgvUEFrPQ}
     tags:
       - tag: "7.2"
-        source_branch: "7.2-stable"
+        triggerPayload:
+          source_type: "Branch"
+          source_name: "7.2-stable"
   - name: infracamp/mailtainer
     tags:
       - tag: "1.0"
-  - name: infracamp/rudl-cloudfront
-    tags:
-      - tag: latest
-  - name: infracamp/kickstart-flavor-gaia
-    tags:
-      - tag: latest
-      - tag: testing
-  - name: infracamp/kickstart-flavor-erebos
-    tags:
-      - tag: latest
