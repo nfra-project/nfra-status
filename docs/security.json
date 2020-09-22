@@ -3,9 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"bsdutils"
 			],
 			"date_open": "2020-09-18"
 		},
@@ -53,6 +52,14 @@
 				"bsdutils"
 			],
 			"date_open": "2020-09-17"
+		},
+		{
+			"name": "nfra/kickstart-flavor-php",
+			"tag": "7.4",
+			"update_required": false,
+			"packages_affected": [
+			],
+			"date_open": null
 		}
 	],
 	"last_check": "2020-09-22"
