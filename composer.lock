@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "c95f9f898d1a05cf7fdd37238ba139ca",
@@ -394,12 +394,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rudl-project/rudl-vault.git",
-                "reference": "fc175bb9737d2791bed3805846a7251ad49f965d"
+                "reference": "69395afad9ce17f381b288ff3788576d1cda2ced"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rudl-project/rudl-vault/zipball/fc175bb9737d2791bed3805846a7251ad49f965d",
-                "reference": "fc175bb9737d2791bed3805846a7251ad49f965d",
+                "url": "https://api.github.com/repos/rudl-project/rudl-vault/zipball/69395afad9ce17f381b288ff3788576d1cda2ced",
+                "reference": "69395afad9ce17f381b288ff3788576d1cda2ced",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                 "cloud",
                 "secrets"
             ],
-            "time": "2020-09-22T16:39:09+00:00"
+            "time": "2020-09-22T19:17:32+00:00"
         }
     ],
     "packages-dev": [],
@@ -456,6 +456,5 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
