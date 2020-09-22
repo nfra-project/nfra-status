@@ -6,6 +6,11 @@ projects:
         triggerPayload:
           source_type: "Branch"
           source_name: "7.2-stable"
+      - tag: "7.4"
+        triggerPayload:
+          source_type: "Branch"
+          source_name: "7.4-stable"
+
   - name: infracamp/mailtainer
     tags:
       - tag: "1.0"
