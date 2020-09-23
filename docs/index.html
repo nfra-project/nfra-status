@@ -15,7 +15,8 @@
         ((self) => {
             let $scope = self.scopeInit({
                 container: [],
-                last_check: ""
+                last_check: "",
+                showLog: []
             });
 
             ka_http_req("/security.json").json = (data) => {
@@ -29,9 +30,9 @@
         <thead>
             <tr>
                 <td>Container</td>
-                <td>Tag</td>
                 <td>Risky packages</td>
                 <td>Since</td>
+                <td>Last build</td>
 
             </tr>
         </thead>
@@ -39,12 +40,16 @@
             <tr *if="container.length === 0">
                 <td colspan="2">No data</td>
             </tr>
-            <tr *for="let c of container indexby idx" [classlist.alert-primary]="c.update_required">
-                <td><b>{{c.name}}</b></td>
-                <td>{{c.tag}}</td>
-                <td>{{ c.update_required ? c.packages_affected.join(", ") : ""}}</td>
-                <td>{{ c.update_required ? c.date_open : "" }}</td>
+            <tr *for="let c of container indexby idx" [classlist.alert-warning]="c.update_required">
+                <td><b [on.click]="$scope.showLog=c.scanLog">{{c.name}}:{{c.tag}}</b></td>
+
+                <td [title]="c.packages_affected.join(', ')">{{ c.update_required ? (c.packages_affected.length > 9 ? ">10" : c.packages_affected.length) : ""}}</td>
+                <td>
+                    {{ c.update_required ? c.date_open : "" }}
+                </td>
+                <td>{{ c.last_rebuild }}</td>
             </tr>
+
         </tbody>
         <tfoot>
             <tr>
@@ -52,6 +57,10 @@
             </tr>
         </tfoot>
     </table>
+    <div *for="let log of showLog">
+        Date: {{ log.date }}
+        <pre>{{ log.description }}</pre>
+    </div>
 </template>
 </div>
 </body>
