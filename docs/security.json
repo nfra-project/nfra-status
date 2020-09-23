@@ -6,7 +6,10 @@
 			"update_required": false,
 			"packages_affected": [
 			],
-			"date_open": "2020-09-18"
+			"date_open": "2020-09-18",
+			"last_rebuild": "",
+			"scanLog": [
+			]
 		},
 		{
 			"name": "infracamp/mailtainer",
@@ -14,7 +17,10 @@
 			"update_required": false,
 			"packages_affected": [
 			],
-			"date_open": "2020-09-17"
+			"date_open": "2020-09-17",
+			"last_rebuild": "",
+			"scanLog": [
+			]
 		},
 		{
 			"name": "infracamp/rudl-cloudfront",
@@ -23,7 +29,10 @@
 			"packages_affected": [
 				"bsdutils"
 			],
-			"date_open": "2020-09-17"
+			"date_open": "2020-09-17",
+			"last_rebuild": "",
+			"scanLog": [
+			]
 		},
 		{
 			"name": "infracamp/kickstart-flavor-gaia",
@@ -32,7 +41,10 @@
 			"packages_affected": [
 				"bsdutils"
 			],
-			"date_open": "2020-09-17"
+			"date_open": "2020-09-17",
+			"last_rebuild": "",
+			"scanLog": [
+			]
 		},
 		{
 			"name": "infracamp/kickstart-flavor-gaia",
@@ -41,7 +53,10 @@
 			"packages_affected": [
 				"bsdutils"
 			],
-			"date_open": "2020-09-17"
+			"date_open": "2020-09-17",
+			"last_rebuild": "",
+			"scanLog": [
+			]
 		},
 		{
 			"name": "infracamp/kickstart-flavor-erebos",
@@ -50,7 +65,10 @@
 			"packages_affected": [
 				"bsdutils"
 			],
-			"date_open": "2020-09-17"
+			"date_open": "2020-09-17",
+			"last_rebuild": "",
+			"scanLog": [
+			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
@@ -58,8 +76,11 @@
 			"update_required": false,
 			"packages_affected": [
 			],
-			"date_open": null
+			"date_open": null,
+			"last_rebuild": "",
+			"scanLog": [
+			]
 		}
 	],
-	"last_check": "2020-09-23 06:06:40"
+	"last_check": "2020-09-24 01:53:00"
 }
