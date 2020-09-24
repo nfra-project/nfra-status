@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "c95f9f898d1a05cf7fdd37238ba139ca",
@@ -205,12 +205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phore/phore-misc.git",
-                "reference": "0cbd3a6635cd452fbe07d337299d172d5831ce47"
+                "reference": "a8d2019e1cd533c27ac32d0cbaccd63628f70e6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phore/phore-misc/zipball/0cbd3a6635cd452fbe07d337299d172d5831ce47",
-                "reference": "0cbd3a6635cd452fbe07d337299d172d5831ce47",
+                "url": "https://api.github.com/repos/phore/phore-misc/zipball/a8d2019e1cd533c27ac32d0cbaccd63628f70e6d",
+                "reference": "a8d2019e1cd533c27ac32d0cbaccd63628f70e6d",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +245,7 @@
                 "logging",
                 "syslog"
             ],
-            "time": "2020-09-22T12:29:16+00:00"
+            "time": "2020-09-23T23:04:37+00:00"
         },
         {
             "name": "phore/system",
@@ -456,5 +456,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
