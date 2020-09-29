@@ -49,64 +49,64 @@
 				"mount"
 			],
 			"date_open": "2020-09-24",
-			"last_rebuild": "2020-09-28 06:08",
+			"last_rebuild": "2020-09-29 06:07",
 			"scanLog": [
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "mount",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "util-linux",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "fdisk",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "libsmartcols1",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "libmount1",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "libfdisk1",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "libblkid1",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "libuuid1",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-28",
+					"date": "2020-09-29",
 					"packetname": "bsdutils",
 					"severity": null,
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
-					"date": "2020-09-27",
+					"date": "2020-09-28",
 					"packetname": "mount",
 					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
@@ -114,5 +114,5 @@
 			]
 		}
 	],
-	"last_check": "2020-09-28 06:08:21"
+	"last_check": "2020-09-29 06:07:53"
 }
