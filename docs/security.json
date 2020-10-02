@@ -36,17 +36,8 @@
 		{
 			"name": "infracamp/mrcron",
 			"tag": "testing",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"bsdutils",
-				"libuuid1",
-				"libblkid1",
-				"libfdisk1",
-				"libmount1",
-				"libsmartcols1",
-				"fdisk",
-				"util-linux",
-				"mount"
 			],
 			"date_open": "2020-09-24",
 			"last_rebuild": "2020-10-01 06:08",
@@ -54,55 +45,55 @@
 				{
 					"date": "2020-10-01",
 					"packetname": "mount",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
 					"date": "2020-10-01",
 					"packetname": "util-linux",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
 					"date": "2020-10-01",
 					"packetname": "fdisk",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
 					"date": "2020-10-01",
 					"packetname": "libsmartcols1",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
 					"date": "2020-10-01",
 					"packetname": "libmount1",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
 					"date": "2020-10-01",
 					"packetname": "libfdisk1",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
 					"date": "2020-10-01",
 					"packetname": "libblkid1",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
 					"date": "2020-10-01",
 					"packetname": "libuuid1",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
 					"date": "2020-10-01",
 					"packetname": "bsdutils",
-					"severity": null,
+					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				},
 				{
@@ -114,5 +105,5 @@
 			]
 		}
 	],
-	"last_check": "2020-10-01 06:08:28"
+	"last_check": "2020-10-02 06:08:08"
 }
