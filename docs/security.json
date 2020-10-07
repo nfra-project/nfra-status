@@ -14,9 +14,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libbrotli1"
 			],
 			"date_open": "2020-10-06",
 			"last_rebuild": "2020-10-06 06:07",
@@ -24,7 +23,7 @@
 				{
 					"date": "2020-10-06",
 					"packetname": "libbrotli1",
-					"severity": null,
+					"severity": "",
 					"description": "'brotli (1.0.7-6ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Buffr overflow\n    - debian/patches/CVE-2020-8927.patch: fix potential overflow when\n      input chunk is >2GiB in c/common/*, c/dec/*, c/enc/*,\n      research/brotli_decoder.c, research/draw_histogram.cc,\n      scripts/.bintray.json, scripts/source.lst, setup.py.\n    - CVE-2020-8927\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 28 Sep 2020 14:25:38 -0300'"
 				}
 			]
@@ -34,22 +33,27 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"libbrotli1",
-				"python3-urllib3"
+				"libbrotli1"
 			],
 			"date_open": "2020-10-06",
-			"last_rebuild": "2020-10-06 06:08",
+			"last_rebuild": "2020-10-07 06:08",
 			"scanLog": [
+				{
+					"date": "2020-10-07",
+					"packetname": "libbrotli1",
+					"severity": null,
+					"description": "'brotli (1.0.7-6ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Buffr overflow\n    - debian/patches/CVE-2020-8927.patch: fix potential overflow when\n      input chunk is >2GiB in c/common/*, c/dec/*, c/enc/*,\n      research/brotli_decoder.c, research/draw_histogram.cc,\n      scripts/.bintray.json, scripts/source.lst, setup.py.\n    - CVE-2020-8927\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 28 Sep 2020 14:25:38 -0300'"
+				},
 				{
 					"date": "2020-10-06",
 					"packetname": "python3-urllib3",
-					"severity": null,
+					"severity": "",
 					"description": "'python-urllib3 (1.25.8-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection via method parameter\n    - debian/patches/CVE-2020-26137.patch: raise ValueError if method\n      contains control characters in src/urllib3/connection.py,\n      test/with_dummyserver/test_connectionpool.py.\n    - CVE-2020-26137\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 01 Oct 2020 13:56:51 -0400'"
 				},
 				{
 					"date": "2020-10-06",
 					"packetname": "libbrotli1",
-					"severity": null,
+					"severity": "",
 					"description": "'brotli (1.0.7-6ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Buffr overflow\n    - debian/patches/CVE-2020-8927.patch: fix potential overflow when\n      input chunk is >2GiB in c/common/*, c/dec/*, c/enc/*,\n      research/brotli_decoder.c, research/draw_histogram.cc,\n      scripts/.bintray.json, scripts/source.lst, setup.py.\n    - CVE-2020-8927\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 28 Sep 2020 14:25:38 -0300'"
 				}
 			]
@@ -126,5 +130,5 @@
 			]
 		}
 	],
-	"last_check": "2020-10-06 06:09:07"
+	"last_check": "2020-10-07 06:09:08"
 }
