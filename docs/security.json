@@ -14,12 +14,54 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"gcc-10-base",
+				"libstdc++6",
+				"libgcc-s1",
+				"libpython3.8",
+				"libpython3.8-minimal",
+				"libpython3.8-stdlib"
 			],
-			"date_open": "2020-10-06",
-			"last_rebuild": "2020-10-06 06:07",
+			"date_open": "2020-10-08",
+			"last_rebuild": "2020-10-08 06:07",
 			"scanLog": [
+				{
+					"date": "2020-10-08",
+					"packetname": "libpython3.8-stdlib",
+					"severity": null,
+					"description": "'python3.8 (3.8.5-1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2020 14:59:40 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "libpython3.8-minimal",
+					"severity": null,
+					"description": "'python3.8 (3.8.5-1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2020 14:59:40 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "libpython3.8",
+					"severity": null,
+					"description": "'python3.8 (3.8.5-1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2020 14:59:40 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "libgcc-s1",
+					"severity": null,
+					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "libstdc++6",
+					"severity": null,
+					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "gcc-10-base",
+					"severity": null,
+					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
+				},
 				{
 					"date": "2020-10-06",
 					"packetname": "libbrotli1",
@@ -33,28 +75,79 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"libbrotli1"
+				"libpython3.8",
+				"python3-lib2to3",
+				"python3-distutils",
+				"python3.8",
+				"libpython3.8-stdlib",
+				"python3.8-minimal",
+				"libpython3.8-minimal",
+				"gcc-10-base",
+				"libstdc++6",
+				"libgcc-s1"
 			],
 			"date_open": "2020-10-06",
-			"last_rebuild": "2020-10-07 06:08",
+			"last_rebuild": "2020-10-08 06:07",
 			"scanLog": [
 				{
-					"date": "2020-10-07",
-					"packetname": "libbrotli1",
+					"date": "2020-10-08",
+					"packetname": "libgcc-s1",
 					"severity": null,
-					"description": "'brotli (1.0.7-6ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Buffr overflow\n    - debian/patches/CVE-2020-8927.patch: fix potential overflow when\n      input chunk is >2GiB in c/common/*, c/dec/*, c/enc/*,\n      research/brotli_decoder.c, research/draw_histogram.cc,\n      scripts/.bintray.json, scripts/source.lst, setup.py.\n    - CVE-2020-8927\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 28 Sep 2020 14:25:38 -0300'"
+					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
 				},
 				{
-					"date": "2020-10-06",
-					"packetname": "python3-urllib3",
-					"severity": "",
-					"description": "'python-urllib3 (1.25.8-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection via method parameter\n    - debian/patches/CVE-2020-26137.patch: raise ValueError if method\n      contains control characters in src/urllib3/connection.py,\n      test/with_dummyserver/test_connectionpool.py.\n    - CVE-2020-26137\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 01 Oct 2020 13:56:51 -0400'"
+					"date": "2020-10-08",
+					"packetname": "libstdc++6",
+					"severity": null,
+					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
 				},
 				{
-					"date": "2020-10-06",
-					"packetname": "libbrotli1",
-					"severity": "",
-					"description": "'brotli (1.0.7-6ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Buffr overflow\n    - debian/patches/CVE-2020-8927.patch: fix potential overflow when\n      input chunk is >2GiB in c/common/*, c/dec/*, c/enc/*,\n      research/brotli_decoder.c, research/draw_histogram.cc,\n      scripts/.bintray.json, scripts/source.lst, setup.py.\n    - CVE-2020-8927\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 28 Sep 2020 14:25:38 -0300'"
+					"date": "2020-10-08",
+					"packetname": "gcc-10-base",
+					"severity": null,
+					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "libpython3.8-minimal",
+					"severity": null,
+					"description": "'python3.8 (3.8.5-1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2020 14:59:40 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "python3.8-minimal",
+					"severity": null,
+					"description": "'python3.8 (3.8.5-1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2020 14:59:40 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "libpython3.8-stdlib",
+					"severity": null,
+					"description": "'python3.8 (3.8.5-1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2020 14:59:40 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "python3.8",
+					"severity": null,
+					"description": "'python3.8 (3.8.5-1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2020 14:59:40 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "python3-distutils",
+					"severity": null,
+					"description": "'python3-stdlib-extensions (3.8.5-1~20.04.1) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n  * Build as well for 3.9, except on i386.\n\n -- Matthias Klose <doko@ubuntu.com>  Mon, 10 Aug 2020 14:24:47 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "python3-lib2to3",
+					"severity": null,
+					"description": "'python3-stdlib-extensions (3.8.5-1~20.04.1) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n  * Build as well for 3.9, except on i386.\n\n -- Matthias Klose <doko@ubuntu.com>  Mon, 10 Aug 2020 14:24:47 +0200'"
+				},
+				{
+					"date": "2020-10-08",
+					"packetname": "libpython3.8",
+					"severity": null,
+					"description": "'python3.8 (3.8.5-1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1889218. Backport Python 3.8.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 28 Jul 2020 14:59:40 +0200'"
 				}
 			]
 		},
@@ -130,5 +223,5 @@
 			]
 		}
 	],
-	"last_check": "2020-10-07 06:09:08"
+	"last_check": "2020-10-08 06:08:35"
 }
