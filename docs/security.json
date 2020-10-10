@@ -3,9 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"php-imagick"
 			],
 			"date_open": "2020-10-09",
 			"last_rebuild": "2020-10-09 06:07",
@@ -13,7 +12,7 @@
 				{
 					"date": "2020-10-09",
 					"packetname": "php-imagick",
-					"severity": null,
+					"severity": "",
 					"description": "'php-imagick (3.4.3~rc2-2ubuntu4.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Out of bounds write\n    - debian/patches/0001-Bounds-check-kernel-origin-position.patch: Bounds\n      check kernel origin position.\n    - debian/patches/0002-avoid-unsigned-less-than-equal-warning.patch: avoid\n      unsigned less than equal warning.\n    - debian/patches/0003-Typo.patch: Typo.\n    - debian/patches/0004-Change-to-unsigned-long-to-avoid-C-complaining.patch:\n      Change to unsigned long to avoid C complaining.\n    - debian/patches/0005-Correcting-signed-unsigned-checking.patch: Correcting\n      signed/unsigned checking.\n    - debian/patches/0006-And-so-the-long-day-wore-on.patch: And so the long\n      day wore on.\n    - debian/patches/0008-Corrected-typo-for-columns-rows.patch: Corrected typo\n      for columns => rows.\n    - CVE-2019-11037\n\n -- Paulo Flabiano Smorigo <pfsmorigo@canonical.com>  Wed, 07 Oct 2020 18:37:07 +0000'"
 				}
 			]
@@ -74,11 +73,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"gcc-10-base",
-				"libstdc++6",
-				"libgcc-s1"
 			],
 			"date_open": "2020-10-06",
 			"last_rebuild": "2020-10-09 06:08",
@@ -86,19 +82,19 @@
 				{
 					"date": "2020-10-09",
 					"packetname": "libgcc-s1",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
 				},
 				{
 					"date": "2020-10-09",
 					"packetname": "libstdc++6",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
 				},
 				{
 					"date": "2020-10-09",
 					"packetname": "gcc-10-base",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
 				},
 				{
@@ -153,12 +149,18 @@
 				"php-imagick"
 			],
 			"date_open": "2020-10-09",
-			"last_rebuild": "2020-10-09 06:09",
+			"last_rebuild": "2020-10-10 06:10",
 			"scanLog": [
+				{
+					"date": "2020-10-10",
+					"packetname": "php-imagick",
+					"severity": null,
+					"description": "'php-imagick (3.4.3~rc2-2ubuntu4.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Out of bounds write\n    - debian/patches/0001-Bounds-check-kernel-origin-position.patch: Bounds\n      check kernel origin position.\n    - debian/patches/0002-avoid-unsigned-less-than-equal-warning.patch: avoid\n      unsigned less than equal warning.\n    - debian/patches/0003-Typo.patch: Typo.\n    - debian/patches/0004-Change-to-unsigned-long-to-avoid-C-complaining.patch:\n      Change to unsigned long to avoid C complaining.\n    - debian/patches/0005-Correcting-signed-unsigned-checking.patch: Correcting\n      signed/unsigned checking.\n    - debian/patches/0006-And-so-the-long-day-wore-on.patch: And so the long\n      day wore on.\n    - debian/patches/0008-Corrected-typo-for-columns-rows.patch: Corrected typo\n      for columns => rows.\n    - CVE-2019-11037\n\n -- Paulo Flabiano Smorigo <pfsmorigo@canonical.com>  Wed, 07 Oct 2020 18:37:07 +0000'"
+				},
 				{
 					"date": "2020-10-09",
 					"packetname": "php-imagick",
-					"severity": null,
+					"severity": "",
 					"description": "'php-imagick (3.4.3~rc2-2ubuntu4.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Out of bounds write\n    - debian/patches/0001-Bounds-check-kernel-origin-position.patch: Bounds\n      check kernel origin position.\n    - debian/patches/0002-avoid-unsigned-less-than-equal-warning.patch: avoid\n      unsigned less than equal warning.\n    - debian/patches/0003-Typo.patch: Typo.\n    - debian/patches/0004-Change-to-unsigned-long-to-avoid-C-complaining.patch:\n      Change to unsigned long to avoid C complaining.\n    - debian/patches/0005-Correcting-signed-unsigned-checking.patch: Correcting\n      signed/unsigned checking.\n    - debian/patches/0006-And-so-the-long-day-wore-on.patch: And so the long\n      day wore on.\n    - debian/patches/0008-Corrected-typo-for-columns-rows.patch: Corrected typo\n      for columns => rows.\n    - CVE-2019-11037\n\n -- Paulo Flabiano Smorigo <pfsmorigo@canonical.com>  Wed, 07 Oct 2020 18:37:07 +0000'"
 				},
 				{
@@ -208,15 +210,9 @@
 					"packetname": "libuuid1",
 					"severity": "",
 					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
-				},
-				{
-					"date": "2020-10-01",
-					"packetname": "bsdutils",
-					"severity": "",
-					"description": "'util-linux (2.31.1-0.4ubuntu3.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: privilege escalation via bash completion umount script\n    - debian/patches/CVE-2018-7738.patch: use findmnt, escape a space in\n      paths in bash-completion/umount.\n    - CVE-2018-7738\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Sep 2020 14:43:15 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2020-10-09 06:09:14"
+	"last_check": "2020-10-10 06:10:11"
 }
