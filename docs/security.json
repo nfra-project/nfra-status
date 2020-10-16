@@ -146,82 +146,79 @@
 			"tag": "testing",
 			"update_required": true,
 			"packages_affected": [
-				"python2.7",
-				"libpython2.7-stdlib",
-				"python2.7-minimal",
-				"libpython2.7-minimal",
 				"libpython3.6",
 				"libpython3.6-stdlib",
 				"libpython3.6-minimal",
 				"vim",
 				"vim-runtime",
-				"xxd"
+				"xxd",
+				"vim-common"
 			],
 			"date_open": "2020-10-09",
-			"last_rebuild": "2020-10-15 18:06",
+			"last_rebuild": "2020-10-16 06:09",
 			"scanLog": [
 				{
-					"date": "2020-10-15",
+					"date": "2020-10-16",
+					"packetname": "vim-common",
+					"severity": null,
+					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
+				},
+				{
+					"date": "2020-10-16",
 					"packetname": "xxd",
 					"severity": null,
 					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
-					"date": "2020-10-15",
+					"date": "2020-10-16",
 					"packetname": "vim-runtime",
 					"severity": null,
 					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
-					"date": "2020-10-15",
+					"date": "2020-10-16",
 					"packetname": "vim",
 					"severity": null,
 					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
-					"date": "2020-10-15",
+					"date": "2020-10-16",
 					"packetname": "libpython3.6-minimal",
 					"severity": null,
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.3) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/disabling_test_ttk_guionly.patch: disabling ttk_guionly\n    test which is causing a hang for ppc64el build.\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Thu, 08 Oct 2020 09:12:24 -0300'"
 				},
 				{
-					"date": "2020-10-15",
+					"date": "2020-10-16",
 					"packetname": "libpython3.6-stdlib",
 					"severity": null,
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.3) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/disabling_test_ttk_guionly.patch: disabling ttk_guionly\n    test which is causing a hang for ppc64el build.\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Thu, 08 Oct 2020 09:12:24 -0300'"
 				},
 				{
-					"date": "2020-10-15",
+					"date": "2020-10-16",
 					"packetname": "libpython3.6",
 					"severity": null,
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.3) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/disabling_test_ttk_guionly.patch: disabling ttk_guionly\n    test which is causing a hang for ppc64el build.\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Thu, 08 Oct 2020 09:12:24 -0300'"
 				},
 				{
 					"date": "2020-10-15",
-					"packetname": "libpython2.7-minimal",
-					"severity": null,
-					"description": "'python2.7 (2.7.17-1~18.04ubuntu1.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/issue9146.patch: re-adding fix FIPS mode environments where MD5\n    isn\\'t available in Modules/_hashopenssl.c. (LP: #1898078)\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 30 Sep 2020 10:38:04 -0300'"
+					"packetname": "xxd",
+					"severity": "",
+					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
 					"date": "2020-10-15",
-					"packetname": "python2.7-minimal",
-					"severity": null,
-					"description": "'python2.7 (2.7.17-1~18.04ubuntu1.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/issue9146.patch: re-adding fix FIPS mode environments where MD5\n    isn\\'t available in Modules/_hashopenssl.c. (LP: #1898078)\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 30 Sep 2020 10:38:04 -0300'"
+					"packetname": "vim-runtime",
+					"severity": "",
+					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
 					"date": "2020-10-15",
-					"packetname": "libpython2.7-stdlib",
-					"severity": null,
-					"description": "'python2.7 (2.7.17-1~18.04ubuntu1.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/issue9146.patch: re-adding fix FIPS mode environments where MD5\n    isn\\'t available in Modules/_hashopenssl.c. (LP: #1898078)\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 30 Sep 2020 10:38:04 -0300'"
-				},
-				{
-					"date": "2020-10-15",
-					"packetname": "python2.7",
-					"severity": null,
-					"description": "'python2.7 (2.7.17-1~18.04ubuntu1.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/issue9146.patch: re-adding fix FIPS mode environments where MD5\n    isn\\'t available in Modules/_hashopenssl.c. (LP: #1898078)\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 30 Sep 2020 10:38:04 -0300'"
+					"packetname": "vim",
+					"severity": "",
+					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2020-10-15 18:06:10"
+	"last_check": "2020-10-16 06:09:58"
 }
