@@ -85,9 +85,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libfreetype6"
 			],
 			"date_open": "2020-10-21",
 			"last_rebuild": "2020-10-22 06:09",
@@ -95,7 +94,7 @@
 				{
 					"date": "2020-10-22",
 					"packetname": "libfreetype6",
-					"severity": null,
+					"severity": "",
 					"description": "'freetype (2.10.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow via integer truncation in\n    Load_SBit_Png\n    - debian/patches/CVE-2020-15999.patch: Update src/sfnt/pngshim.c to\n      test and reject invalid bitmap size earlier in Load_SBit_Png. Based on\n      upstream patch.\n    - CVE-2020-15999\n\n -- Alex Murray <alex.murray@canonical.com>  Tue, 20 Oct 2020 12:37:23 +1030'"
 				},
 				{
@@ -157,17 +156,8 @@
 		{
 			"name": "infracamp/mrcron",
 			"tag": "testing",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.6",
-				"libpython3.6-stdlib",
-				"libpython3.6-minimal",
-				"vim",
-				"vim-runtime",
-				"xxd",
-				"vim-common",
-				"libfreetype6",
-				"linux-libc-dev"
 			],
 			"date_open": "2020-10-09",
 			"last_rebuild": "2020-10-22 06:10",
@@ -175,55 +165,55 @@
 				{
 					"date": "2020-10-22",
 					"packetname": "linux-libc-dev",
-					"severity": null,
+					"severity": "",
 					"description": "'linux (4.15.0-122.124) bionic; urgency=medium\n\n  * bionic/linux: 4.15.0-122.124 -proposed tracker (LP: #1899941)\n\n  * CVE-2020-12351 // CVE-2020-12352 // CVE-2020-24490\n    - Bluetooth: Disable High Speed by default\n    - Bluetooth: MGMT: Fix not checking if BT_HS is enabled\n    - [Config] Disable BlueZ highspeed support\n\n  * CVE-2020-12351\n    - Bluetooth: L2CAP: Fix calling sk_filter on non-socket based channel\n\n  * CVE-2020-12352\n    - Bluetooth: A2MP: Fix not initializing all members\n\n -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Thu, 15 Oct 2020 14:39:56 +0200'"
 				},
 				{
 					"date": "2020-10-22",
 					"packetname": "libfreetype6",
-					"severity": null,
+					"severity": "",
 					"description": "'freetype (2.8.1-2ubuntu2.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow via integer truncation in\n    Load_SBit_Png\n    - debian/patches-freetype/CVE-2020-15999.patch: Update\n      src/sfnt/pngshim.c to test and reject invalid bitmap size earlier in\n      Load_SBit_Png. Based on upstream patch.\n    - CVE-2020-15999\n\n -- Alex Murray <alex.murray@canonical.com>  Tue, 20 Oct 2020 12:49:06 +1030'"
 				},
 				{
 					"date": "2020-10-22",
 					"packetname": "vim-common",
-					"severity": null,
+					"severity": "",
 					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
 					"date": "2020-10-22",
 					"packetname": "xxd",
-					"severity": null,
+					"severity": "",
 					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
 					"date": "2020-10-22",
 					"packetname": "vim-runtime",
-					"severity": null,
+					"severity": "",
 					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
 					"date": "2020-10-22",
 					"packetname": "vim",
-					"severity": null,
+					"severity": "",
 					"description": "'vim (2:8.0.1453-1ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: rvim restricted mode circumvention\n    - debian/patches/CVE-2019-20807-1.patch: disable using interfaces in\n      restricted mode in runtime/doc/starting.txt, src/evalfunc.c,\n      src/ex_cmds.c, src/ex_docmd.c, src/if_perl.xs,\n      src/testdir/Make_all.mak, src/testdir/test_restricted.vim.\n    - debian/patches/CVE-2019-20807-2.patch: missing some changes for Ex\n      commands in src/ex_cmds.h.\n    - CVE-2019-20807\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 13 Oct 2020 11:49:09 -0400'"
 				},
 				{
 					"date": "2020-10-22",
 					"packetname": "libpython3.6-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.3) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/disabling_test_ttk_guionly.patch: disabling ttk_guionly\n    test which is causing a hang for ppc64el build.\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Thu, 08 Oct 2020 09:12:24 -0300'"
 				},
 				{
 					"date": "2020-10-22",
 					"packetname": "libpython3.6-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.3) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/disabling_test_ttk_guionly.patch: disabling ttk_guionly\n    test which is causing a hang for ppc64el build.\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Thu, 08 Oct 2020 09:12:24 -0300'"
 				},
 				{
 					"date": "2020-10-22",
 					"packetname": "libpython3.6",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.3) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: CRLF injection\n    - debian/patches/CVE-2020-26116.patch: prevent header injection\n      in http methods in Lib/httplib.py, Lib/test/test_httlib.py.\n    - CVE-2020-26116\n  * debian/patches/disabling_test_ttk_guionly.patch: disabling ttk_guionly\n    test which is causing a hang for ppc64el build.\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Thu, 08 Oct 2020 09:12:24 -0300'"
 				},
 				{
@@ -235,5 +225,5 @@
 			]
 		}
 	],
-	"last_check": "2020-10-22 06:10:07"
+	"last_check": "2020-10-23 06:10:01"
 }
