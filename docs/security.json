@@ -3,12 +3,19 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"ca-certificates"
 			],
-			"date_open": "2020-10-27",
-			"last_rebuild": "2020-10-27 05:08",
+			"date_open": "2020-10-29",
+			"last_rebuild": "2020-10-29 05:09",
 			"scanLog": [
+				{
+					"date": "2020-10-29",
+					"packetname": "ca-certificates",
+					"severity": null,
+					"description": "'ca-certificates (20201027ubuntu0.18.04.1) bionic-security; urgency=medium\n\n  * mozilla/{certdata.txt,nssckbi.h}:\n    Update Mozilla certificate authority bundle to version 2.44.\n    (LP: #1900727)\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 27 Oct 2020 07:37:00 -0400'"
+				},
 				{
 					"date": "2020-10-27",
 					"packetname": "perl-modules-5.26",
@@ -50,12 +57,19 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"ca-certificates"
 			],
-			"date_open": "2020-10-27",
-			"last_rebuild": "2020-10-27 05:09",
+			"date_open": "2020-10-29",
+			"last_rebuild": "2020-10-29 05:09",
 			"scanLog": [
+				{
+					"date": "2020-10-29",
+					"packetname": "ca-certificates",
+					"severity": null,
+					"description": "'ca-certificates (20201027ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * mozilla/{certdata.txt,nssckbi.h}:\n    Update Mozilla certificate authority bundle to version 2.44.\n    (LP: #1900727)\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 27 Oct 2020 07:37:00 -0400'"
+				},
 				{
 					"date": "2020-10-27",
 					"packetname": "perl-modules-5.30",
@@ -109,12 +123,6 @@
 					"packetname": "libgcc-s1",
 					"severity": "",
 					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
-				},
-				{
-					"date": "2020-10-08",
-					"packetname": "libstdc++6",
-					"severity": "",
-					"description": "'gcc-10 (10.2.0-5ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1879481. Update to the GCC 10.2.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Aug 2020 14:12:50 +0200'"
 				}
 			]
 		},
@@ -123,36 +131,46 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"libperl5.30",
-				"perl",
-				"perl-base",
-				"perl-modules-5.30"
+				"ca-certificates",
+				"distro-info-data"
 			],
 			"date_open": "2020-10-27",
-			"last_rebuild": "2020-10-28 05:10",
+			"last_rebuild": "2020-10-29 05:09",
 			"scanLog": [
 				{
+					"date": "2020-10-29",
+					"packetname": "distro-info-data",
+					"severity": null,
+					"description": "'distro-info-data (0.43ubuntu1.2) focal; urgency=medium\n\n  * Add Ubuntu 21.04, Hirsute HANIMAL (LP: #1901361).\n\n -- \\305\\201ukasz \\'sil2100\\' Zemczak <lukasz.zemczak@ubuntu.com>  Mon, 26 Oct 2020 15:23:20 +0100'"
+				},
+				{
+					"date": "2020-10-29",
+					"packetname": "ca-certificates",
+					"severity": null,
+					"description": "'ca-certificates (20201027ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * mozilla/{certdata.txt,nssckbi.h}:\n    Update Mozilla certificate authority bundle to version 2.44.\n    (LP: #1900727)\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 27 Oct 2020 07:37:00 -0400'"
+				},
+				{
 					"date": "2020-10-28",
 					"packetname": "perl-modules-5.30",
-					"severity": null,
+					"severity": "",
 					"description": "'perl (5.30.0-9ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878-1.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - debian/patches/fixes/CVE-2020-10878-2.patch: use long jumps if there\n      is any possibility of overflow in regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:56:54 -0400'"
 				},
 				{
 					"date": "2020-10-28",
 					"packetname": "perl-base",
-					"severity": null,
+					"severity": "",
 					"description": "'perl (5.30.0-9ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878-1.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - debian/patches/fixes/CVE-2020-10878-2.patch: use long jumps if there\n      is any possibility of overflow in regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:56:54 -0400'"
 				},
 				{
 					"date": "2020-10-28",
 					"packetname": "perl",
-					"severity": null,
+					"severity": "",
 					"description": "'perl (5.30.0-9ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878-1.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - debian/patches/fixes/CVE-2020-10878-2.patch: use long jumps if there\n      is any possibility of overflow in regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:56:54 -0400'"
 				},
 				{
 					"date": "2020-10-28",
 					"packetname": "libperl5.30",
-					"severity": null,
+					"severity": "",
 					"description": "'perl (5.30.0-9ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878-1.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - debian/patches/fixes/CVE-2020-10878-2.patch: use long jumps if there\n      is any possibility of overflow in regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:56:54 -0400'"
 				},
 				{
@@ -178,18 +196,6 @@
 					"packetname": "libperl5.30",
 					"severity": "",
 					"description": "'perl (5.30.0-9ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878-1.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - debian/patches/fixes/CVE-2020-10878-2.patch: use long jumps if there\n      is any possibility of overflow in regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:56:54 -0400'"
-				},
-				{
-					"date": "2020-10-22",
-					"packetname": "libfreetype6",
-					"severity": "",
-					"description": "'freetype (2.10.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow via integer truncation in\n    Load_SBit_Png\n    - debian/patches/CVE-2020-15999.patch: Update src/sfnt/pngshim.c to\n      test and reject invalid bitmap size earlier in Load_SBit_Png. Based on\n      upstream patch.\n    - CVE-2020-15999\n\n -- Alex Murray <alex.murray@canonical.com>  Tue, 20 Oct 2020 12:37:23 +1030'"
-				},
-				{
-					"date": "2020-10-21",
-					"packetname": "libfreetype6",
-					"severity": "",
-					"description": "'freetype (2.10.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow via integer truncation in\n    Load_SBit_Png\n    - debian/patches/CVE-2020-15999.patch: Update src/sfnt/pngshim.c to\n      test and reject invalid bitmap size earlier in Load_SBit_Png. Based on\n      upstream patch.\n    - CVE-2020-15999\n\n -- Alex Murray <alex.murray@canonical.com>  Tue, 20 Oct 2020 12:37:23 +1030'"
 				}
 			]
 		},
@@ -201,33 +207,64 @@
 				"libperl5.26",
 				"perl",
 				"perl-base",
-				"perl-modules-5.26"
+				"perl-modules-5.26",
+				"ca-certificates"
 			],
 			"date_open": "2020-10-27",
-			"last_rebuild": "2020-10-28 05:11",
+			"last_rebuild": "2020-10-29 05:10",
 			"scanLog": [
 				{
-					"date": "2020-10-28",
+					"date": "2020-10-29",
+					"packetname": "ca-certificates",
+					"severity": null,
+					"description": "'ca-certificates (20201027ubuntu0.18.04.1) bionic-security; urgency=medium\n\n  * mozilla/{certdata.txt,nssckbi.h}:\n    Update Mozilla certificate authority bundle to version 2.44.\n    (LP: #1900727)\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 27 Oct 2020 07:37:00 -0400'"
+				},
+				{
+					"date": "2020-10-29",
 					"packetname": "perl-modules-5.26",
 					"severity": null,
 					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
 				},
 				{
-					"date": "2020-10-28",
+					"date": "2020-10-29",
 					"packetname": "perl-base",
 					"severity": null,
 					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
 				},
 				{
-					"date": "2020-10-28",
+					"date": "2020-10-29",
 					"packetname": "perl",
 					"severity": null,
 					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
 				},
 				{
-					"date": "2020-10-28",
+					"date": "2020-10-29",
 					"packetname": "libperl5.26",
 					"severity": null,
+					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
+				},
+				{
+					"date": "2020-10-28",
+					"packetname": "perl-modules-5.26",
+					"severity": "",
+					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
+				},
+				{
+					"date": "2020-10-28",
+					"packetname": "perl-base",
+					"severity": "",
+					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
+				},
+				{
+					"date": "2020-10-28",
+					"packetname": "perl",
+					"severity": "",
+					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
+				},
+				{
+					"date": "2020-10-28",
+					"packetname": "libperl5.26",
+					"severity": "",
 					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
 				},
 				{
@@ -235,39 +272,9 @@
 					"packetname": "perl-modules-5.26",
 					"severity": "",
 					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
-				},
-				{
-					"date": "2020-10-27",
-					"packetname": "perl-base",
-					"severity": "",
-					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
-				},
-				{
-					"date": "2020-10-27",
-					"packetname": "perl",
-					"severity": "",
-					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
-				},
-				{
-					"date": "2020-10-27",
-					"packetname": "libperl5.26",
-					"severity": "",
-					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
-				},
-				{
-					"date": "2020-10-22",
-					"packetname": "linux-libc-dev",
-					"severity": "",
-					"description": "'linux (4.15.0-122.124) bionic; urgency=medium\n\n  * bionic/linux: 4.15.0-122.124 -proposed tracker (LP: #1899941)\n\n  * CVE-2020-12351 // CVE-2020-12352 // CVE-2020-24490\n    - Bluetooth: Disable High Speed by default\n    - Bluetooth: MGMT: Fix not checking if BT_HS is enabled\n    - [Config] Disable BlueZ highspeed support\n\n  * CVE-2020-12351\n    - Bluetooth: L2CAP: Fix calling sk_filter on non-socket based channel\n\n  * CVE-2020-12352\n    - Bluetooth: A2MP: Fix not initializing all members\n\n -- Kleber Sacilotto de Souza <kleber.souza@canonical.com>  Thu, 15 Oct 2020 14:39:56 +0200'"
-				},
-				{
-					"date": "2020-10-22",
-					"packetname": "libfreetype6",
-					"severity": "",
-					"description": "'freetype (2.8.1-2ubuntu2.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow via integer truncation in\n    Load_SBit_Png\n    - debian/patches-freetype/CVE-2020-15999.patch: Update\n      src/sfnt/pngshim.c to test and reject invalid bitmap size earlier in\n      Load_SBit_Png. Based on upstream patch.\n    - CVE-2020-15999\n\n -- Alex Murray <alex.murray@canonical.com>  Tue, 20 Oct 2020 12:49:06 +1030'"
 				}
 			]
 		}
 	],
-	"last_check": "2020-10-28 05:11:17"
+	"last_check": "2020-10-29 05:10:52"
 }
