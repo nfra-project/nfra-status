@@ -9,18 +9,30 @@
 				"libldap-2.4-2"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2020-11-10 05:05",
+			"last_rebuild": "2020-11-11 05:05",
 			"scanLog": [
 				{
-					"date": "2020-11-10",
+					"date": "2020-11-11",
 					"packetname": "libldap-2.4-2",
 					"severity": null,
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
 				},
 				{
-					"date": "2020-11-10",
+					"date": "2020-11-11",
 					"packetname": "libldap-common",
 					"severity": null,
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
+				},
+				{
+					"date": "2020-11-10",
+					"packetname": "libldap-2.4-2",
+					"severity": "",
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
+				},
+				{
+					"date": "2020-11-10",
+					"packetname": "libldap-common",
+					"severity": "",
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
 				},
 				{
@@ -58,28 +70,14 @@
 					"packetname": "libperl5.26",
 					"severity": "",
 					"description": "'perl (5.26.1-6ubuntu0.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n  * debian/patches/fixes/fix_test_2020.patch: fix FTBFS caused by test\n    failing in the year 2020 in cpan/Time-Local/t/Local.t.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:57:24 -0400'"
-				},
-				{
-					"date": "2020-10-21",
-					"packetname": "libfreetype6",
-					"severity": "",
-					"description": "'freetype (2.8.1-2ubuntu2.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow via integer truncation in\n    Load_SBit_Png\n    - debian/patches-freetype/CVE-2020-15999.patch: Update\n      src/sfnt/pngshim.c to test and reject invalid bitmap size earlier in\n      Load_SBit_Png. Based on upstream patch.\n    - CVE-2020-15999\n\n -- Alex Murray <alex.murray@canonical.com>  Tue, 20 Oct 2020 12:49:06 +1030'"
-				},
-				{
-					"date": "2020-10-09",
-					"packetname": "php-imagick",
-					"severity": "",
-					"description": "'php-imagick (3.4.3~rc2-2ubuntu4.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Out of bounds write\n    - debian/patches/0001-Bounds-check-kernel-origin-position.patch: Bounds\n      check kernel origin position.\n    - debian/patches/0002-avoid-unsigned-less-than-equal-warning.patch: avoid\n      unsigned less than equal warning.\n    - debian/patches/0003-Typo.patch: Typo.\n    - debian/patches/0004-Change-to-unsigned-long-to-avoid-C-complaining.patch:\n      Change to unsigned long to avoid C complaining.\n    - debian/patches/0005-Correcting-signed-unsigned-checking.patch: Correcting\n      signed/unsigned checking.\n    - debian/patches/0006-And-so-the-long-day-wore-on.patch: And so the long\n      day wore on.\n    - debian/patches/0008-Corrected-typo-for-columns-rows.patch: Corrected typo\n      for columns => rows.\n    - CVE-2019-11037\n\n -- Paulo Flabiano Smorigo <pfsmorigo@canonical.com>  Wed, 07 Oct 2020 18:37:07 +0000'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libldap-common",
-				"libldap-2.4-2"
 			],
 			"date_open": "2020-11-10",
 			"last_rebuild": "2020-11-10 05:05",
@@ -87,13 +85,13 @@
 				{
 					"date": "2020-11-10",
 					"packetname": "libldap-2.4-2",
-					"severity": null,
+					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:43:57 -0500'"
 				},
 				{
 					"date": "2020-11-10",
 					"packetname": "libldap-common",
-					"severity": null,
+					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:43:57 -0500'"
 				},
 				{
@@ -155,18 +153,30 @@
 				"libldap-2.4-2"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2020-11-10 05:06",
+			"last_rebuild": "2020-11-11 05:06",
 			"scanLog": [
 				{
-					"date": "2020-11-10",
+					"date": "2020-11-11",
 					"packetname": "libldap-2.4-2",
 					"severity": null,
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:43:57 -0500'"
 				},
 				{
-					"date": "2020-11-10",
+					"date": "2020-11-11",
 					"packetname": "libldap-common",
 					"severity": null,
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:43:57 -0500'"
+				},
+				{
+					"date": "2020-11-10",
+					"packetname": "libldap-2.4-2",
+					"severity": "",
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:43:57 -0500'"
+				},
+				{
+					"date": "2020-11-10",
+					"packetname": "libldap-common",
+					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:43:57 -0500'"
 				},
 				{
@@ -204,18 +214,6 @@
 					"packetname": "ca-certificates",
 					"severity": "",
 					"description": "'ca-certificates (20201027ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * mozilla/{certdata.txt,nssckbi.h}:\n    Update Mozilla certificate authority bundle to version 2.44.\n    (LP: #1900727)\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 27 Oct 2020 07:37:00 -0400'"
-				},
-				{
-					"date": "2020-10-28",
-					"packetname": "perl-modules-5.30",
-					"severity": "",
-					"description": "'perl (5.30.0-9ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878-1.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - debian/patches/fixes/CVE-2020-10878-2.patch: use long jumps if there\n      is any possibility of overflow in regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:56:54 -0400'"
-				},
-				{
-					"date": "2020-10-28",
-					"packetname": "perl-base",
-					"severity": "",
-					"description": "'perl (5.30.0-9ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap buffer overflow in regex compiler\n    - debian/patches/fixes/CVE-2020-10543.patch: prevent integer overflow\n      from nested regex quantifiers in regcomp.c.\n    - CVE-2020-10543\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-10878-1.patch: extract\n      rck_elide_nothing in embed.fnc, embed.h, proto.h, regcomp.c.\n    - debian/patches/fixes/CVE-2020-10878-2.patch: use long jumps if there\n      is any possibility of overflow in regcomp.c.\n    - CVE-2020-10878\n  * SECURITY UPDATE: regex intermediate language state corruption\n    - debian/patches/fixes/CVE-2020-12723.patch: avoid mutating regexp\n      program within GOSUB in embed.fnc, embed.h, proto.h, regcomp.c,\n      t/re/pat.t.\n    - CVE-2020-12723\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 19 Oct 2020 06:56:54 -0400'"
 				}
 			]
 		},
@@ -228,18 +226,30 @@
 				"libldap-2.4-2"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2020-11-10 05:06",
+			"last_rebuild": "2020-11-11 05:07",
 			"scanLog": [
 				{
-					"date": "2020-11-10",
+					"date": "2020-11-11",
 					"packetname": "libldap-2.4-2",
 					"severity": null,
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
 				},
 				{
-					"date": "2020-11-10",
+					"date": "2020-11-11",
 					"packetname": "libldap-common",
 					"severity": null,
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
+				},
+				{
+					"date": "2020-11-10",
+					"packetname": "libldap-2.4-2",
+					"severity": "",
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
+				},
+				{
+					"date": "2020-11-10",
+					"packetname": "libldap-common",
+					"severity": "",
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
 				},
 				{
@@ -274,18 +284,6 @@
 				},
 				{
 					"date": "2020-11-02",
-					"packetname": "ca-certificates",
-					"severity": "",
-					"description": "'ca-certificates (20201027ubuntu0.18.04.1) bionic-security; urgency=medium\n\n  * mozilla/{certdata.txt,nssckbi.h}:\n    Update Mozilla certificate authority bundle to version 2.44.\n    (LP: #1900727)\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 27 Oct 2020 07:37:00 -0400'"
-				},
-				{
-					"date": "2020-11-01",
-					"packetname": "tzdata",
-					"severity": "",
-					"description": "'tzdata (2020d-0ubuntu0.18.04) bionic; urgency=medium\n\n  * New upstream version (LP: #1901020), affecting past and future timestamps:\n    - Palestine ends DST earlier than predicted, on 2020-10-24.\n    - Fiji starts DST later than usual, on 2020-12-20.\n    - Revised predictions for Morocco\\'s changes starting in 2023.\n    - Canada\\'s Yukon changes to -07 on 2020-11-01, not 2020-03-08.\n    - Macquarie Island has stayed in sync with Tasmania since 2011.\n    - Casey, Antarctica is at +08 in winter and +11 in summer since 2018.\n  * Restore old SystemV timezones.\n\n -- Brian Murray <brian@ubuntu.com>  Thu, 22 Oct 2020 14:18:51 -0700'"
-				},
-				{
-					"date": "2020-11-01",
 					"packetname": "ca-certificates",
 					"severity": "",
 					"description": "'ca-certificates (20201027ubuntu0.18.04.1) bionic-security; urgency=medium\n\n  * mozilla/{certdata.txt,nssckbi.h}:\n    Update Mozilla certificate authority bundle to version 2.44.\n    (LP: #1900727)\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 27 Oct 2020 07:37:00 -0400'"
@@ -293,5 +291,5 @@
 			]
 		}
 	],
-	"last_check": "2020-11-10 05:06:45"
+	"last_check": "2020-11-11 05:07:52"
 }
