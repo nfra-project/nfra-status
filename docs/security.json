@@ -223,24 +223,42 @@
 				"linux-libc-dev"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2020-11-13 05:07",
+			"last_rebuild": "2020-11-14 05:09",
 			"scanLog": [
 				{
-					"date": "2020-11-13",
+					"date": "2020-11-14",
 					"packetname": "linux-libc-dev",
 					"severity": null,
 					"description": "'linux (4.15.0-123.126) bionic; urgency=medium\n\n  * CVE-2020-8694\n    - powercap: make attributes only readable by root\n\n -- Stefan Bader <stefan.bader@canonical.com>  Wed, 21 Oct 2020 11:12:40 +0200'"
 				},
 				{
-					"date": "2020-11-13",
+					"date": "2020-11-14",
 					"packetname": "libldap-2.4-2",
 					"severity": null,
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
 				},
 				{
-					"date": "2020-11-13",
+					"date": "2020-11-14",
 					"packetname": "libldap-common",
 					"severity": null,
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
+				},
+				{
+					"date": "2020-11-13",
+					"packetname": "linux-libc-dev",
+					"severity": "",
+					"description": "'linux (4.15.0-123.126) bionic; urgency=medium\n\n  * CVE-2020-8694\n    - powercap: make attributes only readable by root\n\n -- Stefan Bader <stefan.bader@canonical.com>  Wed, 21 Oct 2020 11:12:40 +0200'"
+				},
+				{
+					"date": "2020-11-13",
+					"packetname": "libldap-2.4-2",
+					"severity": "",
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
+				},
+				{
+					"date": "2020-11-13",
+					"packetname": "libldap-common",
+					"severity": "",
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
 				},
 				{
@@ -264,29 +282,11 @@
 				{
 					"date": "2020-11-11",
 					"packetname": "libldap-2.4-2",
-					"severity": "",
-					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
-				},
-				{
-					"date": "2020-11-11",
-					"packetname": "libldap-common",
-					"severity": "",
-					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
-				},
-				{
-					"date": "2020-11-10",
-					"packetname": "libldap-2.4-2",
-					"severity": "",
-					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
-				},
-				{
-					"date": "2020-11-10",
-					"packetname": "libldap-common",
 					"severity": "",
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:44:26 -0500'"
 				}
 			]
 		}
 	],
-	"last_check": "2020-11-13 05:07:48"
+	"last_check": "2020-11-14 05:09:29"
 }
