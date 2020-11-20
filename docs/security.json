@@ -3,14 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libgssapi-krb5-2",
-				"libkrb5-3",
-				"libkrb5support0",
-				"libk5crypto3",
-				"libldap-common",
-				"libldap-2.4-2"
 			],
 			"date_open": "2020-11-18",
 			"last_rebuild": "2020-11-19 05:06",
@@ -18,37 +12,37 @@
 				{
 					"date": "2020-11-19",
 					"packetname": "libldap-2.4-2",
-					"severity": null,
+					"severity": "",
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libldap-common",
-					"severity": null,
+					"severity": "",
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libk5crypto3",
-					"severity": null,
+					"severity": "",
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libkrb5support0",
-					"severity": null,
+					"severity": "",
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libkrb5-3",
-					"severity": null,
+					"severity": "",
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libgssapi-krb5-2",
-					"severity": null,
+					"severity": "",
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
@@ -151,14 +145,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libgssapi-krb5-2",
-				"libkrb5-3",
-				"libkrb5support0",
-				"libk5crypto3",
-				"libldap-common",
-				"libldap-2.4-2"
 			],
 			"date_open": "2020-11-18",
 			"last_rebuild": "2020-11-19 05:07",
@@ -166,37 +154,37 @@
 				{
 					"date": "2020-11-19",
 					"packetname": "libldap-2.4-2",
-					"severity": null,
+					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:39:57 -0500'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libldap-common",
-					"severity": null,
+					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:39:57 -0500'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libk5crypto3",
-					"severity": null,
+					"severity": "",
 					"description": "'krb5 (1.17-6ubuntu4.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:12 -0300'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libkrb5support0",
-					"severity": null,
+					"severity": "",
 					"description": "'krb5 (1.17-6ubuntu4.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:12 -0300'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libkrb5-3",
-					"severity": null,
+					"severity": "",
 					"description": "'krb5 (1.17-6ubuntu4.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:12 -0300'"
 				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libgssapi-krb5-2",
-					"severity": null,
+					"severity": "",
 					"description": "'krb5 (1.17-6ubuntu4.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:12 -0300'"
 				},
 				{
@@ -240,64 +228,64 @@
 				"linux-libc-dev"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2020-11-19 05:08",
+			"last_rebuild": "2020-11-20 05:08",
 			"scanLog": [
 				{
-					"date": "2020-11-19",
+					"date": "2020-11-20",
 					"packetname": "linux-libc-dev",
 					"severity": null,
 					"description": "'linux (4.15.0-123.126) bionic; urgency=medium\n\n  * CVE-2020-8694\n    - powercap: make attributes only readable by root\n\n -- Stefan Bader <stefan.bader@canonical.com>  Wed, 21 Oct 2020 11:12:40 +0200'"
 				},
 				{
-					"date": "2020-11-19",
+					"date": "2020-11-20",
 					"packetname": "libldap-2.4-2",
 					"severity": null,
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
 				},
 				{
-					"date": "2020-11-19",
+					"date": "2020-11-20",
 					"packetname": "libldap-common",
 					"severity": null,
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
 				},
 				{
-					"date": "2020-11-19",
+					"date": "2020-11-20",
 					"packetname": "libk5crypto3",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-11-19",
+					"date": "2020-11-20",
 					"packetname": "libkrb5support0",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-11-19",
+					"date": "2020-11-20",
 					"packetname": "libkrb5-3",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-11-19",
+					"date": "2020-11-20",
 					"packetname": "libgssapi-krb5-2",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-11-19",
+					"date": "2020-11-20",
 					"packetname": "krb5-locales",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-11-18",
+					"date": "2020-11-19",
 					"packetname": "linux-libc-dev",
 					"severity": "",
 					"description": "'linux (4.15.0-123.126) bionic; urgency=medium\n\n  * CVE-2020-8694\n    - powercap: make attributes only readable by root\n\n -- Stefan Bader <stefan.bader@canonical.com>  Wed, 21 Oct 2020 11:12:40 +0200'"
 				},
 				{
-					"date": "2020-11-18",
+					"date": "2020-11-19",
 					"packetname": "libldap-2.4-2",
 					"severity": "",
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
@@ -305,5 +293,5 @@
 			]
 		}
 	],
-	"last_check": "2020-11-19 05:08:52"
+	"last_check": "2020-11-20 05:08:29"
 }
