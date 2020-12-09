@@ -3,12 +3,33 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libssl1.1",
+				"openssl",
+				"libssl1.0.0"
 			],
-			"date_open": "2020-11-18",
-			"last_rebuild": "2020-11-19 05:06",
+			"date_open": "2020-12-09",
+			"last_rebuild": "2020-12-09 05:10",
 			"scanLog": [
+				{
+					"date": "2020-12-09",
+					"packetname": "libssl1.0.0",
+					"severity": null,
+					"description": "'openssl1.0 (1.0.2n-1ubuntu5.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/asn1/asn1.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/asn1/asn1.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in crypto/x509v3/v3nametest.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 14:54:00 -0500'"
+				},
+				{
+					"date": "2020-12-09",
+					"packetname": "openssl",
+					"severity": null,
+					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:54:45 -0500'"
+				},
+				{
+					"date": "2020-12-09",
+					"packetname": "libssl1.1",
+					"severity": null,
+					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:54:45 -0500'"
+				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libldap-2.4-2",
@@ -50,36 +71,32 @@
 					"packetname": "libldap-2.4-2",
 					"severity": "",
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
-				},
-				{
-					"date": "2020-11-18",
-					"packetname": "libldap-common",
-					"severity": "",
-					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
-				},
-				{
-					"date": "2020-11-18",
-					"packetname": "libk5crypto3",
-					"severity": "",
-					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
-				},
-				{
-					"date": "2020-11-18",
-					"packetname": "libkrb5support0",
-					"severity": "",
-					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libssl1.1",
+				"openssl"
 			],
-			"date_open": "2020-11-18",
-			"last_rebuild": "2020-11-18 05:07",
+			"date_open": "2020-12-09",
+			"last_rebuild": "2020-12-09 05:10",
 			"scanLog": [
+				{
+					"date": "2020-12-09",
+					"packetname": "openssl",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:52:44 -0500'"
+				},
+				{
+					"date": "2020-12-09",
+					"packetname": "libssl1.1",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:52:44 -0500'"
+				},
 				{
 					"date": "2020-11-18",
 					"packetname": "libldap-2.4-2",
@@ -127,30 +144,32 @@
 					"packetname": "libldap-common",
 					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via NULL pointer dereference\n    - debian/patches/CVE-2020-25692.patch: skip normalization if there\\'s no\n      equality rule in servers/slapd/modrdn.c.\n    - CVE-2020-25692\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 04 Nov 2020 09:43:57 -0500'"
-				},
-				{
-					"date": "2020-10-30",
-					"packetname": "tzdata",
-					"severity": "",
-					"description": "'tzdata (2020d-0ubuntu0.20.04) focal; urgency=medium\n\n  * New upstream version (LP: #1901020), affecting past and future timestamps:\n    - Palestine ends DST earlier than predicted, on 2020-10-24.\n    - Fiji starts DST later than usual, on 2020-12-20.\n    - Revised predictions for Morocco\\'s changes starting in 2023.\n    - Canada\\'s Yukon changes to -07 on 2020-11-01, not 2020-03-08.\n    - Macquarie Island has stayed in sync with Tasmania since 2011.\n    - Casey, Antarctica is at +08 in winter and +11 in summer since 2018.\n  * Update ICU timezone data files to 2020d.\n  * Restore old SystemV timezones.\n\n -- Brian Murray <brian@ubuntu.com>  Thu, 22 Oct 2020 12:29:22 -0700'"
-				},
-				{
-					"date": "2020-10-29",
-					"packetname": "ca-certificates",
-					"severity": "",
-					"description": "'ca-certificates (20201027ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * mozilla/{certdata.txt,nssckbi.h}:\n    Update Mozilla certificate authority bundle to version 2.44.\n    (LP: #1900727)\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 27 Oct 2020 07:37:00 -0400'"
 				}
 			]
 		},
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libssl1.1",
+				"openssl"
 			],
-			"date_open": "2020-11-18",
-			"last_rebuild": "2020-11-19 05:07",
+			"date_open": "2020-12-09",
+			"last_rebuild": "2020-12-09 05:11",
 			"scanLog": [
+				{
+					"date": "2020-12-09",
+					"packetname": "openssl",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:52:44 -0500'"
+				},
+				{
+					"date": "2020-12-09",
+					"packetname": "libssl1.1",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:52:44 -0500'"
+				},
 				{
 					"date": "2020-11-19",
 					"packetname": "libldap-2.4-2",
@@ -198,18 +217,6 @@
 					"packetname": "libldap-common",
 					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:39:57 -0500'"
-				},
-				{
-					"date": "2020-11-18",
-					"packetname": "libk5crypto3",
-					"severity": "",
-					"description": "'krb5 (1.17-6ubuntu4.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:12 -0300'"
-				},
-				{
-					"date": "2020-11-18",
-					"packetname": "libkrb5support0",
-					"severity": "",
-					"description": "'krb5 (1.17-6ubuntu4.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:12 -0300'"
 				}
 			]
 		},
@@ -218,80 +225,82 @@
 			"tag": "testing",
 			"update_required": true,
 			"packages_affected": [
+				"libssl1.1",
+				"openssl",
 				"krb5-locales",
 				"libgssapi-krb5-2",
 				"libkrb5-3",
 				"libkrb5support0",
 				"libk5crypto3",
-				"libldap-common",
-				"libldap-2.4-2",
-				"linux-libc-dev"
+				"libssl1.0-dev",
+				"libssl1.0.0",
+				"libldap-common"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2020-12-08 05:14",
+			"last_rebuild": "2020-12-09 05:13",
 			"scanLog": [
 				{
-					"date": "2020-12-08",
-					"packetname": "linux-libc-dev",
-					"severity": null,
-					"description": "'linux (4.15.0-126.129) bionic; urgency=medium\n\n  * bionic/linux: 4.15.0-126.129 -proposed tracker (LP: #1905305)\n\n  * CVE-2020-4788\n    - SAUCE: powerpc/64s: Define MASKABLE_RELON_EXCEPTION_PSERIES_OOL\n    - SAUCE: powerpc/64s: move some exception handlers out of line\n    - powerpc/64s: flush L1D on kernel entry\n    - SAUCE: powerpc: Add a framework for user access tracking\n    - powerpc: Implement user_access_begin and friends\n    - powerpc: Fix __clear_user() with KUAP enabled\n    - powerpc/uaccess: Evaluate macro arguments once, before user access is\n      allowed\n    - powerpc/64s: flush L1D after user accesses\n\n -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Mon, 23 Nov 2020 15:01:09 -0300'"
-				},
-				{
-					"date": "2020-12-08",
-					"packetname": "libldap-2.4-2",
-					"severity": null,
-					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
-				},
-				{
-					"date": "2020-12-08",
+					"date": "2020-12-09",
 					"packetname": "libldap-common",
 					"severity": null,
 					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
 				},
 				{
-					"date": "2020-12-08",
+					"date": "2020-12-09",
+					"packetname": "libssl1.0.0",
+					"severity": null,
+					"description": "'openssl1.0 (1.0.2n-1ubuntu5.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/asn1/asn1.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/asn1/asn1.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in crypto/x509v3/v3nametest.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 14:54:00 -0500'"
+				},
+				{
+					"date": "2020-12-09",
+					"packetname": "libssl1.0-dev",
+					"severity": null,
+					"description": "'openssl1.0 (1.0.2n-1ubuntu5.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/asn1/asn1.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/asn1/asn1.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in crypto/x509v3/v3nametest.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 14:54:00 -0500'"
+				},
+				{
+					"date": "2020-12-09",
 					"packetname": "libk5crypto3",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-12-08",
+					"date": "2020-12-09",
 					"packetname": "libkrb5support0",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-12-08",
+					"date": "2020-12-09",
 					"packetname": "libkrb5-3",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-12-08",
+					"date": "2020-12-09",
 					"packetname": "libgssapi-krb5-2",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-12-08",
+					"date": "2020-12-09",
 					"packetname": "krb5-locales",
 					"severity": null,
 					"description": "'krb5 (1.16-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Unbounded recursion\n    - debian/patches/CVE-2020-28196.patch: adds recursion limit for ASN.1\n      indefinite lenghts in src/lib/krb5/asn.1/asn1_encode.c.\n    - CVE-2020-28196\n\n -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 11 Nov 2020 11:23:49 -0300'"
 				},
 				{
-					"date": "2020-12-07",
-					"packetname": "linux-libc-dev",
-					"severity": "",
-					"description": "'linux (4.15.0-126.129) bionic; urgency=medium\n\n  * bionic/linux: 4.15.0-126.129 -proposed tracker (LP: #1905305)\n\n  * CVE-2020-4788\n    - SAUCE: powerpc/64s: Define MASKABLE_RELON_EXCEPTION_PSERIES_OOL\n    - SAUCE: powerpc/64s: move some exception handlers out of line\n    - powerpc/64s: flush L1D on kernel entry\n    - SAUCE: powerpc: Add a framework for user access tracking\n    - powerpc: Implement user_access_begin and friends\n    - powerpc: Fix __clear_user() with KUAP enabled\n    - powerpc/uaccess: Evaluate macro arguments once, before user access is\n      allowed\n    - powerpc/64s: flush L1D after user accesses\n\n -- Thadeu Lima de Souza Cascardo <cascardo@canonical.com>  Mon, 23 Nov 2020 15:01:09 -0300'"
+					"date": "2020-12-09",
+					"packetname": "openssl",
+					"severity": null,
+					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:54:45 -0500'"
 				},
 				{
-					"date": "2020-12-07",
-					"packetname": "libldap-2.4-2",
-					"severity": "",
-					"description": "'openldap (2.4.45+dfsg-1ubuntu1.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: assertion failure in Certificate List syntax\n    validation\n    - debian/patches/CVE-2020-25709.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25709\n  * SECURITY UPDATE: assertion failure in CSN normalization with invalid\n    input\n    - debian/patches/CVE-2020-25710.patch: properly handle error in\n      servers/slapd/schema_init.c.\n    - CVE-2020-25710\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 16 Nov 2020 08:40:57 -0500'"
+					"date": "2020-12-09",
+					"packetname": "libssl1.1",
+					"severity": null,
+					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.7) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:54:45 -0500'"
 				}
 			]
 		}
 	],
-	"last_check": "2020-12-08 05:14:18"
+	"last_check": "2020-12-09 05:13:09"
 }
