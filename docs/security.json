@@ -145,13 +145,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libapt-pkg6.0",
-				"apt",
-				"curl",
-				"libcurl4",
-				"libcurl3-gnutls"
 			],
 			"date_open": "2020-12-09",
 			"last_rebuild": "2020-12-11 05:09",
@@ -159,31 +154,31 @@
 				{
 					"date": "2020-12-11",
 					"packetname": "libcurl3-gnutls",
-					"severity": null,
+					"severity": "",
 					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
 				},
 				{
 					"date": "2020-12-11",
 					"packetname": "libcurl4",
-					"severity": null,
+					"severity": "",
 					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
 				},
 				{
 					"date": "2020-12-11",
 					"packetname": "curl",
-					"severity": null,
+					"severity": "",
 					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
 				},
 				{
 					"date": "2020-12-11",
 					"packetname": "apt",
-					"severity": null,
+					"severity": "",
 					"description": "'apt (2.0.2ubuntu0.2) focal-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n  * .gitlab-ci.yml: Test on focal, not unstable\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:08:43 +0100'"
 				},
 				{
 					"date": "2020-12-11",
 					"packetname": "libapt-pkg6.0",
-					"severity": null,
+					"severity": "",
 					"description": "'apt (2.0.2ubuntu0.2) focal-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n  * .gitlab-ci.yml: Test on focal, not unstable\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:08:43 +0100'"
 				},
 				{
@@ -230,64 +225,64 @@
 				"libcurl3-gnutls"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2020-12-11 05:10",
+			"last_rebuild": "2020-12-12 05:10",
 			"scanLog": [
 				{
-					"date": "2020-12-11",
+					"date": "2020-12-12",
 					"packetname": "libcurl3-gnutls",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2020-12-11",
+					"date": "2020-12-12",
 					"packetname": "libcurl4",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2020-12-11",
+					"date": "2020-12-12",
 					"packetname": "curl",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2020-12-11",
+					"date": "2020-12-12",
 					"packetname": "apt",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				},
 				{
-					"date": "2020-12-11",
+					"date": "2020-12-12",
 					"packetname": "libapt-pkg5.0",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				},
 				{
-					"date": "2020-12-10",
+					"date": "2020-12-11",
 					"packetname": "libcurl3-gnutls",
 					"severity": "",
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2020-12-10",
+					"date": "2020-12-11",
 					"packetname": "libcurl4",
 					"severity": "",
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2020-12-10",
+					"date": "2020-12-11",
 					"packetname": "curl",
 					"severity": "",
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2020-12-10",
+					"date": "2020-12-11",
 					"packetname": "apt",
 					"severity": "",
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				},
 				{
-					"date": "2020-12-10",
+					"date": "2020-12-11",
 					"packetname": "libapt-pkg5.0",
 					"severity": "",
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
@@ -295,5 +290,5 @@
 			]
 		}
 	],
-	"last_check": "2020-12-11 05:10:09"
+	"last_check": "2020-12-12 05:10:11"
 }
