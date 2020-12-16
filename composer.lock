@@ -12,16 +12,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phore/phore-cli-tools.git",
-                "reference": "ed2551ca787f096ea595db29c5806243ffc5ae80"
+                "reference": "6ad824350aded1f79336841b76630b386b63f3b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phore/phore-cli-tools/zipball/ed2551ca787f096ea595db29c5806243ffc5ae80",
-                "reference": "ed2551ca787f096ea595db29c5806243ffc5ae80",
+                "url": "https://api.github.com/repos/phore/phore-cli-tools/zipball/6ad824350aded1f79336841b76630b386b63f3b4",
+                "reference": "6ad824350aded1f79336841b76630b386b63f3b4",
                 "shasum": ""
             },
             "require": {
                 "ext-readline": "*",
+                "phore/core": "*",
                 "php": ">=7.2",
                 "psr/log": "^1.1"
             },
@@ -56,7 +57,7 @@
                 "cli",
                 "secrets"
             ],
-            "time": "2020-09-22T19:15:48+00:00"
+            "time": "2020-12-16T01:06:48+00:00"
         },
         {
             "name": "phore/core",
@@ -205,12 +206,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phore/phore-misc.git",
-                "reference": "a8d2019e1cd533c27ac32d0cbaccd63628f70e6d"
+                "reference": "1d1142b4f2750844acb618f60376a7162213bc73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phore/phore-misc/zipball/a8d2019e1cd533c27ac32d0cbaccd63628f70e6d",
-                "reference": "a8d2019e1cd533c27ac32d0cbaccd63628f70e6d",
+                "url": "https://api.github.com/repos/phore/phore-misc/zipball/1d1142b4f2750844acb618f60376a7162213bc73",
+                "reference": "1d1142b4f2750844acb618f60376a7162213bc73",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +246,7 @@
                 "logging",
                 "syslog"
             ],
-            "time": "2020-09-23T23:04:37+00:00"
+            "time": "2020-12-16T01:43:41+00:00"
         },
         {
             "name": "phore/system",
