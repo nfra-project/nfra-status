@@ -3,6 +3,7 @@
 set -e
 
 sudo apt-get install -y composer php-yaml
+sudo composer self-update --2
 composer update
 
 vendor/bin/rudlvault inspect -o watchlist.unsealed.yml watchlist.yml
