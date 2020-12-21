@@ -8,7 +8,7 @@ on:
 
 jobs:
   scan_containers:
-    runs-on: ubuntu:20.04
+    runs-on: ubuntu-bionic
     steps:
       - uses: actions/checkout@master
         with:
