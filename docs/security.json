@@ -3,9 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"unzip"
 			],
 			"date_open": "2020-12-16",
 			"last_rebuild": "2020-12-22 08:57",
@@ -13,7 +12,7 @@
 				{
 					"date": "2020-12-22",
 					"packetname": "unzip",
-					"severity": null,
+					"severity": "",
 					"description": "'unzip (6.0-21ubuntu1.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: buffer overflow in password protected ZIP archives\n    - debian/patches/20-cve-2018-1000035-unzip-buffer-overflow.patch: Perform\n      check before allocating memory in fileio.c.\n    - CVE-2018-1000035 \n  * SECURITY UPDATE: denial of service (resource consumption)\n    - debian/patches/22-cve-2019-13232-fix-bug-in-undefer-input.patch: Fix bug\n      in undefer_input() of fileio.c that misplaced the input state.\n    - debian/patches/23-cve-2019-13232-zip-bomb-with-overlapped-entries.patch:\n      Detect and reject a zip bomb using overlapped entries.\n    - debian/patches/24-cve-2019-13232-do-not-raise-alert-for-misplaced-central-directory.patch:\n      Do not raise a zip bomb alert for a misplaced central directory.\n    - CVE-2019-13232\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Thu, 26 Nov 2020 16:01:36 -0500'"
 				},
 				{
@@ -146,11 +145,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"imagemagick-6-common",
-				"libmagickcore-6.q16-6",
-				"libmagickwand-6.q16-6"
 			],
 			"date_open": "2020-12-16",
 			"last_rebuild": "2020-12-22 08:58",
@@ -158,19 +154,19 @@
 				{
 					"date": "2020-12-22",
 					"packetname": "libmagickwand-6.q16-6",
-					"severity": null,
+					"severity": "",
 					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
 				},
 				{
 					"date": "2020-12-22",
 					"packetname": "libmagickcore-6.q16-6",
-					"severity": null,
+					"severity": "",
 					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
 				},
 				{
 					"date": "2020-12-22",
 					"packetname": "imagemagick-6-common",
-					"severity": null,
+					"severity": "",
 					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
 				},
 				{
@@ -234,7 +230,7 @@
 				"unzip"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2020-12-22 08:59",
+			"last_rebuild": "2020-12-22 10:16",
 			"scanLog": [
 				{
 					"date": "2020-12-22",
@@ -299,5 +295,5 @@
 			]
 		}
 	],
-	"last_check": "2020-12-22 08:59:33"
+	"last_check": "2020-12-22 10:16:42"
 }
