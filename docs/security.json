@@ -230,64 +230,64 @@
 				"unzip"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2021-01-03 05:22",
+			"last_rebuild": "2021-01-04 05:23",
 			"scanLog": [
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "unzip",
 					"severity": null,
 					"description": "'unzip (6.0-21ubuntu1.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: buffer overflow in password protected ZIP archives\n    - debian/patches/20-cve-2018-1000035-unzip-buffer-overflow.patch: Perform\n      check before allocating memory in fileio.c.\n    - CVE-2018-1000035 \n  * SECURITY UPDATE: denial of service (resource consumption)\n    - debian/patches/22-cve-2019-13232-fix-bug-in-undefer-input.patch: Fix bug\n      in undefer_input() of fileio.c that misplaced the input state.\n    - debian/patches/23-cve-2019-13232-zip-bomb-with-overlapped-entries.patch:\n      Detect and reject a zip bomb using overlapped entries.\n    - debian/patches/24-cve-2019-13232-do-not-raise-alert-for-misplaced-central-directory.patch:\n      Do not raise a zip bomb alert for a misplaced central directory.\n    - CVE-2019-13232\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Thu, 26 Nov 2020 16:01:36 -0500'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "linux-libc-dev",
 					"severity": null,
 					"description": "'linux (4.15.0-128.131) bionic; urgency=medium\n\n  * bionic/linux: 4.15.0-128.131 -proposed tracker (LP: #1907354)\n\n  * Packaging resync (LP: #1786013)\n    - update dkms package versions\n\n  * raid10: discard leads to corrupted file system (LP: #1907262)\n    - Revert \"md/raid10: improve discard request for far layout\"\n    - Revert \"md/raid10: improve raid10 discard request\"\n    - Revert \"md/raid10: pull codes that wait for blocked dev into one function\"\n    - Revert \"md/raid10: extend r10bio devs to raid disks\"\n    - Revert \"md: add md_submit_discard_bio() for submitting discard bio\"\n\n -- Khalid Elmously <khalid.elmously@canonical.com>  Wed, 09 Dec 2020 01:27:33 -0500'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "libcurl3-gnutls",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "libcurl4",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "curl",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "libmagickwand-6.q16-3",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "libmagickcore-6.q16-3",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "imagemagick-6-common",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "apt",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				},
 				{
-					"date": "2021-01-03",
+					"date": "2021-01-04",
 					"packetname": "libapt-pkg5.0",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
@@ -295,5 +295,5 @@
 			]
 		}
 	],
-	"last_check": "2021-01-03 05:22:31"
+	"last_check": "2021-01-04 05:23:49"
 }
