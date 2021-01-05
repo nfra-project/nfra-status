@@ -3,8 +3,8 @@
 set -e
 
 sudo apt-get install -y php-yaml
-curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
-sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup2.php
+sudo php /tmp/composer-setup2.php --install-dir=/usr/local/bin --filename=composer
 composer update
 
 vendor/bin/rudlvault inspect -o watchlist.unsealed.yml watchlist.yml
