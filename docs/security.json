@@ -3,12 +3,40 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"tzdata",
+				"ghostscript",
+				"libgs9",
+				"libgs9-common"
 			],
-			"date_open": "2021-01-06",
-			"last_rebuild": "2021-01-06 05:23",
+			"date_open": "2021-01-08",
+			"last_rebuild": "2021-01-08 05:27",
 			"scanLog": [
+				{
+					"date": "2021-01-08",
+					"packetname": "libgs9-common",
+					"severity": null,
+					"description": "'ghostscript (9.26~dfsg+0-0ubuntu0.18.04.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer overflow in opj_t1_encode_cblks\n    - debian/patches/CVE-2018-5727.patch: fix UBSAN signed integer overflow\n      in openjpeg/src/lib/openjp2/t1.c.\n    - CVE-2018-5727\n  * SECURITY UPDATE: heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-6851.patch: reject images whose\n      coordinates are beyond INT_MAX in openjpeg/src/lib/openjp2/j2k.c.\n    - CVE-2020-6851\n  * SECURITY UPDATE: another heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-8112.patch: avoid integer overflow in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - CVE-2020-8112\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in openjpeg/src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c, openjpeg/src/lib/openjp2/pi.h,\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 12:44:08 -0500'"
+				},
+				{
+					"date": "2021-01-08",
+					"packetname": "libgs9",
+					"severity": null,
+					"description": "'ghostscript (9.26~dfsg+0-0ubuntu0.18.04.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer overflow in opj_t1_encode_cblks\n    - debian/patches/CVE-2018-5727.patch: fix UBSAN signed integer overflow\n      in openjpeg/src/lib/openjp2/t1.c.\n    - CVE-2018-5727\n  * SECURITY UPDATE: heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-6851.patch: reject images whose\n      coordinates are beyond INT_MAX in openjpeg/src/lib/openjp2/j2k.c.\n    - CVE-2020-6851\n  * SECURITY UPDATE: another heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-8112.patch: avoid integer overflow in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - CVE-2020-8112\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in openjpeg/src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c, openjpeg/src/lib/openjp2/pi.h,\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 12:44:08 -0500'"
+				},
+				{
+					"date": "2021-01-08",
+					"packetname": "ghostscript",
+					"severity": null,
+					"description": "'ghostscript (9.26~dfsg+0-0ubuntu0.18.04.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer overflow in opj_t1_encode_cblks\n    - debian/patches/CVE-2018-5727.patch: fix UBSAN signed integer overflow\n      in openjpeg/src/lib/openjp2/t1.c.\n    - CVE-2018-5727\n  * SECURITY UPDATE: heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-6851.patch: reject images whose\n      coordinates are beyond INT_MAX in openjpeg/src/lib/openjp2/j2k.c.\n    - CVE-2020-6851\n  * SECURITY UPDATE: another heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-8112.patch: avoid integer overflow in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - CVE-2020-8112\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in openjpeg/src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c, openjpeg/src/lib/openjp2/pi.h,\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 12:44:08 -0500'"
+				},
+				{
+					"date": "2021-01-08",
+					"packetname": "tzdata",
+					"severity": null,
+					"description": "'tzdata (2020f-0ubuntu0.18.04) bionic; urgency=medium\n\n  * New upstream version (LP: #1909698), affecting the following timestamp:\n    - Volgograd switches to Moscow time on 2020-12-27 at 02:00.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 06 Jan 2021 08:11:57 -0800'"
+				},
 				{
 					"date": "2021-01-06",
 					"packetname": "libp11-kit0",
@@ -44,42 +72,32 @@
 					"packetname": "libcurl3-gnutls",
 					"severity": "",
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
-				},
-				{
-					"date": "2020-12-10",
-					"packetname": "libcurl4",
-					"severity": "",
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
-				},
-				{
-					"date": "2020-12-10",
-					"packetname": "curl",
-					"severity": "",
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
-				},
-				{
-					"date": "2020-12-10",
-					"packetname": "apt",
-					"severity": "",
-					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
-				},
-				{
-					"date": "2020-12-10",
-					"packetname": "libapt-pkg5.0",
-					"severity": "",
-					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"tzdata",
+				"libopenjp2-7"
 			],
-			"date_open": "2021-01-06",
-			"last_rebuild": "2021-01-06 05:23",
+			"date_open": "2021-01-08",
+			"last_rebuild": "2021-01-08 05:27",
 			"scanLog": [
+				{
+					"date": "2021-01-08",
+					"packetname": "libopenjp2-7",
+					"severity": null,
+					"description": "'openjpeg2 (2.3.1-1ubuntu4.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: use-after-free via directory\n    - debian/patches/CVE-2020-15389.patch: fix double-free on input\n      directory with mix of valid and invalid images in\n      src/bin/jp2/opj_decompress.c.\n    - CVE-2020-15389\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: heap-buffer-overflow write\n    - debian/patches/CVE-2020-27823.patch: fix wrong computation in\n      src/bin/jp2/convertpng.c.\n    - CVE-2020-27823\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      src/lib/openjp2/pi.c, src/lib/openjp2/pi.h, src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 09:44:46 -0500'"
+				},
+				{
+					"date": "2021-01-08",
+					"packetname": "tzdata",
+					"severity": null,
+					"description": "'tzdata (2020f-0ubuntu0.20.04) focal; urgency=medium\n\n  * New upstream version (LP: #1909698), affecting the following timestamp:\n    - Volgograd switches to Moscow time on 2020-12-27 at 02:00.\n  * ICU timezone data files are still version 2020d as they have not yet been\n    updated by upstream.\n\n -- Brian Murray <brian@ubuntu.com>  Tue, 05 Jan 2021 16:30:37 -0800'"
+				},
 				{
 					"date": "2021-01-06",
 					"packetname": "libp11-kit0",
@@ -127,18 +145,6 @@
 					"packetname": "apt",
 					"severity": "",
 					"description": "'apt (2.0.2ubuntu0.2) focal-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n  * .gitlab-ci.yml: Test on focal, not unstable\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:08:43 +0100'"
-				},
-				{
-					"date": "2020-12-10",
-					"packetname": "libapt-pkg6.0",
-					"severity": "",
-					"description": "'apt (2.0.2ubuntu0.2) focal-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n  * .gitlab-ci.yml: Test on focal, not unstable\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:08:43 +0100'"
-				},
-				{
-					"date": "2020-12-09",
-					"packetname": "openssl",
-					"severity": "",
-					"description": "'openssl (1.1.1f-1ubuntu2.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:52:44 -0500'"
 				}
 			]
 		},
@@ -147,15 +153,28 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"libp11-kit0"
+				"tzdata",
+				"libopenjp2-7"
 			],
 			"date_open": "2021-01-05",
-			"last_rebuild": "2021-01-07 05:26",
+			"last_rebuild": "2021-01-08 05:27",
 			"scanLog": [
+				{
+					"date": "2021-01-08",
+					"packetname": "libopenjp2-7",
+					"severity": null,
+					"description": "'openjpeg2 (2.3.1-1ubuntu4.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: use-after-free via directory\n    - debian/patches/CVE-2020-15389.patch: fix double-free on input\n      directory with mix of valid and invalid images in\n      src/bin/jp2/opj_decompress.c.\n    - CVE-2020-15389\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: heap-buffer-overflow write\n    - debian/patches/CVE-2020-27823.patch: fix wrong computation in\n      src/bin/jp2/convertpng.c.\n    - CVE-2020-27823\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      src/lib/openjp2/pi.c, src/lib/openjp2/pi.h, src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 09:44:46 -0500'"
+				},
+				{
+					"date": "2021-01-08",
+					"packetname": "tzdata",
+					"severity": null,
+					"description": "'tzdata (2020f-0ubuntu0.20.04) focal; urgency=medium\n\n  * New upstream version (LP: #1909698), affecting the following timestamp:\n    - Volgograd switches to Moscow time on 2020-12-27 at 02:00.\n  * ICU timezone data files are still version 2020d as they have not yet been\n    updated by upstream.\n\n -- Brian Murray <brian@ubuntu.com>  Tue, 05 Jan 2021 16:30:37 -0800'"
+				},
 				{
 					"date": "2021-01-07",
 					"packetname": "libp11-kit0",
-					"severity": null,
+					"severity": "",
 					"description": "'p11-kit (0.23.20-1ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple integer overflows\n    - debian/patches/CVE-2020-29361-1.patch: check for arithmetic overflows\n      before allocating in p11-kit/iter.c, p11-kit/lists.c,\n      p11-kit/proxy.c, p11-kit/rpc-message.c, p11-kit/rpc-message.h,\n      p11-kit/rpc-server.c, trust/index.c.\n    - debian/patches/CVE-2020-29361-2.patch: follow-up to arithmetic\n      overflow fix in common/compat.c, p11-kit/rpc-message.c.\n    - CVE-2020-29361\n  * SECURITY UPDATE: heap over-read in the RPC protocol\n    - debian/patches/CVE-2020-29362.patch: fix bounds check in\n      p11-kit/rpc-message.c.\n    - CVE-2020-29362\n  * SECURITY UPDATE: heap overflow in RPC protocol\n    - debian/patches/CVE-2020-29363.patch: check attribute length against\n      buffer size in p11-kit/rpc-message.c.\n    - CVE-2020-29363\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 04 Jan 2021 14:04:11 -0500'"
 				},
 				{
@@ -199,18 +218,6 @@
 					"packetname": "libmagickcore-6.q16-6",
 					"severity": "",
 					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
-				},
-				{
-					"date": "2020-12-22",
-					"packetname": "imagemagick-6-common",
-					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
-				},
-				{
-					"date": "2020-12-16",
-					"packetname": "libmagickwand-6.q16-6",
-					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
 				}
 			]
 		},
@@ -225,70 +232,70 @@
 				"libmagickcore-6.q16-3",
 				"libmagickwand-6.q16-3",
 				"libp11-kit0",
+				"tzdata",
 				"curl",
 				"libcurl4",
-				"libcurl3-gnutls",
-				"linux-libc-dev"
+				"ghostscript"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2021-01-07 05:27",
+			"last_rebuild": "2021-01-08 05:29",
 			"scanLog": [
 				{
-					"date": "2021-01-07",
-					"packetname": "linux-libc-dev",
+					"date": "2021-01-08",
+					"packetname": "ghostscript",
 					"severity": null,
-					"description": "'linux (4.15.0-129.132) bionic; urgency=medium\n\n  * bionic/linux: 4.15.0-129.132 -proposed tracker (LP: #1907635)\n\n  * Packaging resync (LP: #1786013)\n    - update dkms package versions\n\n  * Ubuntu 18.04- call trace in kernel buffer when unloading ib_ipoib module\n    (LP: #1904848)\n    - SAUCE: net/mlx5e: IPoIB, initialize update_stat_work for ipoib devices\n\n  * memory is leaked when tasks are moved to net_prio (LP: #1886859)\n    - netprio_cgroup: Fix unlimited memory leak of v2 cgroups\n\n  * s390: dbginfo.sh triggers kernel panic, reading from\n    /sys/kernel/mm/page_idle/bitmap (LP: #1904884)\n    - mm/page_idle.c: skip offline pages\n\n  * Bionic update: upstream stable patchset 2020-11-23 (LP: #1905333)\n    - drm/i915: Break up error capture compression loops with cond_resched()\n    - tipc: fix use-after-free in tipc_bcast_get_mode\n    - gianfar: Replace skb_realloc_headroom with skb_cow_head for PTP\n    - gianfar: Account for Tx PTP timestamp in the skb headroom\n    - net: usb: qmi_wwan: add Telit LE910Cx 0x1230 composition\n    - sctp: Fix COMM_LOST/CANT_STR_ASSOC err reporting on big-endian platforms\n    - sfp: Fix error handing in sfp_probe()\n    - Blktrace: bail out early if block debugfs is not configured\n    - i40e: Fix of memory leak and integer truncation in i40e_virtchnl.c\n    - Fonts: Replace discarded const qualifier\n    - ALSA: usb-audio: Add implicit feedback quirk for Qu-16\n    - lib/crc32test: remove extra local_irq_disable/enable\n    - kthread_worker: prevent queuing delayed work from timer_fn when it is being\n      canceled\n    - mm: always have io_remap_pfn_range() set pgprot_decrypted()\n    - gfs2: Wake up when sd_glock_disposal becomes zero\n    - ftrace: Fix recursion check for NMI test\n    - ftrace: Handle tracing when switching between context\n    - tracing: Fix out of bounds write in get_trace_buf\n    - futex: Handle transient \"ownerless\" rtmutex state correctly\n    - ARM: dts: sun4i-a10: fix cpu_alert temperature\n    - x86/kexec: Use up-to-dated screen_info copy to fill boot params\n    - of: Fix reserved-memory overlap detection\n    - blk-cgroup: Fix memleak on error path\n    - blk-cgroup: Pre-allocate tree node on blkg_conf_prep\n    - scsi: core: Don\\'t start concurrent async scan on same host\n    - vsock: use ns_capable_noaudit() on socket create\n    - drm/vc4: drv: Add error handding for bind\n    - ACPI: NFIT: Fix comparison to \\'-ENXIO\\'\n    - vt: Disable KD_FONT_OP_COPY\n    - fork: fix copy_process(CLONE_PARENT) race with the exiting ->real_parent\n    - serial: 8250_mtk: Fix uart_get_baud_rate warning\n    - serial: txx9: add missing platform_driver_unregister() on error in\n      serial_txx9_init\n    - USB: serial: cyberjack: fix write-URB completion race\n    - USB: serial: option: add Quectel EC200T module support\n    - USB: serial: option: add LE910Cx compositions 0x1203, 0x1230, 0x1231\n    - USB: serial: option: add Telit FN980 composition 0x1055\n    - USB: Add NO_LPM quirk for Kingston flash drive\n    - usb: mtu3: fix panic in mtu3_gadget_stop()\n    - ARC: stack unwinding: avoid indefinite looping\n    - Revert \"ARC: entry: fix potential EFA clobber when TIF_SYSCALL_TRACE\"\n    - PM: runtime: Resume the device earlier in __device_release_driver()\n    - btrfs: extent_io: add proper error handling to lock_extent_buffer_for_io()\n    - Btrfs: fix unwritten extent buffers and hangs on future writeback attempts\n    - btrfs: tree-checker: fix the error message for transid error\n    - mm: mempolicy: fix potential pte_unmap_unlock pte error\n    - tools: perf: Fix build error in v4.19.y\n    - net: dsa: read mac address from DT for slave device\n    - arm64: dts: marvell: espressobin: Add ethernet switch aliases\n\n  * Bionic update: upstream stable patchset 2020-11-23 (LP: #1905333) //\n    CVE-2019-19770 which shows this issue is not a core debugfs issue, but\n    - blktrace: fix debugfs use after free\n\n  * Bionic update: upstream stable patchset 2020-11-18 (LP: #1904791)\n    - scripts/setlocalversion: make git describe output more reliable\n    - arm64: link with -z norelro regardless of CONFIG_RELOCATABLE\n    - gtp: fix an use-before-init in gtp_newlink()\n    - ravb: Fix bit fields checking in ravb_hwtstamp_get()\n    - tipc: fix memory leak caused by tipc_buf_append()\n    - arch/x86/amd/ibs: Fix re-arming IBS Fetch\n    - x86/xen: disable Firmware First mode for correctable memory errors\n    - fuse: fix page dereference after free\n    - p54: avoid accessing the data mapped to streaming DMA\n    - mtd: lpddr: Fix bad logic in print_drs_error\n    - ata: sata_rcar: Fix DMA boundary mask\n    - fscrypt: return -EXDEV for incompatible rename or link into encrypted dir\n    - x86/unwind/orc: Fix inactive tasks with stack pointer in %sp on GCC 10\n      compiled kernels\n    - mlxsw: core: Fix use-after-free in mlxsw_emad_trans_finish()\n    - futex: Fix incorrect should_fail_futex() handling\n    - powerpc/powernv/smp: Fix spurious DBG() warning\n    - powerpc: select ARCH_WANT_IRQS_OFF_ACTIVATE_MM\n    - sparc64: remove mm_cpumask clearing to fix kthread_use_mm race\n    - f2fs: add trace exit in exception path\n    - f2fs: fix to check segment boundary during SIT page readahead\n    - um: change sigio_spinlock to a mutex\n    - ARM: 8997/2: hw_breakpoint: Handle inexact watchpoint addresses\n    - xfs: fix realtime bitmap/summary file truncation when growing rt volume\n    - video: fbdev: pvr2fb: initialize variables\n    - ath10k: start recovery process when payload length exceeds max htc length\n      for sdio\n    - ath10k: fix VHT NSS calculation when STBC is enabled\n    - drm/brige/megachips: Add checking if ge_b850v3_lvds_init() is working\n      correctly\n    - media: videodev2.h: RGB BT2020 and HSV are always full range\n    - media: platform: Improve queue set up flow for bug fixing\n    - usb: typec: tcpm: During PR_SWAP, source caps should be sent only after\n      tSwapSourceStart\n    - media: tw5864: check status of tw5864_frameinterval_get\n    - mmc: via-sdmmc: Fix data race bug\n    - drm/bridge/synopsys: dsi: add support for non-continuous HS clock\n    - printk: reduce LOG_BUF_SHIFT range for H8300\n    - kgdb: Make \"kgdbcon\" work properly with \"kgdb_earlycon\"\n    - cpufreq: sti-cpufreq: add stih418 support\n    - USB: adutux: fix debugging\n    - uio: free uio id after uio file node is freed\n    - arm64/mm: return cpu_all_mask when node is NUMA_NO_NODE\n    - ACPI: Add out of bounds and numa_off protections to pxm_to_node()\n    - drivers/net/wan/hdlc_fr: Correctly handle special skb->protocol values\n    - bus/fsl_mc: Do not rely on caller to provide non NULL mc_io\n    - power: supply: test_power: add missing newlines when printing parameters by\n      sysfs\n    - md/bitmap: md_bitmap_get_counter returns wrong blocks\n    - bnxt_en: Log unknown link speed appropriately.\n    - clk: ti: clockdomain: fix static checker warning\n    - net: 9p: initialize sun_server.sun_path to have addr\\'s value only when addr\n      is valid\n    - drivers: watchdog: rdc321x_wdt: Fix race condition bugs\n    - ext4: Detect already used quota file early\n    - gfs2: add validation checks for size of superblock\n    - arm64: dts: renesas: ulcb: add full-pwr-cycle-in-suspend into eMMC nodes\n    - memory: emif: Remove bogus debugfs error handling\n    - ARM: dts: s5pv210: remove DMA controller bus node name to fix dtschema\n      warnings\n    - ARM: dts: s5pv210: move PMU node out of clock controller\n    - ARM: dts: s5pv210: remove dedicated \\'audio-subsystem\\' node\n    - nbd: make the config put is called before the notifying the waiter\n    - sgl_alloc_order: fix memory leak\n    - nvme-rdma: fix crash when connect rejected\n    - md/raid5: fix oops during stripe resizing\n    - perf/x86/amd/ibs: Don\\'t include randomized bits in get_ibs_op_count()\n    - perf/x86/amd/ibs: Fix raw sample data accumulation\n    - leds: bcm6328, bcm6358: use devres LED registering function\n    - fs: Don\\'t invalidate page buffers in block_write_full_page()\n    - NFS: fix nfs_path in case of a rename retry\n    - ACPI / extlog: Check for RDMSR failure\n    - ACPI: debug: don\\'t allow debugging when ACPI is disabled\n    - acpi-cpufreq: Honor _PSD table setting on new AMD CPUs\n    - w1: mxc_w1: Fix timeout resolution problem leading to bus error\n    - scsi: mptfusion: Fix null pointer dereferences in mptscsih_remove()\n    - btrfs: reschedule if necessary when logging directory items\n    - btrfs: send, recompute reference path after orphanization of a directory\n    - btrfs: use kvzalloc() to allocate clone_roots in btrfs_ioctl_send()\n    - btrfs: cleanup cow block on error\n    - btrfs: fix use-after-free on readahead extent after failure to create it\n    - usb: dwc3: ep0: Fix ZLP for OUT ep0 requests\n    - usb: dwc3: core: add phy cleanup for probe error handling\n    - usb: dwc3: core: don\\'t trigger runtime pm when remove driver\n    - usb: cdc-acm: fix cooldown mechanism\n    - usb: host: fsl-mph-dr-of: check return of dma_set_mask()\n    - drm/i915: Force VT\\'d workarounds when running as a guest OS\n    - vt: keyboard, simplify vt_kdgkbsent\n    - vt: keyboard, extend func_buf_lock to readers\n    - dmaengine: dma-jz4780: Fix race in jz4780_dma_tx_status\n    - iio:light:si1145: Fix timestamp alignment and prevent data leak.\n    - iio:adc:ti-adc0832 Fix alignment issue with timestamp\n    - iio:adc:ti-adc12138 Fix alignment issue with timestamp\n    - iio:gyro:itg3200: Fix timestamp alignment and prevent data leak.\n    - s390/stp: add locking to sysfs functions\n    - [Config] update config for PPC_RTAS_FILTER\n    - powerpc/rtas: Restrict RTAS requests from userspace\n    - powerpc: Warn about use of smt_snooze_delay\n    - powerpc/powernv/elog: Fix race while processing OPAL error log event.\n    - NFSv4.2: support EXCHGID4_FLAG_SUPP_FENCE_OPS 4.2 EXCHANGE_ID flag\n    - NFSD: Add missing NFSv2 .pc_func methods\n    - ubifs: dent: Fix some potential memory leaks while iterating entries\n    - perf python scripting: Fix printable strings in python3 scripts\n    - ubi: check kthread_should_stop() after the setting of task state\n    - ia64: fix build error with !COREDUMP\n    - drm/amdgpu: don\\'t map BO in reserved region\n    - ceph: promote to unsigned long long before shifting\n    - libceph: clear con->out_msg on Policy::stateful_server faults\n    - 9P: Cast to loff_t before multiplying\n    - ring-buffer: Return 0 on success from ring_buffer_resize()\n    - vringh: fix __vringh_iov() when riov and wiov are different\n    - ext4: fix leaking sysfs kobject after failed mount\n    - ext4: fix error handling code in add_new_gdb\n    - ext4: fix invalid inode checksum\n    - drm/ttm: fix eviction valuable range check.\n    - rtc: rx8010: don\\'t modify the global rtc ops\n    - tty: make FONTX ioctl use the tty pointer they were actually passed\n    - arm64: berlin: Select DW_APB_TIMER_OF\n    - [Config] update annotations for DW_APB_TIMER\n    - cachefiles: Handle readpage error correctly\n    - hil/parisc: Disable HIL driver when it gets stuck\n    - arm: dts: mt7623: add missing pause for switchport\n    - ARM: samsung: fix PM debug build with DEBUG_LL but !MMU\n    - ARM: s3c24xx: fix missing system reset\n    - device property: Keep secondary firmware node secondary by type\n    - device property: Don\\'t clear secondary pointer for shared primary firmware\n      node\n    - KVM: arm64: Fix AArch32 handling of DBGD{CCINT,SCRext} and DBGVCR\n    - staging: comedi: cb_pcidas: Allow 2-channel commands for AO subdevice\n    - staging: octeon: repair \"fixed-link\" support\n    - staging: octeon: Drop on uncorrectable alignment or FCS error\n    - objtool: Support Clang non-section symbols in ORC generation\n    - arm64: Run ARCH_WORKAROUND_1 enabling code on all CPUs\n    - x86/PCI: Fix intel_mid_pci.c build error when ACPI is not enabled\n    - cxgb4: set up filter action after rewrites\n    - cxl: Rework error message for incompatible slots\n    - serial: pl011: Fix lockdep splat when handling magic-sysrq interrupt\n    - fscrypt: only set dentry_operations on ciphertext dentries\n    - xen/events: don\\'t use chip_data for legacy IRQs\n    - xen/events: avoid removing an event channel while handling it\n    - xen/events: add a proper barrier to 2-level uevent unmasking\n    - xen/events: fix race in evtchn_fifo_unmask()\n    - xen/events: add a new \"late EOI\" evtchn framework\n    - xen/blkback: use lateeoi irq binding\n    - xen/netback: use lateeoi irq binding\n    - xen/scsiback: use lateeoi irq binding\n    - xen/pvcallsback: use lateeoi irq binding\n    - xen/pciback: use lateeoi irq binding\n    - xen/events: switch user event channels to lateeoi model\n    - xen/events: use a common cpu hotplug hook for event channels\n    - xen/events: defer eoi in case of excessive number of events\n    - xen/events: block rogue events for some time\n    - RDMA/qedr: Fix memory leak in iWARP CM\n    - [Config] update config for ARCH_WANT_IRQS_OFF_ACTIVATE_MM\n    - mm: fix exec activate_mm vs TLB shootdown and lazy tlb switching race\n    - f2fs: fix uninit-value in f2fs_lookup\n    - power: supply: bq27xxx: report \"not charging\" on all types\n    - media: imx274: fix frame interval handling\n    - arm64: topology: Stop using MPIDR for topology information\n    - ia64: kprobes: Use generic kretprobe trampoline handler\n    - media: uvcvideo: Fix dereference of out-of-bound list iterator\n    - riscv: Define AT_VECTOR_SIZE_ARCH for ARCH_DLINFO\n    - usb: xhci: omit duplicate actions when suspending a runtime suspended host.\n    - drm/amd/display: HDMI remote sink need mode validation for Linux\n    - btrfs: fix replace of seed device\n    - rpmsg: glink: Use complete_all for open states\n    - cifs: handle -EINTR in cifs_setattr\n    - ACPI: button: fix handling lid state changes when input device closed\n    - scsi: qla2xxx: Fix crash on session cleanup with unload\n    - btrfs: improve device scanning messages\n    - usb: xhci: Workaround for S3 issue on AMD SNPS 3.0 xHC\n    - usb: typec: tcpm: reset hard_reset_count for any disconnect\n    - powerpc: Fix undetected data corruption with P9N DD2.1 VSX CI load emulation\n    - drm/amd/display: Don\\'t invoke kgdb_breakpoint() unconditionally\n\n  * [HP 635] Radeon 6310 brightness control does not work (LP: #1894667) //\n    Bionic update: upstream stable patchset 2020-11-18 (LP: #1904791)\n    - ACPI: video: use ACPI backlight for HP 635 Notebook\n\n  * Bionic update: upstream stable patchset 2020-11-17 (LP: #1904613)\n    - RDMA/cma: Remove dead code for kernel rdmacm multicast\n    - RDMA/hns: Fix missing sq_sig_type when querying QP\n    - rpmsg: smd: Fix a kobj leak in in qcom_smd_parse_edge()\n    - pwm: img: Fix null pointer access in probe\n    - watchdog: Fix memleak in watchdog_cdev_register\n    - watchdog: Use put_device on error\n    - SUNRPC: fix copying of multiple pages in gss_read_proxy_verf()\n    - netfilter: conntrack: connection timeout after re-register\n    - netfilter: nf_fwd_netdev: clear timestamp in forwarding path\n    - ARM: dts: imx6sl: fix rng node\n    - ARM: dts: sun8i: r40: bananapi-m2-ultra: Fix dcdc1 regulator\n    - memory: omap-gpmc: Fix build error without CONFIG_OF\n    - arm64: dts: qcom: pm8916: Remove invalid reg size from wcd_codec\n    - ip_gre: set dev->hard_header_len and dev->needed_headroom properly\n    - usb: dwc3: simple: add support for Hikey 970\n\n  * Bionic: btrfs: kernel BUG at /build/linux-\n    eTBZpZ/linux-4.15.0/fs/btrfs/ctree.c:3233! (LP: #1902254)\n    - btrfs: tree-checker: fix incorrect printk format\n\n  * Bionic update: upstream stable patchset 2020-11-10 (LP: #1903768)\n    - Bluetooth: fix kernel oops in store_pending_adv_report\n    - Bluetooth: Consolidate encryption handling in hci_encrypt_cfm\n    - Bluetooth: Fix update of connection state in `hci_encrypt_cfm`\n    - Bluetooth: Disconnect if E0 is used for Level 4\n    - media: usbtv: Fix refcounting mixup\n    - USB: serial: option: add Cellient MPL200 card\n    - USB: serial: option: Add Telit FT980-KS composition\n    - staging: comedi: check validity of wMaxPacketSize of usb endpoints found\n    - USB: serial: pl2303: add device-id for HP GC device\n    - USB: serial: ftdi_sio: add support for FreeCalypso JTAG+UART adapters\n    - reiserfs: Initialize inode keys properly\n    - reiserfs: Fix oops during mount\n    - drivers/net/ethernet/marvell/mvmdio.c: Fix non OF case\n    - crypto: bcm - Verify GCM/CCM key length in setkey\n    - crypto: qat - check cipher length for aead AES-CBC-HMAC-SHA\n    - ARM: 8858/1: vdso: use $(LD) instead of $(CC) to link VDSO\n    - ARM: 8939/1: kbuild: use correct nm executable\n    - ARM: 8867/1: vdso: pass --be8 to linker if necessary'"
+					"description": "'ghostscript (9.26~dfsg+0-0ubuntu0.18.04.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer overflow in opj_t1_encode_cblks\n    - debian/patches/CVE-2018-5727.patch: fix UBSAN signed integer overflow\n      in openjpeg/src/lib/openjp2/t1.c.\n    - CVE-2018-5727\n  * SECURITY UPDATE: heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-6851.patch: reject images whose\n      coordinates are beyond INT_MAX in openjpeg/src/lib/openjp2/j2k.c.\n    - CVE-2020-6851\n  * SECURITY UPDATE: another heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-8112.patch: avoid integer overflow in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - CVE-2020-8112\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in openjpeg/src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c, openjpeg/src/lib/openjp2/pi.h,\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 12:44:08 -0500'"
 				},
 				{
-					"date": "2021-01-07",
-					"packetname": "libcurl3-gnutls",
-					"severity": null,
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
-				},
-				{
-					"date": "2021-01-07",
+					"date": "2021-01-08",
 					"packetname": "libcurl4",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2021-01-07",
+					"date": "2021-01-08",
 					"packetname": "curl",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2021-01-07",
+					"date": "2021-01-08",
+					"packetname": "tzdata",
+					"severity": null,
+					"description": "'tzdata (2020f-0ubuntu0.18.04) bionic; urgency=medium\n\n  * New upstream version (LP: #1909698), affecting the following timestamp:\n    - Volgograd switches to Moscow time on 2020-12-27 at 02:00.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 06 Jan 2021 08:11:57 -0800'"
+				},
+				{
+					"date": "2021-01-08",
 					"packetname": "libp11-kit0",
 					"severity": null,
 					"description": "'p11-kit (0.23.9-2ubuntu0.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: multiple integer overflows\n    - debian/patches/CVE-2020-29361-1.patch: check for arithmetic overflows\n      before allocating in p11-kit/iter.c, p11-kit/lists.c,\n      p11-kit/proxy.c, p11-kit/rpc-message.c, p11-kit/rpc-message.h,\n      p11-kit/rpc-server.c, trust/index.c.\n    - debian/patches/CVE-2020-29361-2.patch: follow-up to arithmetic\n      overflow fix in common/compat.c, p11-kit/rpc-message.c.\n    - CVE-2020-29361\n  * SECURITY UPDATE: heap over-read in the RPC protocol\n    - debian/patches/CVE-2020-29362.patch: fix bounds check in\n      p11-kit/rpc-message.c.\n    - CVE-2020-29362\n  * SECURITY UPDATE: heap overflow in RPC protocol\n    - debian/patches/CVE-2020-29363.patch: check attribute length against\n      buffer size in p11-kit/rpc-message.c.\n    - CVE-2020-29363\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 04 Jan 2021 14:08:12 -0500'"
 				},
 				{
-					"date": "2021-01-07",
+					"date": "2021-01-08",
 					"packetname": "libmagickwand-6.q16-3",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-07",
+					"date": "2021-01-08",
 					"packetname": "libmagickcore-6.q16-3",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-07",
+					"date": "2021-01-08",
 					"packetname": "imagemagick-6-common",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-07",
+					"date": "2021-01-08",
 					"packetname": "apt",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				},
 				{
-					"date": "2021-01-07",
+					"date": "2021-01-08",
 					"packetname": "libapt-pkg5.0",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
@@ -296,5 +303,5 @@
 			]
 		}
 	],
-	"last_check": "2021-01-07 05:27:48"
+	"last_check": "2021-01-08 05:29:06"
 }
