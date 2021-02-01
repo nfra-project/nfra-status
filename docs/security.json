@@ -230,64 +230,64 @@
 				"curl"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2021-01-31 05:14",
+			"last_rebuild": "2021-02-01 05:15",
 			"scanLog": [
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "curl",
 					"severity": null,
 					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "tzdata",
 					"severity": null,
 					"description": "'tzdata (2021a-0ubuntu0.18.04) bionic; urgency=medium\n\n  * New upstream version (LP: #1913482), affecting the following future timestamp:\n    - South Sudan changes from +03 to +02 on 2021-02-01 at 00:00.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 27 Jan 2021 13:46:22 -0800'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "sudo",
 					"severity": null,
 					"description": "'sudo (1.8.21p2-3ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: dir existence issue via sudoedit race\n    - debian/patches/CVE-2021-23239.patch: fix potential directory existing\n      info leak in sudoedit in src/sudo_edit.c.\n    - CVE-2021-23239\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2021-3156-pre1.patch: check lock record size in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-pre2.patch: sanity check size when\n      converting the first record to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-1.patch: reset valid_flags to\n      MODE_NONINTERACTIVE for sudoedit in src/parse_args.c.\n    - debian/patches/CVE-2021-3156-2.patch: add sudoedit flag checks in\n      plugin in plugins/sudoers/policy.c.\n    - debian/patches/CVE-2021-3156-3.patch: fix potential buffer overflow\n      when unescaping backslashes in plugins/sudoers/sudoers.c.\n    - debian/patches/CVE-2021-3156-4.patch: fix the memset offset when\n      converting a v1 timestamp to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-5.patch: don\\'t assume that argv is\n      allocated as a single flat buffer in src/parse_args.c.\n    - CVE-2021-3156\n  * debian/control: added tzdata to Build-Depends so that the time zone\n    data directory is present during builds.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 19 Jan 2021 09:36:00 -0500'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "libp11-kit0",
 					"severity": null,
 					"description": "'p11-kit (0.23.9-2ubuntu0.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: multiple integer overflows\n    - debian/patches/CVE-2020-29361-1.patch: check for arithmetic overflows\n      before allocating in p11-kit/iter.c, p11-kit/lists.c,\n      p11-kit/proxy.c, p11-kit/rpc-message.c, p11-kit/rpc-message.h,\n      p11-kit/rpc-server.c, trust/index.c.\n    - debian/patches/CVE-2020-29361-2.patch: follow-up to arithmetic\n      overflow fix in common/compat.c, p11-kit/rpc-message.c.\n    - CVE-2020-29361\n  * SECURITY UPDATE: heap over-read in the RPC protocol\n    - debian/patches/CVE-2020-29362.patch: fix bounds check in\n      p11-kit/rpc-message.c.\n    - CVE-2020-29362\n  * SECURITY UPDATE: heap overflow in RPC protocol\n    - debian/patches/CVE-2020-29363.patch: check attribute length against\n      buffer size in p11-kit/rpc-message.c.\n    - CVE-2020-29363\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 04 Jan 2021 14:08:12 -0500'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "libmagickwand-6.q16-3",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "libmagickcore-6.q16-3",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "imagemagick-6-common",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "apt",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "libapt-pkg5.0",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				},
 				{
-					"date": "2021-01-31",
+					"date": "2021-02-01",
 					"packetname": "tar",
 					"severity": null,
 					"description": "'tar (1.29b-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Infinite read loop\n    - debian/patches/Fix-CVE-2018-20482.patch: Add handling for short read\n      condition in sparse_dump_region() of src/sparse.c.\n    - CVE-2018-20482\n  * SECURITY UPDATE: NULL pointer dereference\n    - debian/patches/CVE-2019-9923.patch: Check for NULL return value from\n      find_next_block in src/sparse.c.\n    - CVE-2019-9923\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Tue, 15 Dec 2020 20:39:17 -0500'"
@@ -295,5 +295,5 @@
 			]
 		}
 	],
-	"last_check": "2021-01-31 05:14:12"
+	"last_check": "2021-02-01 05:15:02"
 }
