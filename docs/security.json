@@ -1,6 +1,49 @@
 {
 	"container": [
-
+		{
+			"name": "nfra/kickstart-flavor-bare",
+			"tag": "1.0",
+			"update_required": false,
+			"packages_affected": [
+			],
+			"date_open": null,
+			"last_rebuild": "",
+			"scanLog": [
+			]
+		},
+		{
+			"name": "nfra/kickstart-flavor-php",
+			"tag": "7.2",
+			"update_required": false,
+			"packages_affected": [
+			],
+			"date_open": null,
+			"last_rebuild": "",
+			"scanLog": [
+			]
+		},
+		{
+			"name": "nfra/kickstart-flavor-php",
+			"tag": "7.4",
+			"update_required": false,
+			"packages_affected": [
+			],
+			"date_open": null,
+			"last_rebuild": "",
+			"scanLog": [
+			]
+		},
+		{
+			"name": "infracamp/mailtainer",
+			"tag": "1.0",
+			"update_required": false,
+			"packages_affected": [
+			],
+			"date_open": null,
+			"last_rebuild": "",
+			"scanLog": [
+			]
+		}
 	],
-	"last_check": "2021-02-15 11:59:56"
+	"last_check": "2021-02-15 12:04:30"
 }
