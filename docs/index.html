@@ -41,7 +41,7 @@
                 <td colspan="2">No data</td>
             </tr>
             <tr *for="let c of container indexby idx" [classlist.alert-warning]="c.update_required">
-                <td><b [on.click]="$scope.showLog=c.scanLog">{{c.name}}:{{c.tag}}</b></td>
+                <td><a [on.click]="$scope.showLog=c.scanLog" href="#"><b>{{c.name}}:{{c.tag}}</b></a></td>
 
                 <td [title]="c.packages_affected.join(', ')">{{ c.update_required ? (c.packages_affected.length > 9 ? ">10" : c.packages_affected.length) : ""}}</td>
                 <td>

@@ -6,10 +6,7 @@ projects:
         triggerPayload:
           source_type: "Branch"
           source_name: "1.0-stable"
-      - tag: "unstable"
-        triggerPayload:
-          source_type: "Branch"
-          source_name: "main"
+
 
   - name: nfra/kickstart-flavor-php
     triggerUrl: {RSEC1.main.RUExLVhoai80eDIzeFZiT1NDR090TzJZcWRvZWJoeW1tUXNrbkQ0MjNtMWJSekhJRDh2V0V1UmsrakVHU2VqRVdsMDZxdmFrNlVBa3BRNENNZXcwZTZZVnM5ZUQybG13U3UvUEUvTDZPSmV6SnNoVFhEL1FobE1aVkpTRGJOSG1ic3lkc2VOUFRWczYvajkxR0tjcmM5cjZjdHV0aXQ5OHo1dDhqdjRlQ1YwQ3RlVlM4TnJZSnJkaDRodzN2cWV2MmI5QVF5STltZStIUHowdjYwYlBnRjI5U1dsTjd5cW12aGtYdXlhZHEySEE3S2pJajZiMmNCQ1hIdWw1UFFMMmxBaTd6QmRYc0s5RUQzZUtxTzR6Vk52bDZwb3FiUXgvUEFrPQ}
@@ -22,10 +19,7 @@ projects:
         triggerPayload:
           source_type: "Branch"
           source_name: "7.4-stable"
-      - tag: "unstable"
-        triggerPayload:
-          source_type: "Branch"
-          source_name: "master"
+
 
   - name: infracamp/mailtainer
     triggerUrl: {RSEC1.main.RUExLWwvWFBwaVZvNnFSdkUycFJYS29YQjhaZzU5Y25IbDQ0eXIwdzJSemE0bmFNcS9UNWN4RC9TYzZXSS95UGdNUVplNW8yQ3d5WXJuVGNrUzhHSnBlNmRtelorRWF4VEFpZ1gvSlVHcDVkVDZhd1FJYm9LQXRJeTQ4TDd5MHpjMGdDMUFCRTc5bTdsT0I0djBaeVdJaXN5WW0xU2xuL24xekZlbFJhbm1DMU5IY05xNjB1VkUzL0ozTk9uME4xR3RlNFJsc2NyeEpPcjBXS2hUSGZxakF6cCtGSzhvRkZiRzFZWVkvM3UzMkVBT1ZuM1JQdEdNV1VPWlZQWWhlSWFlRmR1dEZEdUVoTzVnQXdCNTVEUFZRNmFYV1QxYXFQbzR4T3BnPT0}
