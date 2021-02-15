@@ -1,4 +1,16 @@
 projects:
+  - name: nfra/kickstart-flavor-bare
+    triggerUrl: {RSEC1.main.RUExLXdlb0REdEZaYTZKOHgzQ2swY2hqVVRxdzJXTGN2TFRvcDBoM2U2UW8zMVZTdk1uaUFxTWowOHFoUFpQdE9UQlcvTUdaTmtIcEtmMlN5WE5CSi9LTCtxdWNnQ3FWdTE0TDdaRmYrRmh5S1FLZklGMVVBYWdJNEg4Mm4rYXQybktRcUF4Q2dGdTZnK3lJSldhUlNveXNPQlpPMEJkdGpVeHlTMngvblBoeklieU9PKzNaeVJCbmZtUnByL3NoVStVV1V2NG9TSVFJNUU5QzlkY0w0V2ltZ3RIam82WlRWZyszMlJJUWtFSDk3MDlNLzJhc2QwOCtTeWJibmZYTng4UmswN3JOTnh2TkRVWkY2M2FWZms5ZTIrYmZtOVp0bDJCMQ}
+    tags:
+      - tag: "1.0"
+        triggerPayload:
+          source_type: "Branch"
+          source_name: "1.0-stable"
+      - tag: "unstable"
+        triggerPayload:
+          source_type: "Branch"
+          source_name: "main"
+
   - name: nfra/kickstart-flavor-php
     triggerUrl: {RSEC1.main.RUExLVhoai80eDIzeFZiT1NDR090TzJZcWRvZWJoeW1tUXNrbkQ0MjNtMWJSekhJRDh2V0V1UmsrakVHU2VqRVdsMDZxdmFrNlVBa3BRNENNZXcwZTZZVnM5ZUQybG13U3UvUEUvTDZPSmV6SnNoVFhEL1FobE1aVkpTRGJOSG1ic3lkc2VOUFRWczYvajkxR0tjcmM5cjZjdHV0aXQ5OHo1dDhqdjRlQ1YwQ3RlVlM4TnJZSnJkaDRodzN2cWV2MmI5QVF5STltZStIUHowdjYwYlBnRjI5U1dsTjd5cW12aGtYdXlhZHEySEE3S2pJajZiMmNCQ1hIdWw1UFFMMmxBaTd6QmRYc0s5RUQzZUtxTzR6Vk52bDZwb3FiUXgvUEFrPQ}
     tags:
@@ -10,6 +22,10 @@ projects:
         triggerPayload:
           source_type: "Branch"
           source_name: "7.4-stable"
+      - tag: "unstable"
+        triggerPayload:
+          source_type: "Branch"
+          source_name: "master"
 
   - name: infracamp/mailtainer
     triggerUrl: {RSEC1.main.RUExLWwvWFBwaVZvNnFSdkUycFJYS29YQjhaZzU5Y25IbDQ0eXIwdzJSemE0bmFNcS9UNWN4RC9TYzZXSS95UGdNUVplNW8yQ3d5WXJuVGNrUzhHSnBlNmRtelorRWF4VEFpZ1gvSlVHcDVkVDZhd1FJYm9LQXRJeTQ4TDd5MHpjMGdDMUFCRTc5bTdsT0I0djBaeVdJaXN5WW0xU2xuL24xekZlbFJhbm1DMU5IY05xNjB1VkUzL0ozTk9uME4xR3RlNFJsc2NyeEpPcjBXS2hUSGZxakF6cCtGSzhvRkZiRzFZWVkvM3UzMkVBT1ZuM1JQdEdNV1VPWlZQWWhlSWFlRmR1dEZEdUVoTzVnQXdCNTVEUFZRNmFYV1QxYXFQbzR4T3BnPT0}
@@ -19,11 +35,4 @@ projects:
           source_type: "Branch"
           source_name: "1.0-stable"
 
-  - name: infracamp/mrcron
-    triggerUrl: {RSEC1.main.RUExLVYwTmVZQURReFY3bEMwK0NHR2VIb3k3SldrSmlpcEYxRXN3L25GU2FmeVZYa2VBcjFwa1RjNHlUZThCdHAzb3NIU00wc1RYN1BBTDBuSWl1Y0swMjBnT09DeWs1VkpZbDd4TkNQTWpoTXB6SnUrQS9EZlBlS1hhaVVPbDhIeEpxVU1VNGc3S0pxblNsMVRYb09ndzU1U0pOTmgvcHU0QzEwK1ZmT3dLWEZMS0d6UC9lVEd5ZkNqbDAvYVJ6NW1yQ0tjVUJLS0h6NFFXY3pkUGFWejNwY3ZyY1FrY1NyVDEwY0FxcnlYazdZdHNRbHByNzdkUmwwSkUwVXROSFVNbFNsaE1GeXk1VGhpTTJnR0VsT2F3N0dmbm5MYXhyMXIvbEhlTT0}
-    tags:
-      - tag: "testing"
-        triggerPayload:
-          source_type: "Branch"
-          source_name: "master"
 
