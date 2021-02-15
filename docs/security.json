@@ -6,68 +6,68 @@
 			"update_required": false,
 			"packages_affected": [
 			],
-			"date_open": "2020-12-16",
-			"last_rebuild": "2020-12-22 08:57",
+			"date_open": "2021-02-09",
+			"last_rebuild": "2021-02-09 05:07",
 			"scanLog": [
 				{
-					"date": "2020-12-22",
-					"packetname": "unzip",
+					"date": "2021-02-09",
+					"packetname": "libldap-2.4-2",
 					"severity": "",
-					"description": "'unzip (6.0-21ubuntu1.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: buffer overflow in password protected ZIP archives\n    - debian/patches/20-cve-2018-1000035-unzip-buffer-overflow.patch: Perform\n      check before allocating memory in fileio.c.\n    - CVE-2018-1000035 \n  * SECURITY UPDATE: denial of service (resource consumption)\n    - debian/patches/22-cve-2019-13232-fix-bug-in-undefer-input.patch: Fix bug\n      in undefer_input() of fileio.c that misplaced the input state.\n    - debian/patches/23-cve-2019-13232-zip-bomb-with-overlapped-entries.patch:\n      Detect and reject a zip bomb using overlapped entries.\n    - debian/patches/24-cve-2019-13232-do-not-raise-alert-for-misplaced-central-directory.patch:\n      Do not raise a zip bomb alert for a misplaced central directory.\n    - CVE-2019-13232\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Thu, 26 Nov 2020 16:01:36 -0500'"
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer underflow in Certificate Exact Assertion\n    processing\n    - debian/patches/CVE-2020-36221-1.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - debian/patches/CVE-2020-36221-2.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - CVE-2020-36221\n  * SECURITY UPDATE: assert failure in saslAuthzTo validation\n    - debian/patches/CVE-2020-36222-1.patch: remove saslauthz asserts in\n      servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36222-2.patch: fix debug msg in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36222\n  * SECURITY UPDATE: crash in Values Return Filter control handling\n    - debian/patches/CVE-2020-36223.patch: fix vrfilter double-free in\n      servers/slapd/controls.c.\n    - CVE-2020-36223\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36224-1.patch: use ch_free on normalized DN\n      in servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36224-2.patch: use slap_sl_free in prev\n      commit in servers/slapd/saslauthz.c.\n    - CVE-2020-36224\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36225.patch: fix AVA_Sort on invalid RDN in\n      servers/slapd/dn.c.\n    - CVE-2020-36225\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36226.patch: fix slap_parse_user in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36226\n  * SECURITY UPDATE: infinite loop in cancel_extop Cancel operation\n    - debian/patches/CVE-2020-36227.patch: fix cancel exop in\n      servers/slapd/cancel.c.\n    - CVE-2020-36227\n  * SECURITY UPDATE: DoS in Certificate List Exact Assertion processing\n    - debian/patches/CVE-2020-36228.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2020-36228\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ad_keystring\n    - debian/patches/CVE-2020-36229.patch: add more checks to\n      ldap_X509dn2bv in libraries/libldap/tls2.c.\n    - CVE-2020-36229\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ber_next_element\n    - debian/patches/CVE-2020-36230.patch: check for invalid BER after RDN\n      count in libraries/libldap/tls2.c.\n    - CVE-2020-36230\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Feb 2021 11:08:14 -0500'"
 				},
 				{
-					"date": "2020-12-16",
-					"packetname": "libmagickwand-6.q16-3",
+					"date": "2021-02-09",
+					"packetname": "libldap-common",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer underflow in Certificate Exact Assertion\n    processing\n    - debian/patches/CVE-2020-36221-1.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - debian/patches/CVE-2020-36221-2.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - CVE-2020-36221\n  * SECURITY UPDATE: assert failure in saslAuthzTo validation\n    - debian/patches/CVE-2020-36222-1.patch: remove saslauthz asserts in\n      servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36222-2.patch: fix debug msg in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36222\n  * SECURITY UPDATE: crash in Values Return Filter control handling\n    - debian/patches/CVE-2020-36223.patch: fix vrfilter double-free in\n      servers/slapd/controls.c.\n    - CVE-2020-36223\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36224-1.patch: use ch_free on normalized DN\n      in servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36224-2.patch: use slap_sl_free in prev\n      commit in servers/slapd/saslauthz.c.\n    - CVE-2020-36224\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36225.patch: fix AVA_Sort on invalid RDN in\n      servers/slapd/dn.c.\n    - CVE-2020-36225\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36226.patch: fix slap_parse_user in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36226\n  * SECURITY UPDATE: infinite loop in cancel_extop Cancel operation\n    - debian/patches/CVE-2020-36227.patch: fix cancel exop in\n      servers/slapd/cancel.c.\n    - CVE-2020-36227\n  * SECURITY UPDATE: DoS in Certificate List Exact Assertion processing\n    - debian/patches/CVE-2020-36228.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2020-36228\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ad_keystring\n    - debian/patches/CVE-2020-36229.patch: add more checks to\n      ldap_X509dn2bv in libraries/libldap/tls2.c.\n    - CVE-2020-36229\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ber_next_element\n    - debian/patches/CVE-2020-36230.patch: check for invalid BER after RDN\n      count in libraries/libldap/tls2.c.\n    - CVE-2020-36230\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Feb 2021 11:08:14 -0500'"
 				},
 				{
-					"date": "2020-12-16",
-					"packetname": "libmagickcore-6.q16-3",
+					"date": "2021-02-03",
+					"packetname": "ca-certificates",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
+					"description": "'ca-certificates (20210119~18.04.1) bionic-security; urgency=medium\n\n  * Update ca-certificates database to 20210119 (LP: #1914064):\n    - mozilla/{certdata.txt,nssckbi.h}: Update Mozilla certificate\n      authority bundle to version 2.46.\n    - backport certain changes from the Ubuntu 20.10 20210119 package\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 01 Feb 2021 10:14:19 -0500'"
 				},
 				{
-					"date": "2020-12-16",
-					"packetname": "imagemagick-6-common",
+					"date": "2021-01-29",
+					"packetname": "tzdata",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
+					"description": "'tzdata (2021a-0ubuntu0.18.04) bionic; urgency=medium\n\n  * New upstream version (LP: #1913482), affecting the following future timestamp:\n    - South Sudan changes from +03 to +02 on 2021-02-01 at 00:00.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 27 Jan 2021 13:46:22 -0800'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "libcurl3-gnutls",
+					"date": "2021-01-27",
+					"packetname": "sudo",
 					"severity": "",
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
+					"description": "'sudo (1.8.21p2-3ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: dir existence issue via sudoedit race\n    - debian/patches/CVE-2021-23239.patch: fix potential directory existing\n      info leak in sudoedit in src/sudo_edit.c.\n    - CVE-2021-23239\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2021-3156-pre1.patch: check lock record size in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-pre2.patch: sanity check size when\n      converting the first record to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-1.patch: reset valid_flags to\n      MODE_NONINTERACTIVE for sudoedit in src/parse_args.c.\n    - debian/patches/CVE-2021-3156-2.patch: add sudoedit flag checks in\n      plugin in plugins/sudoers/policy.c.\n    - debian/patches/CVE-2021-3156-3.patch: fix potential buffer overflow\n      when unescaping backslashes in plugins/sudoers/sudoers.c.\n    - debian/patches/CVE-2021-3156-4.patch: fix the memset offset when\n      converting a v1 timestamp to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-5.patch: don\\'t assume that argv is\n      allocated as a single flat buffer in src/parse_args.c.\n    - CVE-2021-3156\n  * debian/control: added tzdata to Build-Depends so that the time zone\n    data directory is present during builds.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 19 Jan 2021 09:36:00 -0500'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "libcurl4",
+					"date": "2021-01-14",
+					"packetname": "tar",
 					"severity": "",
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
+					"description": "'tar (1.29b-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Infinite read loop\n    - debian/patches/Fix-CVE-2018-20482.patch: Add handling for short read\n      condition in sparse_dump_region() of src/sparse.c.\n    - CVE-2018-20482\n  * SECURITY UPDATE: NULL pointer dereference\n    - debian/patches/CVE-2019-9923.patch: Check for NULL return value from\n      find_next_block in src/sparse.c.\n    - CVE-2019-9923\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Tue, 15 Dec 2020 20:39:17 -0500'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "curl",
+					"date": "2021-01-08",
+					"packetname": "libgs9-common",
 					"severity": "",
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
+					"description": "'ghostscript (9.26~dfsg+0-0ubuntu0.18.04.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer overflow in opj_t1_encode_cblks\n    - debian/patches/CVE-2018-5727.patch: fix UBSAN signed integer overflow\n      in openjpeg/src/lib/openjp2/t1.c.\n    - CVE-2018-5727\n  * SECURITY UPDATE: heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-6851.patch: reject images whose\n      coordinates are beyond INT_MAX in openjpeg/src/lib/openjp2/j2k.c.\n    - CVE-2020-6851\n  * SECURITY UPDATE: another heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-8112.patch: avoid integer overflow in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - CVE-2020-8112\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in openjpeg/src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c, openjpeg/src/lib/openjp2/pi.h,\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 12:44:08 -0500'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "apt",
+					"date": "2021-01-08",
+					"packetname": "libgs9",
 					"severity": "",
-					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
+					"description": "'ghostscript (9.26~dfsg+0-0ubuntu0.18.04.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer overflow in opj_t1_encode_cblks\n    - debian/patches/CVE-2018-5727.patch: fix UBSAN signed integer overflow\n      in openjpeg/src/lib/openjp2/t1.c.\n    - CVE-2018-5727\n  * SECURITY UPDATE: heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-6851.patch: reject images whose\n      coordinates are beyond INT_MAX in openjpeg/src/lib/openjp2/j2k.c.\n    - CVE-2020-6851\n  * SECURITY UPDATE: another heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-8112.patch: avoid integer overflow in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - CVE-2020-8112\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in openjpeg/src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c, openjpeg/src/lib/openjp2/pi.h,\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 12:44:08 -0500'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "libapt-pkg5.0",
+					"date": "2021-01-08",
+					"packetname": "ghostscript",
 					"severity": "",
-					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
+					"description": "'ghostscript (9.26~dfsg+0-0ubuntu0.18.04.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: integer overflow in opj_t1_encode_cblks\n    - debian/patches/CVE-2018-5727.patch: fix UBSAN signed integer overflow\n      in openjpeg/src/lib/openjp2/t1.c.\n    - CVE-2018-5727\n  * SECURITY UPDATE: heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-6851.patch: reject images whose\n      coordinates are beyond INT_MAX in openjpeg/src/lib/openjp2/j2k.c.\n    - CVE-2020-6851\n  * SECURITY UPDATE: another heap overflow in opj_t1_clbl_decode_processor\n    - debian/patches/CVE-2020-8112.patch: avoid integer overflow in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - CVE-2020-8112\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      openjpeg/src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in openjpeg/src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c, openjpeg/src/lib/openjp2/pi.h,\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      openjpeg/src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      openjpeg/src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 12:44:08 -0500'"
 				},
 				{
-					"date": "2020-12-09",
-					"packetname": "libssl1.0.0",
+					"date": "2021-01-08",
+					"packetname": "tzdata",
 					"severity": "",
-					"description": "'openssl1.0 (1.0.2n-1ubuntu5.5) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/asn1/asn1.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/asn1/asn1.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in crypto/x509v3/v3nametest.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 14:54:00 -0500'"
+					"description": "'tzdata (2020f-0ubuntu0.18.04) bionic; urgency=medium\n\n  * New upstream version (LP: #1909698), affecting the following timestamp:\n    - Volgograd switches to Moscow time on 2020-12-27 at 02:00.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 06 Jan 2021 08:11:57 -0800'"
 				}
 			]
 		},
@@ -77,68 +77,68 @@
 			"update_required": false,
 			"packages_affected": [
 			],
-			"date_open": "2020-12-16",
-			"last_rebuild": "2020-12-16 05:08",
+			"date_open": "2021-02-09",
+			"last_rebuild": "2021-02-09 05:07",
 			"scanLog": [
 				{
-					"date": "2020-12-16",
-					"packetname": "libmagickwand-6.q16-6",
+					"date": "2021-02-09",
+					"packetname": "libldap-2.4-2",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: integer underflow in Certificate Exact Assertion\n    processing\n    - debian/patches/CVE-2020-36221-1.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - debian/patches/CVE-2020-36221-2.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - CVE-2020-36221\n  * SECURITY UPDATE: assert failure in saslAuthzTo validation\n    - debian/patches/CVE-2020-36222-1.patch: remove saslauthz asserts in\n      servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36222-2.patch: fix debug msg in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36222\n  * SECURITY UPDATE: crash in Values Return Filter control handling\n    - debian/patches/CVE-2020-36223.patch: fix vrfilter double-free in\n      servers/slapd/controls.c.\n    - CVE-2020-36223\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36224-1.patch: use ch_free on normalized DN\n      in servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36224-2.patch: use slap_sl_free in prev\n      commit in servers/slapd/saslauthz.c.\n    - CVE-2020-36224\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36225.patch: fix AVA_Sort on invalid RDN in\n      servers/slapd/dn.c.\n    - CVE-2020-36225\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36226.patch: fix slap_parse_user in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36226\n  * SECURITY UPDATE: infinite loop in cancel_extop Cancel operation\n    - debian/patches/CVE-2020-36227.patch: fix cancel exop in\n      servers/slapd/cancel.c.\n    - CVE-2020-36227\n  * SECURITY UPDATE: DoS in Certificate List Exact Assertion processing\n    - debian/patches/CVE-2020-36228.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2020-36228\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ad_keystring\n    - debian/patches/CVE-2020-36229.patch: add more checks to\n      ldap_X509dn2bv in libraries/libldap/tls2.c.\n    - CVE-2020-36229\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ber_next_element\n    - debian/patches/CVE-2020-36230.patch: check for invalid BER after RDN\n      count in libraries/libldap/tls2.c.\n    - CVE-2020-36230\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Feb 2021 11:06:34 -0500'"
 				},
 				{
-					"date": "2020-12-16",
-					"packetname": "libmagickcore-6.q16-6",
+					"date": "2021-02-09",
+					"packetname": "libldap-common",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: integer underflow in Certificate Exact Assertion\n    processing\n    - debian/patches/CVE-2020-36221-1.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - debian/patches/CVE-2020-36221-2.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - CVE-2020-36221\n  * SECURITY UPDATE: assert failure in saslAuthzTo validation\n    - debian/patches/CVE-2020-36222-1.patch: remove saslauthz asserts in\n      servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36222-2.patch: fix debug msg in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36222\n  * SECURITY UPDATE: crash in Values Return Filter control handling\n    - debian/patches/CVE-2020-36223.patch: fix vrfilter double-free in\n      servers/slapd/controls.c.\n    - CVE-2020-36223\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36224-1.patch: use ch_free on normalized DN\n      in servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36224-2.patch: use slap_sl_free in prev\n      commit in servers/slapd/saslauthz.c.\n    - CVE-2020-36224\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36225.patch: fix AVA_Sort on invalid RDN in\n      servers/slapd/dn.c.\n    - CVE-2020-36225\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36226.patch: fix slap_parse_user in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36226\n  * SECURITY UPDATE: infinite loop in cancel_extop Cancel operation\n    - debian/patches/CVE-2020-36227.patch: fix cancel exop in\n      servers/slapd/cancel.c.\n    - CVE-2020-36227\n  * SECURITY UPDATE: DoS in Certificate List Exact Assertion processing\n    - debian/patches/CVE-2020-36228.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2020-36228\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ad_keystring\n    - debian/patches/CVE-2020-36229.patch: add more checks to\n      ldap_X509dn2bv in libraries/libldap/tls2.c.\n    - CVE-2020-36229\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ber_next_element\n    - debian/patches/CVE-2020-36230.patch: check for invalid BER after RDN\n      count in libraries/libldap/tls2.c.\n    - CVE-2020-36230\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Feb 2021 11:06:34 -0500'"
 				},
 				{
-					"date": "2020-12-16",
-					"packetname": "imagemagick-6-common",
+					"date": "2021-02-03",
+					"packetname": "ca-certificates",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'ca-certificates (20210119~20.04.1) focal-security; urgency=medium\n\n  * Update ca-certificates database to 20210119 (LP: #1914064):\n    - mozilla/{certdata.txt,nssckbi.h}: Update Mozilla certificate\n      authority bundle to version 2.46.\n    - backport certain changes from the Ubuntu 20.10 20210119 package\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 01 Feb 2021 10:14:19 -0500'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "libcurl3-gnutls",
+					"date": "2021-01-29",
+					"packetname": "tzdata",
 					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
+					"description": "'tzdata (2021a-0ubuntu0.20.04) focal; urgency=medium\n\n  * New upstream version (LP: #1913482), affecting the following future timestamp:\n    - South Sudan changes from +03 to +02 on 2021-02-01 at 00:00.\n  * Update ICU timezone data files which are utilized by php and update them\n    to 2021a.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 27 Jan 2021 13:32:53 -0800'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "libcurl4",
+					"date": "2021-01-27",
+					"packetname": "sudo",
 					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
+					"description": "'sudo (1.8.31-1ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: dir existence issue via sudoedit race\n    - debian/patches/CVE-2021-23239.patch: fix potential directory existing\n      info leak in sudoedit in src/sudo_edit.c.\n    - CVE-2021-23239\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2021-3156-pre1.patch: sanity check size when\n      converting the first record to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-1.patch: reset valid_flags to\n      MODE_NONINTERACTIVE for sudoedit in src/parse_args.c.\n    - debian/patches/CVE-2021-3156-2.patch: add sudoedit flag checks in\n      plugin in plugins/sudoers/policy.c.\n    - debian/patches/CVE-2021-3156-3.patch: fix potential buffer overflow\n      when unescaping backslashes in plugins/sudoers/sudoers.c.\n    - debian/patches/CVE-2021-3156-4.patch: fix the memset offset when\n      converting a v1 timestamp to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-5.patch: don\\'t assume that argv is\n      allocated as a single flat buffer in src/parse_args.c.\n    - CVE-2021-3156\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 19 Jan 2021 09:21:02 -0500'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "curl",
+					"date": "2021-01-14",
+					"packetname": "tar",
 					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
+					"description": "'tar (1.30+dfsg-7ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer dereference\n    - debian/patches/CVE-2019-9923.patch: Check for NULL return value from\n      find_next_block in src/sparse.c.\n    - CVE-2019-9923\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Tue, 15 Dec 2020 20:38:40 -0500'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "apt",
+					"date": "2021-01-13",
+					"packetname": "tzdata",
 					"severity": "",
-					"description": "'apt (2.0.2ubuntu0.2) focal-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n  * .gitlab-ci.yml: Test on focal, not unstable\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:08:43 +0100'"
+					"description": "'tzdata (2020f-0ubuntu0.20.04.1) focal; urgency=medium\n\n  * Update ICU timezone data files which are utilized by php to version 2020f.\n    (LP: #1910636)\n\n -- Brian Murray <brian@ubuntu.com>  Fri, 08 Jan 2021 08:19:33 -0800'"
 				},
 				{
-					"date": "2020-12-10",
-					"packetname": "libapt-pkg6.0",
+					"date": "2021-01-08",
+					"packetname": "libopenjp2-7",
 					"severity": "",
-					"description": "'apt (2.0.2ubuntu0.2) focal-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n  * .gitlab-ci.yml: Test on focal, not unstable\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:08:43 +0100'"
+					"description": "'openjpeg2 (2.3.1-1ubuntu4.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: use-after-free via directory\n    - debian/patches/CVE-2020-15389.patch: fix double-free on input\n      directory with mix of valid and invalid images in\n      src/bin/jp2/opj_decompress.c.\n    - CVE-2020-15389\n  * SECURITY UPDATE: heap-buffer-overflow\n    - debian/patches/CVE-2020-27814-1.patch: grow buffer size in\n      src/lib/openjp2/tcd.c.\n    - debian/patches/CVE-2020-27814-2.patch: grow it again\n    - debian/patches/CVE-2020-27814-3.patch: and some more\n    - debian/patches/CVE-2020-27814-4.patch: bigger, BIGGER!!!\n    - CVE-2020-27814\n  * SECURITY UPDATE: heap-buffer-overflow write\n    - debian/patches/CVE-2020-27823.patch: fix wrong computation in\n      src/bin/jp2/convertpng.c.\n    - CVE-2020-27823\n  * SECURITY UPDATE: global-buffer-overflow\n    - debian/patches/CVE-2020-27824.patch: avoid global buffer overflow on\n      irreversible conversion when too many decomposition levels are\n      specified in src/lib/openjp2/dwt.c.\n    - CVE-2020-27824\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27841.patch: add extra checks to\n      src/lib/openjp2/pi.c, src/lib/openjp2/pi.h, src/lib/openjp2/t2.c.\n    - CVE-2020-27841\n  * SECURITY UPDATE: null pointer dereference\n    - debian/patches/CVE-2020-27842.patch: add check to\n      src/lib/openjp2/t2.c.\n    - CVE-2020-27842\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27843.patch: add check to\n      src/lib/openjp2/t2.c.\n    - CVE-2020-27843\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-27845.patch: add extra checks to\n      src/lib/openjp2/pi.c.\n    - CVE-2020-27845\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 06 Jan 2021 09:44:46 -0500'"
 				},
 				{
-					"date": "2020-12-09",
-					"packetname": "openssl",
+					"date": "2021-01-08",
+					"packetname": "tzdata",
 					"severity": "",
-					"description": "'openssl (1.1.1f-1ubuntu2.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:52:44 -0500'"
+					"description": "'tzdata (2020f-0ubuntu0.20.04) focal; urgency=medium\n\n  * New upstream version (LP: #1909698), affecting the following timestamp:\n    - Volgograd switches to Moscow time on 2020-12-27 at 02:00.\n  * ICU timezone data files are still version 2020d as they have not yet been\n    updated by upstream.\n\n -- Brian Murray <brian@ubuntu.com>  Tue, 05 Jan 2021 16:30:37 -0800'"
 				},
 				{
-					"date": "2020-12-09",
-					"packetname": "libssl1.1",
+					"date": "2021-01-06",
+					"packetname": "libp11-kit0",
 					"severity": "",
-					"description": "'openssl (1.1.1f-1ubuntu2.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: EDIPARTYNAME NULL pointer de-ref\n    - debian/patches/CVE-2020-1971-1.patch: use explicit tagging for\n      DirectoryString in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-2.patch: correctly compare EdiPartyName\n      in crypto/x509v3/v3_genn.c.\n    - debian/patches/CVE-2020-1971-3.patch: check that multi-strings/CHOICE\n      types don\\'t use implicit tagging in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_dec.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-4.patch: complain if we are attempting\n      to encode with an invalid ASN.1 template in crypto/asn1/asn1_err.c,\n      crypto/asn1/tasn_enc.c, crypto/err/openssl.txt,\n      include/openssl/asn1err.h.\n    - debian/patches/CVE-2020-1971-5.patch: add a test for GENERAL_NAME_cmp\n      in test/v3nametest.c.\n    - debian/patches/CVE-2020-1971-6.patch: add a test for\n      encoding/decoding using an invalid ASN.1 Template in\n      test/asn1_decode_test.c, test/asn1_encode_test.c.\n    - CVE-2020-1971\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Dec 2020 09:52:44 -0500'"
+					"description": "'p11-kit (0.23.20-1ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple integer overflows\n    - debian/patches/CVE-2020-29361-1.patch: check for arithmetic overflows\n      before allocating in p11-kit/iter.c, p11-kit/lists.c,\n      p11-kit/proxy.c, p11-kit/rpc-message.c, p11-kit/rpc-message.h,\n      p11-kit/rpc-server.c, trust/index.c.\n    - debian/patches/CVE-2020-29361-2.patch: follow-up to arithmetic\n      overflow fix in common/compat.c, p11-kit/rpc-message.c.\n    - CVE-2020-29361\n  * SECURITY UPDATE: heap over-read in the RPC protocol\n    - debian/patches/CVE-2020-29362.patch: fix bounds check in\n      p11-kit/rpc-message.c.\n    - CVE-2020-29362\n  * SECURITY UPDATE: heap overflow in RPC protocol\n    - debian/patches/CVE-2020-29363.patch: check attribute length against\n      buffer size in p11-kit/rpc-message.c.\n    - CVE-2020-29363\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 04 Jan 2021 14:04:11 -0500'"
 				}
 			]
 		},
@@ -148,68 +148,68 @@
 			"update_required": false,
 			"packages_affected": [
 			],
-			"date_open": "2020-12-16",
-			"last_rebuild": "2020-12-22 08:58",
+			"date_open": "2021-02-09",
+			"last_rebuild": "2021-02-10 05:08",
 			"scanLog": [
 				{
-					"date": "2020-12-22",
-					"packetname": "libmagickwand-6.q16-6",
+					"date": "2021-02-10",
+					"packetname": "libldap-2.4-2",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: integer underflow in Certificate Exact Assertion\n    processing\n    - debian/patches/CVE-2020-36221-1.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - debian/patches/CVE-2020-36221-2.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - CVE-2020-36221\n  * SECURITY UPDATE: assert failure in saslAuthzTo validation\n    - debian/patches/CVE-2020-36222-1.patch: remove saslauthz asserts in\n      servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36222-2.patch: fix debug msg in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36222\n  * SECURITY UPDATE: crash in Values Return Filter control handling\n    - debian/patches/CVE-2020-36223.patch: fix vrfilter double-free in\n      servers/slapd/controls.c.\n    - CVE-2020-36223\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36224-1.patch: use ch_free on normalized DN\n      in servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36224-2.patch: use slap_sl_free in prev\n      commit in servers/slapd/saslauthz.c.\n    - CVE-2020-36224\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36225.patch: fix AVA_Sort on invalid RDN in\n      servers/slapd/dn.c.\n    - CVE-2020-36225\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36226.patch: fix slap_parse_user in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36226\n  * SECURITY UPDATE: infinite loop in cancel_extop Cancel operation\n    - debian/patches/CVE-2020-36227.patch: fix cancel exop in\n      servers/slapd/cancel.c.\n    - CVE-2020-36227\n  * SECURITY UPDATE: DoS in Certificate List Exact Assertion processing\n    - debian/patches/CVE-2020-36228.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2020-36228\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ad_keystring\n    - debian/patches/CVE-2020-36229.patch: add more checks to\n      ldap_X509dn2bv in libraries/libldap/tls2.c.\n    - CVE-2020-36229\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ber_next_element\n    - debian/patches/CVE-2020-36230.patch: check for invalid BER after RDN\n      count in libraries/libldap/tls2.c.\n    - CVE-2020-36230\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Feb 2021 11:06:34 -0500'"
 				},
 				{
-					"date": "2020-12-22",
-					"packetname": "libmagickcore-6.q16-6",
+					"date": "2021-02-10",
+					"packetname": "libldap-common",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: integer underflow in Certificate Exact Assertion\n    processing\n    - debian/patches/CVE-2020-36221-1.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - debian/patches/CVE-2020-36221-2.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - CVE-2020-36221\n  * SECURITY UPDATE: assert failure in saslAuthzTo validation\n    - debian/patches/CVE-2020-36222-1.patch: remove saslauthz asserts in\n      servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36222-2.patch: fix debug msg in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36222\n  * SECURITY UPDATE: crash in Values Return Filter control handling\n    - debian/patches/CVE-2020-36223.patch: fix vrfilter double-free in\n      servers/slapd/controls.c.\n    - CVE-2020-36223\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36224-1.patch: use ch_free on normalized DN\n      in servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36224-2.patch: use slap_sl_free in prev\n      commit in servers/slapd/saslauthz.c.\n    - CVE-2020-36224\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36225.patch: fix AVA_Sort on invalid RDN in\n      servers/slapd/dn.c.\n    - CVE-2020-36225\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36226.patch: fix slap_parse_user in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36226\n  * SECURITY UPDATE: infinite loop in cancel_extop Cancel operation\n    - debian/patches/CVE-2020-36227.patch: fix cancel exop in\n      servers/slapd/cancel.c.\n    - CVE-2020-36227\n  * SECURITY UPDATE: DoS in Certificate List Exact Assertion processing\n    - debian/patches/CVE-2020-36228.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2020-36228\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ad_keystring\n    - debian/patches/CVE-2020-36229.patch: add more checks to\n      ldap_X509dn2bv in libraries/libldap/tls2.c.\n    - CVE-2020-36229\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ber_next_element\n    - debian/patches/CVE-2020-36230.patch: check for invalid BER after RDN\n      count in libraries/libldap/tls2.c.\n    - CVE-2020-36230\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Feb 2021 11:06:34 -0500'"
 				},
 				{
-					"date": "2020-12-22",
-					"packetname": "imagemagick-6-common",
+					"date": "2021-02-09",
+					"packetname": "libldap-2.4-2",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: integer underflow in Certificate Exact Assertion\n    processing\n    - debian/patches/CVE-2020-36221-1.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - debian/patches/CVE-2020-36221-2.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - CVE-2020-36221\n  * SECURITY UPDATE: assert failure in saslAuthzTo validation\n    - debian/patches/CVE-2020-36222-1.patch: remove saslauthz asserts in\n      servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36222-2.patch: fix debug msg in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36222\n  * SECURITY UPDATE: crash in Values Return Filter control handling\n    - debian/patches/CVE-2020-36223.patch: fix vrfilter double-free in\n      servers/slapd/controls.c.\n    - CVE-2020-36223\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36224-1.patch: use ch_free on normalized DN\n      in servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36224-2.patch: use slap_sl_free in prev\n      commit in servers/slapd/saslauthz.c.\n    - CVE-2020-36224\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36225.patch: fix AVA_Sort on invalid RDN in\n      servers/slapd/dn.c.\n    - CVE-2020-36225\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36226.patch: fix slap_parse_user in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36226\n  * SECURITY UPDATE: infinite loop in cancel_extop Cancel operation\n    - debian/patches/CVE-2020-36227.patch: fix cancel exop in\n      servers/slapd/cancel.c.\n    - CVE-2020-36227\n  * SECURITY UPDATE: DoS in Certificate List Exact Assertion processing\n    - debian/patches/CVE-2020-36228.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2020-36228\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ad_keystring\n    - debian/patches/CVE-2020-36229.patch: add more checks to\n      ldap_X509dn2bv in libraries/libldap/tls2.c.\n    - CVE-2020-36229\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ber_next_element\n    - debian/patches/CVE-2020-36230.patch: check for invalid BER after RDN\n      count in libraries/libldap/tls2.c.\n    - CVE-2020-36230\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Feb 2021 11:06:34 -0500'"
 				},
 				{
-					"date": "2020-12-16",
-					"packetname": "libmagickwand-6.q16-6",
+					"date": "2021-02-09",
+					"packetname": "libldap-common",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: integer underflow in Certificate Exact Assertion\n    processing\n    - debian/patches/CVE-2020-36221-1.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - debian/patches/CVE-2020-36221-2.patch: fix serialNumberAndIssuerCheck\n      in servers/slapd/schema_init.c.\n    - CVE-2020-36221\n  * SECURITY UPDATE: assert failure in saslAuthzTo validation\n    - debian/patches/CVE-2020-36222-1.patch: remove saslauthz asserts in\n      servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36222-2.patch: fix debug msg in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36222\n  * SECURITY UPDATE: crash in Values Return Filter control handling\n    - debian/patches/CVE-2020-36223.patch: fix vrfilter double-free in\n      servers/slapd/controls.c.\n    - CVE-2020-36223\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36224-1.patch: use ch_free on normalized DN\n      in servers/slapd/saslauthz.c.\n    - debian/patches/CVE-2020-36224-2.patch: use slap_sl_free in prev\n      commit in servers/slapd/saslauthz.c.\n    - CVE-2020-36224\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36225.patch: fix AVA_Sort on invalid RDN in\n      servers/slapd/dn.c.\n    - CVE-2020-36225\n  * SECURITY UPDATE: DoS in saslAuthzTo processing\n    - debian/patches/CVE-2020-36226.patch: fix slap_parse_user in\n      servers/slapd/saslauthz.c.\n    - CVE-2020-36226\n  * SECURITY UPDATE: infinite loop in cancel_extop Cancel operation\n    - debian/patches/CVE-2020-36227.patch: fix cancel exop in\n      servers/slapd/cancel.c.\n    - CVE-2020-36227\n  * SECURITY UPDATE: DoS in Certificate List Exact Assertion processing\n    - debian/patches/CVE-2020-36228.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2020-36228\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ad_keystring\n    - debian/patches/CVE-2020-36229.patch: add more checks to\n      ldap_X509dn2bv in libraries/libldap/tls2.c.\n    - CVE-2020-36229\n  * SECURITY UPDATE: DoS in X.509 DN parsing in ber_next_element\n    - debian/patches/CVE-2020-36230.patch: check for invalid BER after RDN\n      count in libraries/libldap/tls2.c.\n    - CVE-2020-36230\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Feb 2021 11:06:34 -0500'"
 				},
 				{
-					"date": "2020-12-16",
-					"packetname": "libmagickcore-6.q16-6",
+					"date": "2021-02-04",
+					"packetname": "ca-certificates",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'ca-certificates (20210119~20.04.1) focal-security; urgency=medium\n\n  * Update ca-certificates database to 20210119 (LP: #1914064):\n    - mozilla/{certdata.txt,nssckbi.h}: Update Mozilla certificate\n      authority bundle to version 2.46.\n    - backport certain changes from the Ubuntu 20.10 20210119 package\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 01 Feb 2021 10:14:19 -0500'"
 				},
 				{
-					"date": "2020-12-16",
-					"packetname": "imagemagick-6-common",
+					"date": "2021-02-03",
+					"packetname": "ca-certificates",
 					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:52:45 -0500'"
+					"description": "'ca-certificates (20210119~20.04.1) focal-security; urgency=medium\n\n  * Update ca-certificates database to 20210119 (LP: #1914064):\n    - mozilla/{certdata.txt,nssckbi.h}: Update Mozilla certificate\n      authority bundle to version 2.46.\n    - backport certain changes from the Ubuntu 20.10 20210119 package\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 01 Feb 2021 10:14:19 -0500'"
 				},
 				{
-					"date": "2020-12-11",
-					"packetname": "libcurl3-gnutls",
+					"date": "2021-01-30",
+					"packetname": "tzdata",
 					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
+					"description": "'tzdata (2021a-0ubuntu0.20.04) focal; urgency=medium\n\n  * New upstream version (LP: #1913482), affecting the following future timestamp:\n    - South Sudan changes from +03 to +02 on 2021-02-01 at 00:00.\n  * Update ICU timezone data files which are utilized by php and update them\n    to 2021a.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 27 Jan 2021 13:32:53 -0800'"
 				},
 				{
-					"date": "2020-12-11",
-					"packetname": "libcurl4",
+					"date": "2021-01-29",
+					"packetname": "tzdata",
 					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
+					"description": "'tzdata (2021a-0ubuntu0.20.04) focal; urgency=medium\n\n  * New upstream version (LP: #1913482), affecting the following future timestamp:\n    - South Sudan changes from +03 to +02 on 2021-02-01 at 00:00.\n  * Update ICU timezone data files which are utilized by php and update them\n    to 2021a.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 27 Jan 2021 13:32:53 -0800'"
 				},
 				{
-					"date": "2020-12-11",
-					"packetname": "curl",
+					"date": "2021-01-29",
+					"packetname": "sudo",
 					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:59:13 -0500'"
+					"description": "'sudo (1.8.31-1ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: dir existence issue via sudoedit race\n    - debian/patches/CVE-2021-23239.patch: fix potential directory existing\n      info leak in sudoedit in src/sudo_edit.c.\n    - CVE-2021-23239\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2021-3156-pre1.patch: sanity check size when\n      converting the first record to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-1.patch: reset valid_flags to\n      MODE_NONINTERACTIVE for sudoedit in src/parse_args.c.\n    - debian/patches/CVE-2021-3156-2.patch: add sudoedit flag checks in\n      plugin in plugins/sudoers/policy.c.\n    - debian/patches/CVE-2021-3156-3.patch: fix potential buffer overflow\n      when unescaping backslashes in plugins/sudoers/sudoers.c.\n    - debian/patches/CVE-2021-3156-4.patch: fix the memset offset when\n      converting a v1 timestamp to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-5.patch: don\\'t assume that argv is\n      allocated as a single flat buffer in src/parse_args.c.\n    - CVE-2021-3156\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 19 Jan 2021 09:21:02 -0500'"
 				},
 				{
-					"date": "2020-12-11",
-					"packetname": "apt",
+					"date": "2021-01-27",
+					"packetname": "sudo",
 					"severity": "",
-					"description": "'apt (2.0.2ubuntu0.2) focal-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n  * .gitlab-ci.yml: Test on focal, not unstable\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:08:43 +0100'"
+					"description": "'sudo (1.8.31-1ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: dir existence issue via sudoedit race\n    - debian/patches/CVE-2021-23239.patch: fix potential directory existing\n      info leak in sudoedit in src/sudo_edit.c.\n    - CVE-2021-23239\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2021-3156-pre1.patch: sanity check size when\n      converting the first record to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-1.patch: reset valid_flags to\n      MODE_NONINTERACTIVE for sudoedit in src/parse_args.c.\n    - debian/patches/CVE-2021-3156-2.patch: add sudoedit flag checks in\n      plugin in plugins/sudoers/policy.c.\n    - debian/patches/CVE-2021-3156-3.patch: fix potential buffer overflow\n      when unescaping backslashes in plugins/sudoers/sudoers.c.\n    - debian/patches/CVE-2021-3156-4.patch: fix the memset offset when\n      converting a v1 timestamp to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-5.patch: don\\'t assume that argv is\n      allocated as a single flat buffer in src/parse_args.c.\n    - CVE-2021-3156\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 19 Jan 2021 09:21:02 -0500'"
 				}
 			]
 		},
@@ -218,82 +218,82 @@
 			"tag": "testing",
 			"update_required": true,
 			"packages_affected": [
+				"tar",
 				"libapt-pkg5.0",
 				"apt",
 				"imagemagick-6-common",
 				"libmagickcore-6.q16-3",
 				"libmagickwand-6.q16-3",
-				"curl",
-				"libcurl4",
-				"libcurl3-gnutls",
-				"linux-libc-dev",
-				"unzip"
+				"libp11-kit0",
+				"ca-certificates",
+				"sudo",
+				"tzdata"
 			],
 			"date_open": "2020-11-10",
-			"last_rebuild": "2021-01-04 05:23",
+			"last_rebuild": "2021-02-15 05:09",
 			"scanLog": [
 				{
-					"date": "2021-01-04",
-					"packetname": "unzip",
+					"date": "2021-02-15",
+					"packetname": "tzdata",
 					"severity": null,
-					"description": "'unzip (6.0-21ubuntu1.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: buffer overflow in password protected ZIP archives\n    - debian/patches/20-cve-2018-1000035-unzip-buffer-overflow.patch: Perform\n      check before allocating memory in fileio.c.\n    - CVE-2018-1000035 \n  * SECURITY UPDATE: denial of service (resource consumption)\n    - debian/patches/22-cve-2019-13232-fix-bug-in-undefer-input.patch: Fix bug\n      in undefer_input() of fileio.c that misplaced the input state.\n    - debian/patches/23-cve-2019-13232-zip-bomb-with-overlapped-entries.patch:\n      Detect and reject a zip bomb using overlapped entries.\n    - debian/patches/24-cve-2019-13232-do-not-raise-alert-for-misplaced-central-directory.patch:\n      Do not raise a zip bomb alert for a misplaced central directory.\n    - CVE-2019-13232\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Thu, 26 Nov 2020 16:01:36 -0500'"
+					"description": "'tzdata (2021a-0ubuntu0.18.04) bionic; urgency=medium\n\n  * New upstream version (LP: #1913482), affecting the following future timestamp:\n    - South Sudan changes from +03 to +02 on 2021-02-01 at 00:00.\n\n -- Brian Murray <brian@ubuntu.com>  Wed, 27 Jan 2021 13:46:22 -0800'"
 				},
 				{
-					"date": "2021-01-04",
-					"packetname": "linux-libc-dev",
+					"date": "2021-02-15",
+					"packetname": "sudo",
 					"severity": null,
-					"description": "'linux (4.15.0-128.131) bionic; urgency=medium\n\n  * bionic/linux: 4.15.0-128.131 -proposed tracker (LP: #1907354)\n\n  * Packaging resync (LP: #1786013)\n    - update dkms package versions\n\n  * raid10: discard leads to corrupted file system (LP: #1907262)\n    - Revert \"md/raid10: improve discard request for far layout\"\n    - Revert \"md/raid10: improve raid10 discard request\"\n    - Revert \"md/raid10: pull codes that wait for blocked dev into one function\"\n    - Revert \"md/raid10: extend r10bio devs to raid disks\"\n    - Revert \"md: add md_submit_discard_bio() for submitting discard bio\"\n\n -- Khalid Elmously <khalid.elmously@canonical.com>  Wed, 09 Dec 2020 01:27:33 -0500'"
+					"description": "'sudo (1.8.21p2-3ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: dir existence issue via sudoedit race\n    - debian/patches/CVE-2021-23239.patch: fix potential directory existing\n      info leak in sudoedit in src/sudo_edit.c.\n    - CVE-2021-23239\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2021-3156-pre1.patch: check lock record size in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-pre2.patch: sanity check size when\n      converting the first record to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-1.patch: reset valid_flags to\n      MODE_NONINTERACTIVE for sudoedit in src/parse_args.c.\n    - debian/patches/CVE-2021-3156-2.patch: add sudoedit flag checks in\n      plugin in plugins/sudoers/policy.c.\n    - debian/patches/CVE-2021-3156-3.patch: fix potential buffer overflow\n      when unescaping backslashes in plugins/sudoers/sudoers.c.\n    - debian/patches/CVE-2021-3156-4.patch: fix the memset offset when\n      converting a v1 timestamp to TS_LOCKEXCL in\n      plugins/sudoers/timestamp.c.\n    - debian/patches/CVE-2021-3156-5.patch: don\\'t assume that argv is\n      allocated as a single flat buffer in src/parse_args.c.\n    - CVE-2021-3156\n  * debian/control: added tzdata to Build-Depends so that the time zone\n    data directory is present during builds.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 19 Jan 2021 09:36:00 -0500'"
 				},
 				{
-					"date": "2021-01-04",
-					"packetname": "libcurl3-gnutls",
+					"date": "2021-02-15",
+					"packetname": "ca-certificates",
 					"severity": null,
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
+					"description": "'ca-certificates (20210119~18.04.1) bionic-security; urgency=medium\n\n  * Update ca-certificates database to 20210119 (LP: #1914064):\n    - mozilla/{certdata.txt,nssckbi.h}: Update Mozilla certificate\n      authority bundle to version 2.46.\n    - backport certain changes from the Ubuntu 20.10 20210119 package\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 01 Feb 2021 10:14:19 -0500'"
 				},
 				{
-					"date": "2021-01-04",
-					"packetname": "libcurl4",
+					"date": "2021-02-15",
+					"packetname": "libp11-kit0",
 					"severity": null,
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
+					"description": "'p11-kit (0.23.9-2ubuntu0.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: multiple integer overflows\n    - debian/patches/CVE-2020-29361-1.patch: check for arithmetic overflows\n      before allocating in p11-kit/iter.c, p11-kit/lists.c,\n      p11-kit/proxy.c, p11-kit/rpc-message.c, p11-kit/rpc-message.h,\n      p11-kit/rpc-server.c, trust/index.c.\n    - debian/patches/CVE-2020-29361-2.patch: follow-up to arithmetic\n      overflow fix in common/compat.c, p11-kit/rpc-message.c.\n    - CVE-2020-29361\n  * SECURITY UPDATE: heap over-read in the RPC protocol\n    - debian/patches/CVE-2020-29362.patch: fix bounds check in\n      p11-kit/rpc-message.c.\n    - CVE-2020-29362\n  * SECURITY UPDATE: heap overflow in RPC protocol\n    - debian/patches/CVE-2020-29363.patch: check attribute length against\n      buffer size in p11-kit/rpc-message.c.\n    - CVE-2020-29363\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 04 Jan 2021 14:08:12 -0500'"
 				},
 				{
-					"date": "2021-01-04",
-					"packetname": "curl",
-					"severity": null,
-					"description": "'curl (7.58.0-2ubuntu3.12) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: FTP redirect to malicious host via PASV response\n    - debian/patches/CVE-2020-8284.patch: use CURLOPT_FTP_SKIP_PASV_IP by\n      default in lib/url.c, src/tool_cfgable.c, docs/*, tests/data/*.\n    - CVE-2020-8284\n  * SECURITY UPDATE: FTP wildcard stack buffer overflow in libcurl\n    - debian/patches/CVE-2020-8285.patch: make wc_statemach loop instead of\n      recurse in lib/ftp.c.\n    - CVE-2020-8285\n  * SECURITY UPDATE: Inferior OCSP verification\n    - debian/patches/CVE-2020-8286.patch: make the OCSP verification verify\n      the certificate id in lib/vtls/openssl.c.\n    - CVE-2020-8286\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 01 Dec 2020 13:01:10 -0500'"
-				},
-				{
-					"date": "2021-01-04",
+					"date": "2021-02-15",
 					"packetname": "libmagickwand-6.q16-3",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-04",
+					"date": "2021-02-15",
 					"packetname": "libmagickcore-6.q16-3",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-04",
+					"date": "2021-02-15",
 					"packetname": "imagemagick-6-common",
 					"severity": null,
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow\n    - debian/patches/CVE-2019-19948.patch: Fix heap-based buffer overflow in\n      coders/sgi.c.\n    - debian/patches/CVE-2019-19949.patch: Fix heap-based buffer overflow in\n      coders/png.c.\n    - CVE-2019-19948\n    - CVE-2019-19949 \n  * SECURITY UPDATE: division by zero\n    - debian/patches/CVE-2020-27560.patch: Change division to multiplication in\n      OptimizeLayerFrames in magick/layer.c\n    - CVE-2020-27560\n  * debian/patches/fix-test-failures.patch: fix FTBFS due to test failure\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 18 Nov 2020 08:51:34 -0500'"
 				},
 				{
-					"date": "2021-01-04",
+					"date": "2021-02-15",
 					"packetname": "apt",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
 				},
 				{
-					"date": "2021-01-04",
+					"date": "2021-02-15",
 					"packetname": "libapt-pkg5.0",
 					"severity": null,
 					"description": "'apt (1.6.12ubuntu0.2) bionic-security; urgency=high\n\n  * SECURITY UPDATE: Integer overflow in parsing (LP: #1899193)\n    - apt-pkg/contrib/arfile.cc: add extra checks.\n    - apt-pkg/contrib/tarfile.cc: limit tar item sizes to 128 GiB\n    - apt-pkg/deb/debfile.cc: limit control file sizes to 64 MiB\n    - test/*: add tests.\n    - CVE-2020-27350\n  * Additional hardening:\n    - apt-pkg/contrib/tarfile.cc: Limit size of long names and links to 1 MiB\n\n -- Julian Andres Klode <juliank@ubuntu.com>  Mon, 07 Dec 2020 12:13:36 +0100'"
+				},
+				{
+					"date": "2021-02-15",
+					"packetname": "tar",
+					"severity": null,
+					"description": "'tar (1.29b-2ubuntu0.2) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Infinite read loop\n    - debian/patches/Fix-CVE-2018-20482.patch: Add handling for short read\n      condition in sparse_dump_region() of src/sparse.c.\n    - CVE-2018-20482\n  * SECURITY UPDATE: NULL pointer dereference\n    - debian/patches/CVE-2019-9923.patch: Check for NULL return value from\n      find_next_block in src/sparse.c.\n    - CVE-2019-9923\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Tue, 15 Dec 2020 20:39:17 -0500'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-01-04 05:23:49"
+	"last_check": "2021-02-15 05:09:44"
 }
