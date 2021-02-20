@@ -178,12 +178,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phore/phore-hydrator.git",
-                "reference": "b6ebf3958d05eee9969869aff8f433d79229085e"
+                "reference": "9e5bb8d9f8e652821dde1a0af65871ffe703a606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phore/phore-hydrator/zipball/b6ebf3958d05eee9969869aff8f433d79229085e",
-                "reference": "b6ebf3958d05eee9969869aff8f433d79229085e",
+                "url": "https://api.github.com/repos/phore/phore-hydrator/zipball/9e5bb8d9f8e652821dde1a0af65871ffe703a606",
+                "reference": "9e5bb8d9f8e652821dde1a0af65871ffe703a606",
                 "shasum": ""
             },
             "require": {
@@ -218,7 +218,7 @@
                 "issues": "https://github.com/phore/phore-hydrator/issues",
                 "source": "https://github.com/phore/phore-hydrator/tree/master"
             },
-            "time": "2020-09-18T22:32:08+00:00"
+            "time": "2021-02-19T19:29:19+00:00"
         },
         {
             "name": "phore/misc",

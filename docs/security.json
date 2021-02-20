@@ -3,10 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libssl1.1",
-				"openssl"
 			],
 			"date_open": "2021-02-19",
 			"last_rebuild": "2021-02-19 05:07",
@@ -14,13 +12,13 @@
 				{
 					"date": "2021-02-19",
 					"packetname": "openssl",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				},
 				{
 					"date": "2021-02-19",
 					"packetname": "libssl1.1",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				}
 			]
@@ -28,11 +26,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libssl1.1",
-				"openssl",
-				"libssl1.0.0"
 			],
 			"date_open": "2021-02-19",
 			"last_rebuild": "2021-02-19 05:07",
@@ -40,19 +35,19 @@
 				{
 					"date": "2021-02-19",
 					"packetname": "libssl1.0.0",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl1.0 (1.0.2n-1ubuntu5.6) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840-pre1.patch: add new EVP error codes in\n      crypto/evp/evp_err.c, crypto/evp/evp.h.\n    - debian/patches/CVE-2021-23840-pre2.patch: add a new EVP error code in\n      crypto/evp/evp_err.c, crypto/evp/evp.h.\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/evp/evp_enc.c,\n      crypto/evp/evp_err.c, crypto/evp/evp.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 10:33:20 -0500'"
 				},
 				{
 					"date": "2021-02-19",
 					"packetname": "openssl",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840-pre1.patch: add a new EVP error code in\n      crypto/err/openssl.txt, crypto/evp/evp_err.c,\n      include/openssl/evperr.h.\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				},
 				{
 					"date": "2021-02-19",
 					"packetname": "libssl1.1",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840-pre1.patch: add a new EVP error code in\n      crypto/err/openssl.txt, crypto/evp/evp_err.c,\n      include/openssl/evperr.h.\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				}
 			]
@@ -60,10 +55,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libssl1.1",
-				"openssl"
 			],
 			"date_open": "2021-02-19",
 			"last_rebuild": "2021-02-19 05:08",
@@ -71,13 +64,13 @@
 				{
 					"date": "2021-02-19",
 					"packetname": "openssl",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				},
 				{
 					"date": "2021-02-19",
 					"packetname": "libssl1.1",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				}
 			]
@@ -91,22 +84,34 @@
 				"openssl"
 			],
 			"date_open": "2021-02-19",
-			"last_rebuild": "2021-02-19 05:08",
+			"last_rebuild": "2021-02-20 05:08",
 			"scanLog": [
 				{
-					"date": "2021-02-19",
+					"date": "2021-02-20",
 					"packetname": "openssl",
 					"severity": null,
 					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				},
 				{
-					"date": "2021-02-19",
+					"date": "2021-02-20",
 					"packetname": "libssl1.1",
 					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
+				},
+				{
+					"date": "2021-02-19",
+					"packetname": "openssl",
+					"severity": "",
+					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
+				},
+				{
+					"date": "2021-02-19",
+					"packetname": "libssl1.1",
+					"severity": "",
 					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-02-19 05:08:34"
+	"last_check": "2021-02-20 05:08:35"
 }
