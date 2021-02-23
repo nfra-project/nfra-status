@@ -3,12 +3,26 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libldap-common",
+				"libldap-2.4-2"
 			],
-			"date_open": "2021-02-19",
-			"last_rebuild": "2021-02-19 05:07",
+			"date_open": "2021-02-23",
+			"last_rebuild": "2021-02-23 05:06",
 			"scanLog": [
+				{
+					"date": "2021-02-23",
+					"packetname": "libldap-2.4-2",
+					"severity": null,
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
+				},
+				{
+					"date": "2021-02-23",
+					"packetname": "libldap-common",
+					"severity": null,
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
+				},
 				{
 					"date": "2021-02-19",
 					"packetname": "openssl",
@@ -26,12 +40,26 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libldap-common",
+				"libldap-2.4-2"
 			],
-			"date_open": "2021-02-19",
-			"last_rebuild": "2021-02-19 05:07",
+			"date_open": "2021-02-23",
+			"last_rebuild": "2021-02-23 05:06",
 			"scanLog": [
+				{
+					"date": "2021-02-23",
+					"packetname": "libldap-2.4-2",
+					"severity": null,
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.10) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:42 -0500'"
+				},
+				{
+					"date": "2021-02-23",
+					"packetname": "libldap-common",
+					"severity": null,
+					"description": "'openldap (2.4.45+dfsg-1ubuntu1.10) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:42 -0500'"
+				},
 				{
 					"date": "2021-02-19",
 					"packetname": "libssl1.0.0",
@@ -55,12 +83,26 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libldap-common",
+				"libldap-2.4-2"
 			],
-			"date_open": "2021-02-19",
-			"last_rebuild": "2021-02-19 05:08",
+			"date_open": "2021-02-23",
+			"last_rebuild": "2021-02-23 05:07",
 			"scanLog": [
+				{
+					"date": "2021-02-23",
+					"packetname": "libldap-2.4-2",
+					"severity": null,
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
+				},
+				{
+					"date": "2021-02-23",
+					"packetname": "libldap-common",
+					"severity": null,
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
+				},
 				{
 					"date": "2021-02-19",
 					"packetname": "openssl",
@@ -78,12 +120,26 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libldap-common",
+				"libldap-2.4-2"
 			],
-			"date_open": "2021-02-19",
-			"last_rebuild": "2021-02-20 05:08",
+			"date_open": "2021-02-23",
+			"last_rebuild": "2021-02-23 05:07",
 			"scanLog": [
+				{
+					"date": "2021-02-23",
+					"packetname": "libldap-2.4-2",
+					"severity": null,
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
+				},
+				{
+					"date": "2021-02-23",
+					"packetname": "libldap-common",
+					"severity": null,
+					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
+				},
 				{
 					"date": "2021-02-20",
 					"packetname": "openssl",
@@ -111,5 +167,5 @@
 			]
 		}
 	],
-	"last_check": "2021-02-22 05:08:05"
+	"last_check": "2021-02-23 05:07:19"
 }
