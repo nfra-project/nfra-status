@@ -3,11 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.8",
-				"libpython3.8-minimal",
-				"libpython3.8-stdlib"
 			],
 			"date_open": "2021-02-26",
 			"last_rebuild": "2021-02-26 05:09",
@@ -15,19 +12,19 @@
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
@@ -59,12 +56,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.6",
-				"libpython3.6-stdlib",
-				"libpython3.6-minimal",
-				"libtiff5"
 			],
 			"date_open": "2021-02-26",
 			"last_rebuild": "2021-02-26 05:09",
@@ -72,25 +65,25 @@
 				{
 					"date": "2021-02-26",
 					"packetname": "libtiff5",
-					"severity": null,
+					"severity": "",
 					"description": "'tiff (4.0.9-5ubuntu0.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in tif_getimage.c\n    - debian/patches/CVE-2020-35523.patch: check Tile width for overflow in\n      libtiff/tif_getimage.c.\n    - CVE-2020-35523\n  * SECURITY UPDATE: Heap-based buffer overflow in TIFF2PDF tool\n    - debian/patches/CVE-2020-35524.patch: properly calculate datasize when\n      saving to JPEG YCbCr in tools/tiff2pdf.c.\n    - CVE-2020-35524\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 25 Feb 2021 07:37:14 -0500'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.6-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.6.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.6.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 26 Jan 2021 12:33:00 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.6-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.6.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.6.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 26 Jan 2021 12:33:00 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.6",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.6.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.6.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 26 Jan 2021 12:33:00 -0300'"
 				},
 				{
@@ -128,12 +121,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.8",
-				"libpython3.8-minimal",
-				"libpython3.8-stdlib",
-				"libtiff5"
 			],
 			"date_open": "2021-02-26",
 			"last_rebuild": "2021-02-26 05:10",
@@ -141,25 +130,25 @@
 				{
 					"date": "2021-02-26",
 					"packetname": "libtiff5",
-					"severity": null,
+					"severity": "",
 					"description": "'tiff (4.1.0+git191117-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in tif_getimage.c\n    - debian/patches/CVE-2020-35523.patch: check Tile width for overflow in\n      libtiff/tif_getimage.c.\n    - CVE-2020-35523\n  * SECURITY UPDATE: Heap-based buffer overflow in TIFF2PDF tool\n    - debian/patches/CVE-2020-35524.patch: properly calculate datasize when\n      saving to JPEG YCbCr in tools/tiff2pdf.c.\n    - CVE-2020-35524\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 25 Feb 2021 07:36:40 -0500'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
@@ -193,50 +182,51 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"libpython3.8",
-				"python3.8",
-				"libpython3.8-stdlib",
-				"python3.8-minimal",
-				"libpython3.8-minimal",
 				"libtiff5"
 			],
 			"date_open": "2021-02-26",
-			"last_rebuild": "2021-02-26 05:10",
+			"last_rebuild": "2021-02-27 05:09",
 			"scanLog": [
 				{
-					"date": "2021-02-26",
+					"date": "2021-02-27",
 					"packetname": "libtiff5",
 					"severity": null,
 					"description": "'tiff (4.1.0+git191117-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in tif_getimage.c\n    - debian/patches/CVE-2020-35523.patch: check Tile width for overflow in\n      libtiff/tif_getimage.c.\n    - CVE-2020-35523\n  * SECURITY UPDATE: Heap-based buffer overflow in TIFF2PDF tool\n    - debian/patches/CVE-2020-35524.patch: properly calculate datasize when\n      saving to JPEG YCbCr in tools/tiff2pdf.c.\n    - CVE-2020-35524\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 25 Feb 2021 07:36:40 -0500'"
 				},
 				{
 					"date": "2021-02-26",
+					"packetname": "libtiff5",
+					"severity": "",
+					"description": "'tiff (4.1.0+git191117-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in tif_getimage.c\n    - debian/patches/CVE-2020-35523.patch: check Tile width for overflow in\n      libtiff/tif_getimage.c.\n    - CVE-2020-35523\n  * SECURITY UPDATE: Heap-based buffer overflow in TIFF2PDF tool\n    - debian/patches/CVE-2020-35524.patch: properly calculate datasize when\n      saving to JPEG YCbCr in tools/tiff2pdf.c.\n    - CVE-2020-35524\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 25 Feb 2021 07:36:40 -0500'"
+				},
+				{
+					"date": "2021-02-26",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "python3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "python3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
 					"date": "2021-02-26",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				},
 				{
@@ -254,17 +244,11 @@
 				{
 					"date": "2021-02-23",
 					"packetname": "libldap-2.4-2",
-					"severity": "",
-					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
-				},
-				{
-					"date": "2021-02-23",
-					"packetname": "libldap-common",
 					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-02-26 05:10:31"
+	"last_check": "2021-02-27 05:09:37"
 }
