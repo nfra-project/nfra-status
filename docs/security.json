@@ -180,9 +180,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libtiff5"
 			],
 			"date_open": "2021-02-26",
 			"last_rebuild": "2021-02-27 05:09",
@@ -190,7 +189,7 @@
 				{
 					"date": "2021-02-27",
 					"packetname": "libtiff5",
-					"severity": null,
+					"severity": "",
 					"description": "'tiff (4.1.0+git191117-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in tif_getimage.c\n    - debian/patches/CVE-2020-35523.patch: check Tile width for overflow in\n      libtiff/tif_getimage.c.\n    - CVE-2020-35523\n  * SECURITY UPDATE: Heap-based buffer overflow in TIFF2PDF tool\n    - debian/patches/CVE-2020-35524.patch: properly calculate datasize when\n      saving to JPEG YCbCr in tools/tiff2pdf.c.\n    - CVE-2020-35524\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 25 Feb 2021 07:36:40 -0500'"
 				},
 				{
@@ -250,5 +249,5 @@
 			]
 		}
 	],
-	"last_check": "2021-02-27 05:09:37"
+	"last_check": "2021-02-28 05:09:07"
 }
