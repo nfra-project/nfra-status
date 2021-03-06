@@ -126,12 +126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phore/phore-filesystem.git",
-                "reference": "6a0eef1ad83168d2d78f0a50f88b000ab2dd170f"
+                "reference": "2a4edc48488b1355742b89cb4f052367f1efaa18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phore/phore-filesystem/zipball/6a0eef1ad83168d2d78f0a50f88b000ab2dd170f",
-                "reference": "6a0eef1ad83168d2d78f0a50f88b000ab2dd170f",
+                "url": "https://api.github.com/repos/phore/phore-filesystem/zipball/2a4edc48488b1355742b89cb4f052367f1efaa18",
+                "reference": "2a4edc48488b1355742b89cb4f052367f1efaa18",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                 "issues": "https://github.com/phore/phore-filesystem/issues",
                 "source": "https://github.com/phore/phore-filesystem/tree/master"
             },
-            "time": "2021-02-18T22:09:53+00:00"
+            "time": "2021-03-05T19:47:08+00:00"
         },
         {
             "name": "phore/hydrator",
