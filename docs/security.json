@@ -3,9 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"openssh-client"
 			],
 			"date_open": "2021-03-09",
 			"last_rebuild": "2021-03-11 05:08",
@@ -13,7 +12,7 @@
 				{
 					"date": "2021-03-11",
 					"packetname": "openssh-client",
-					"severity": null,
+					"severity": "",
 					"description": "'openssh (1:8.2p1-4ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: double-free memory corruption in ssh-agent\n    - debian/patches/CVE-2021-28041.patch: set ext_name to NULL after\n      freeing it so it doesn\\'t get freed again later on in ssh-agent.c.\n    - CVE-2021-28041\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 09 Mar 2021 09:17:50 -0500'"
 				},
 				{
@@ -146,9 +145,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"openssh-client"
 			],
 			"date_open": "2021-03-09",
 			"last_rebuild": "2021-03-11 05:08",
@@ -156,7 +154,7 @@
 				{
 					"date": "2021-03-11",
 					"packetname": "openssh-client",
-					"severity": null,
+					"severity": "",
 					"description": "'openssh (1:8.2p1-4ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: double-free memory corruption in ssh-agent\n    - debian/patches/CVE-2021-28041.patch: set ext_name to NULL after\n      freeing it so it doesn\\'t get freed again later on in ssh-agent.c.\n    - CVE-2021-28041\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 09 Mar 2021 09:17:50 -0500'"
 				},
 				{
@@ -220,29 +218,33 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"git-man",
-				"git",
 				"openssh-client"
 			],
 			"date_open": "2021-03-09",
-			"last_rebuild": "2021-03-11 05:09",
+			"last_rebuild": "2021-03-12 05:09",
 			"scanLog": [
 				{
-					"date": "2021-03-11",
+					"date": "2021-03-12",
 					"packetname": "openssh-client",
 					"severity": null,
 					"description": "'openssh (1:8.2p1-4ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: double-free memory corruption in ssh-agent\n    - debian/patches/CVE-2021-28041.patch: set ext_name to NULL after\n      freeing it so it doesn\\'t get freed again later on in ssh-agent.c.\n    - CVE-2021-28041\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 09 Mar 2021 09:17:50 -0500'"
 				},
 				{
 					"date": "2021-03-11",
+					"packetname": "openssh-client",
+					"severity": "",
+					"description": "'openssh (1:8.2p1-4ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: double-free memory corruption in ssh-agent\n    - debian/patches/CVE-2021-28041.patch: set ext_name to NULL after\n      freeing it so it doesn\\'t get freed again later on in ssh-agent.c.\n    - CVE-2021-28041\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 09 Mar 2021 09:17:50 -0500'"
+				},
+				{
+					"date": "2021-03-11",
 					"packetname": "git",
-					"severity": null,
+					"severity": "",
 					"description": "'git (1:2.25.1-1ubuntu3.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: remote code exec during clone on case-insensitive FS\n    - debian/patches/CVE-2021-21300.patch: fix bug that makes checkout\n      follow symlinks in leading path in cache.h, compat/mingw.c,\n      git-compat-util.h, run-command.c, symlinks.c, t/t0021-conversion.sh,\n      t/t0021/rot13-filter.pl, t/t2006-checkout-index-basic.sh,\n      unpack-trees.c.\n    - CVE-2021-21300\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 04 Mar 2021 08:01:28 -0500'"
 				},
 				{
 					"date": "2021-03-11",
 					"packetname": "git-man",
-					"severity": null,
+					"severity": "",
 					"description": "'git (1:2.25.1-1ubuntu3.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: remote code exec during clone on case-insensitive FS\n    - debian/patches/CVE-2021-21300.patch: fix bug that makes checkout\n      follow symlinks in leading path in cache.h, compat/mingw.c,\n      git-compat-util.h, run-command.c, symlinks.c, t/t0021-conversion.sh,\n      t/t0021/rot13-filter.pl, t/t2006-checkout-index-basic.sh,\n      unpack-trees.c.\n    - CVE-2021-21300\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 04 Mar 2021 08:01:28 -0500'"
 				},
 				{
@@ -280,15 +282,9 @@
 					"packetname": "libglib2.0-data",
 					"severity": "",
 					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: g_byte_array_new_take length truncation\n    - debian/patches/CVE-2021-2721x/CVE-2021-27218.patch: do not accept too\n      large byte arrays in glib/garray.c, glib/gbytes.c,\n      glib/tests/bytes.c.\n    - CVE-2021-27218\n  * SECURITY UPDATE: integer overflow in g_bytes_new\n    - debian/patches/CVE-2021-2721x/CVE-2021-27219*.patch: add internal\n      g_memdup2() function and use it instead of g_memdup() in a bunch of\n      places.\n    - CVE-2021-27219\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Mar 2021 12:28:09 -0500'"
-				},
-				{
-					"date": "2021-03-09",
-					"packetname": "libglib2.0-0",
-					"severity": "",
-					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: g_byte_array_new_take length truncation\n    - debian/patches/CVE-2021-2721x/CVE-2021-27218.patch: do not accept too\n      large byte arrays in glib/garray.c, glib/gbytes.c,\n      glib/tests/bytes.c.\n    - CVE-2021-27218\n  * SECURITY UPDATE: integer overflow in g_bytes_new\n    - debian/patches/CVE-2021-2721x/CVE-2021-27219*.patch: add internal\n      g_memdup2() function and use it instead of g_memdup() in a bunch of\n      places.\n    - CVE-2021-27219\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Mar 2021 12:28:09 -0500'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-03-11 05:09:28"
+	"last_check": "2021-03-12 05:09:16"
 }
