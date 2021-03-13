@@ -216,9 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"openssh-client"
 			],
 			"date_open": "2021-03-09",
 			"last_rebuild": "2021-03-12 05:09",
@@ -226,7 +225,7 @@
 				{
 					"date": "2021-03-12",
 					"packetname": "openssh-client",
-					"severity": null,
+					"severity": "",
 					"description": "'openssh (1:8.2p1-4ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: double-free memory corruption in ssh-agent\n    - debian/patches/CVE-2021-28041.patch: set ext_name to NULL after\n      freeing it so it doesn\\'t get freed again later on in ssh-agent.c.\n    - CVE-2021-28041\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 09 Mar 2021 09:17:50 -0500'"
 				},
 				{
@@ -286,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-03-12 05:09:16"
+	"last_check": "2021-03-13 05:08:56"
 }
