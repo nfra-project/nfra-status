@@ -74,12 +74,26 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libglib2.0-0",
+				"libglib2.0-data"
 			],
-			"date_open": "2021-03-09",
-			"last_rebuild": "2021-03-10 05:07",
+			"date_open": "2021-03-17",
+			"last_rebuild": "2021-03-17 18:34",
 			"scanLog": [
+				{
+					"date": "2021-03-17",
+					"packetname": "libglib2.0-data",
+					"severity": null,
+					"description": "'glib2.0 (2.56.4-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-pre1.patch: allow g_test_bug() to be\n      used without g_test_bug_base() in /glib/gtestutils.c.\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 12:27:31 -0500'"
+				},
+				{
+					"date": "2021-03-17",
+					"packetname": "libglib2.0-0",
+					"severity": null,
+					"description": "'glib2.0 (2.56.4-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-pre1.patch: allow g_test_bug() to be\n      used without g_test_bug_base() in /glib/gtestutils.c.\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 12:27:31 -0500'"
+				},
 				{
 					"date": "2021-03-10",
 					"packetname": "git",
@@ -127,30 +141,32 @@
 					"packetname": "libpython3.6-stdlib",
 					"severity": "",
 					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.6.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.6.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 26 Jan 2021 12:33:00 -0300'"
-				},
-				{
-					"date": "2021-02-26",
-					"packetname": "libpython3.6",
-					"severity": "",
-					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.6.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.6.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 26 Jan 2021 12:33:00 -0300'"
-				},
-				{
-					"date": "2021-02-23",
-					"packetname": "libldap-2.4-2",
-					"severity": "",
-					"description": "'openldap (2.4.45+dfsg-1ubuntu1.10) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:42 -0500'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libglib2.0-0",
+				"libglib2.0-data"
 			],
-			"date_open": "2021-03-09",
-			"last_rebuild": "2021-03-11 05:08",
+			"date_open": "2021-03-17",
+			"last_rebuild": "2021-03-17 18:34",
 			"scanLog": [
+				{
+					"date": "2021-03-17",
+					"packetname": "libglib2.0-data",
+					"severity": null,
+					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
+				},
+				{
+					"date": "2021-03-17",
+					"packetname": "libglib2.0-0",
+					"severity": null,
+					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
+				},
 				{
 					"date": "2021-03-11",
 					"packetname": "openssh-client",
@@ -198,30 +214,32 @@
 					"packetname": "libpython3.8-stdlib",
 					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
-				},
-				{
-					"date": "2021-02-26",
-					"packetname": "libpython3.8-minimal",
-					"severity": "",
-					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
-				},
-				{
-					"date": "2021-02-26",
-					"packetname": "libpython3.8",
-					"severity": "",
-					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				}
 			]
 		},
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libglib2.0-0",
+				"libglib2.0-data"
 			],
-			"date_open": "2021-03-09",
-			"last_rebuild": "2021-03-12 05:09",
+			"date_open": "2021-03-17",
+			"last_rebuild": "2021-03-17 18:35",
 			"scanLog": [
+				{
+					"date": "2021-03-17",
+					"packetname": "libglib2.0-data",
+					"severity": null,
+					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
+				},
+				{
+					"date": "2021-03-17",
+					"packetname": "libglib2.0-0",
+					"severity": null,
+					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
+				},
 				{
 					"date": "2021-03-12",
 					"packetname": "openssh-client",
@@ -269,21 +287,9 @@
 					"packetname": "libglib2.0-0",
 					"severity": "",
 					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: g_byte_array_new_take length truncation\n    - debian/patches/CVE-2021-2721x/CVE-2021-27218.patch: do not accept too\n      large byte arrays in glib/garray.c, glib/gbytes.c,\n      glib/tests/bytes.c.\n    - CVE-2021-27218\n  * SECURITY UPDATE: integer overflow in g_bytes_new\n    - debian/patches/CVE-2021-2721x/CVE-2021-27219*.patch: add internal\n      g_memdup2() function and use it instead of g_memdup() in a bunch of\n      places.\n    - CVE-2021-27219\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Mar 2021 12:28:09 -0500'"
-				},
-				{
-					"date": "2021-03-10",
-					"packetname": "libzstd1",
-					"severity": "",
-					"description": "'libzstd (1.4.4+dfsg-3ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: race condition allows attacker to access\n    world-readable destination file\n    - debian/patches/0018-fix-file-permissions-on-compression.patch: set\n      umask in programs/fileio.c, programs/util.c, programs/util.h.\n    - CVE-2021-24031\n    - CVE-2021-24032\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 03 Mar 2021 10:47:34 -0500'"
-				},
-				{
-					"date": "2021-03-09",
-					"packetname": "libglib2.0-data",
-					"severity": "",
-					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: g_byte_array_new_take length truncation\n    - debian/patches/CVE-2021-2721x/CVE-2021-27218.patch: do not accept too\n      large byte arrays in glib/garray.c, glib/gbytes.c,\n      glib/tests/bytes.c.\n    - CVE-2021-27218\n  * SECURITY UPDATE: integer overflow in g_bytes_new\n    - debian/patches/CVE-2021-2721x/CVE-2021-27219*.patch: add internal\n      g_memdup2() function and use it instead of g_memdup() in a bunch of\n      places.\n    - CVE-2021-27219\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 02 Mar 2021 12:28:09 -0500'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-03-15 05:08:39"
+	"last_check": "2021-03-17 18:35:31"
 }
