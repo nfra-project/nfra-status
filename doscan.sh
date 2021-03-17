@@ -2,7 +2,7 @@
 
 set -e
 
-sudo apt-get install -y php-yaml
+sudo apt-get install -y php7.4-yaml
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup2.php
 sudo php /tmp/composer-setup2.php --install-dir=/usr/local/bin --filename=composer
 composer update
