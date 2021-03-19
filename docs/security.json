@@ -216,10 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libglib2.0-0",
-				"libglib2.0-data"
 			],
 			"date_open": "2021-03-17",
 			"last_rebuild": "2021-03-18 05:09",
@@ -227,13 +225,13 @@
 				{
 					"date": "2021-03-18",
 					"packetname": "libglib2.0-data",
-					"severity": null,
+					"severity": "",
 					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
 				},
 				{
 					"date": "2021-03-18",
 					"packetname": "libglib2.0-0",
-					"severity": null,
+					"severity": "",
 					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
 				},
 				{
@@ -287,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-03-18 05:09:03"
+	"last_check": "2021-03-19 05:09:19"
 }
