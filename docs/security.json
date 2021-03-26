@@ -3,12 +3,26 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libssl1.1",
+				"openssl"
 			],
-			"date_open": "2021-03-09",
-			"last_rebuild": "2021-03-11 05:08",
+			"date_open": "2021-03-26",
+			"last_rebuild": "2021-03-26 06:14",
 			"scanLog": [
+				{
+					"date": "2021-03-26",
+					"packetname": "openssl",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
+				},
+				{
+					"date": "2021-03-26",
+					"packetname": "libssl1.1",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
+				},
 				{
 					"date": "2021-03-11",
 					"packetname": "openssh-client",
@@ -56,30 +70,32 @@
 					"packetname": "libldap-2.4-2",
 					"severity": "",
 					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
-				},
-				{
-					"date": "2021-02-23",
-					"packetname": "libldap-common",
-					"severity": "",
-					"description": "'openldap (2.4.49+dfsg-2ubuntu1.7) focal-security; urgency=medium\n\n  * SECURITY UPDATE: DoS via malicious packet\n    - debian/patches/CVE-2021-27212.patch: fix issuerAndThisUpdateCheck in\n      servers/slapd/schema_init.c.\n    - CVE-2021-27212\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 18 Feb 2021 09:22:15 -0500'"
-				},
-				{
-					"date": "2021-02-19",
-					"packetname": "openssl",
-					"severity": "",
-					"description": "'openssl (1.1.1f-1ubuntu2.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in CipherUpdate\n    - debian/patches/CVE-2021-23840.patch: don\\'t overflow the output length\n      in EVP_CipherUpdate calls in crypto/err/openssl.txt,\n      crypto/evp/evp_enc.c, crypto/evp/evp_err.c, include/openssl/evperr.h.\n    - CVE-2021-23840\n  * SECURITY UPDATE: Null pointer deref in X509_issuer_and_serial_hash()\n    - debian/patches/CVE-2021-23841.patch: fix Null pointer deref in\n      crypto/x509/x509_cmp.c.\n    - CVE-2021-23841\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 17 Feb 2021 07:35:54 -0500'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libssl1.1",
+				"openssl"
 			],
-			"date_open": "2021-03-17",
-			"last_rebuild": "2021-03-17 18:34",
+			"date_open": "2021-03-26",
+			"last_rebuild": "2021-03-26 06:14",
 			"scanLog": [
+				{
+					"date": "2021-03-26",
+					"packetname": "openssl",
+					"severity": null,
+					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:42:42 -0400'"
+				},
+				{
+					"date": "2021-03-26",
+					"packetname": "libssl1.1",
+					"severity": null,
+					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:42:42 -0400'"
+				},
 				{
 					"date": "2021-03-17",
 					"packetname": "libglib2.0-data",
@@ -127,30 +143,32 @@
 					"packetname": "libtiff5",
 					"severity": "",
 					"description": "'tiff (4.0.9-5ubuntu0.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in tif_getimage.c\n    - debian/patches/CVE-2020-35523.patch: check Tile width for overflow in\n      libtiff/tif_getimage.c.\n    - CVE-2020-35523\n  * SECURITY UPDATE: Heap-based buffer overflow in TIFF2PDF tool\n    - debian/patches/CVE-2020-35524.patch: properly calculate datasize when\n      saving to JPEG YCbCr in tools/tiff2pdf.c.\n    - CVE-2020-35524\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 25 Feb 2021 07:37:14 -0500'"
-				},
-				{
-					"date": "2021-02-26",
-					"packetname": "libpython3.6-minimal",
-					"severity": "",
-					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.6.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.6.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 26 Jan 2021 12:33:00 -0300'"
-				},
-				{
-					"date": "2021-02-26",
-					"packetname": "libpython3.6-stdlib",
-					"severity": "",
-					"description": "'python3.6 (3.6.9-1~18.04ubuntu1.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.6.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.6.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 26 Jan 2021 12:33:00 -0300'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libssl1.1",
+				"openssl"
 			],
-			"date_open": "2021-03-17",
-			"last_rebuild": "2021-03-17 18:34",
+			"date_open": "2021-03-26",
+			"last_rebuild": "2021-03-26 06:14",
 			"scanLog": [
+				{
+					"date": "2021-03-26",
+					"packetname": "openssl",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
+				},
+				{
+					"date": "2021-03-26",
+					"packetname": "libssl1.1",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
+				},
 				{
 					"date": "2021-03-17",
 					"packetname": "libglib2.0-data",
@@ -198,30 +216,32 @@
 					"packetname": "libzstd1",
 					"severity": "",
 					"description": "'libzstd (1.4.4+dfsg-3ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: race condition allows attacker to access\n    world-readable destination file\n    - debian/patches/0018-fix-file-permissions-on-compression.patch: set\n      umask in programs/fileio.c, programs/util.c, programs/util.h.\n    - CVE-2021-24031\n    - CVE-2021-24032\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 03 Mar 2021 10:47:34 -0500'"
-				},
-				{
-					"date": "2021-02-26",
-					"packetname": "libtiff5",
-					"severity": "",
-					"description": "'tiff (4.1.0+git191117-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Integer overflow in tif_getimage.c\n    - debian/patches/CVE-2020-35523.patch: check Tile width for overflow in\n      libtiff/tif_getimage.c.\n    - CVE-2020-35523\n  * SECURITY UPDATE: Heap-based buffer overflow in TIFF2PDF tool\n    - debian/patches/CVE-2020-35524.patch: properly calculate datasize when\n      saving to JPEG YCbCr in tools/tiff2pdf.c.\n    - CVE-2020-35524\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 25 Feb 2021 07:36:40 -0500'"
-				},
-				{
-					"date": "2021-02-26",
-					"packetname": "libpython3.8-stdlib",
-					"severity": "",
-					"description": "'python3.8 (3.8.5-1~20.04.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Code execution from content received via HTTP\n    - debian/patches/CVE-2020-27619-3.8.patch: no longer call eval() on\n      content received via HTTP in Lib/test/multibytecodec_support.py.\n    - CVE-2020-27619\n  * SECURITY UPDATE: Buffer overflow\n    - debian/patches/CVE-2021-3177-3.8.patch: replace snprintf with Python unicode\n      formatting in ctypes param reprs in Lib/ctypes/test/test_parameters.py,\n      Modules/_ctypes/callproc.c.\n    - CVE-2021-3177\n  * Skipping test_idle in riscv64 arch\n    - debian/rules: adding test_idle to TEST_EXCLUDES in riscv64 arch due it\n      hangs in build time.\n\n -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Wed, 27 Jan 2021 12:41:15 -0300'"
 				}
 			]
 		},
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libssl1.1",
+				"openssl"
 			],
-			"date_open": "2021-03-17",
-			"last_rebuild": "2021-03-18 05:09",
+			"date_open": "2021-03-26",
+			"last_rebuild": "2021-03-26 06:15",
 			"scanLog": [
+				{
+					"date": "2021-03-26",
+					"packetname": "openssl",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
+				},
+				{
+					"date": "2021-03-26",
+					"packetname": "libssl1.1",
+					"severity": null,
+					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
+				},
 				{
 					"date": "2021-03-18",
 					"packetname": "libglib2.0-data",
@@ -269,21 +289,9 @@
 					"packetname": "git-man",
 					"severity": "",
 					"description": "'git (1:2.25.1-1ubuntu3.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: remote code exec during clone on case-insensitive FS\n    - debian/patches/CVE-2021-21300.patch: fix bug that makes checkout\n      follow symlinks in leading path in cache.h, compat/mingw.c,\n      git-compat-util.h, run-command.c, symlinks.c, t/t0021-conversion.sh,\n      t/t0021/rot13-filter.pl, t/t2006-checkout-index-basic.sh,\n      unpack-trees.c.\n    - CVE-2021-21300\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 04 Mar 2021 08:01:28 -0500'"
-				},
-				{
-					"date": "2021-03-10",
-					"packetname": "git",
-					"severity": "",
-					"description": "'git (1:2.25.1-1ubuntu3.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: remote code exec during clone on case-insensitive FS\n    - debian/patches/CVE-2021-21300.patch: fix bug that makes checkout\n      follow symlinks in leading path in cache.h, compat/mingw.c,\n      git-compat-util.h, run-command.c, symlinks.c, t/t0021-conversion.sh,\n      t/t0021/rot13-filter.pl, t/t2006-checkout-index-basic.sh,\n      unpack-trees.c.\n    - CVE-2021-21300\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 04 Mar 2021 08:01:28 -0500'"
-				},
-				{
-					"date": "2021-03-10",
-					"packetname": "git-man",
-					"severity": "",
-					"description": "'git (1:2.25.1-1ubuntu3.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: remote code exec during clone on case-insensitive FS\n    - debian/patches/CVE-2021-21300.patch: fix bug that makes checkout\n      follow symlinks in leading path in cache.h, compat/mingw.c,\n      git-compat-util.h, run-command.c, symlinks.c, t/t0021-conversion.sh,\n      t/t0021/rot13-filter.pl, t/t2006-checkout-index-basic.sh,\n      unpack-trees.c.\n    - CVE-2021-21300\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 04 Mar 2021 08:01:28 -0500'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-03-25 05:22:57"
+	"last_check": "2021-03-26 06:15:18"
 }
