@@ -216,10 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libssl1.1",
-				"openssl"
 			],
 			"date_open": "2021-03-26",
 			"last_rebuild": "2021-03-27 05:16",
@@ -227,13 +225,13 @@
 				{
 					"date": "2021-03-27",
 					"packetname": "openssl",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
 				},
 				{
 					"date": "2021-03-27",
 					"packetname": "libssl1.1",
-					"severity": null,
+					"severity": "",
 					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
 				},
 				{
@@ -287,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-03-27 05:16:24"
+	"last_check": "2021-03-28 06:17:12"
 }
