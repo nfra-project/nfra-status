@@ -3,10 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libnettle7",
-				"libhogweed5"
 			],
 			"date_open": "2021-04-14",
 			"last_rebuild": "2021-04-14 06:13",
@@ -14,13 +12,13 @@
 				{
 					"date": "2021-04-14",
 					"packetname": "libhogweed5",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				},
 				{
 					"date": "2021-04-14",
 					"packetname": "libnettle7",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				},
 				{
@@ -76,10 +74,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libnettle6",
-				"libhogweed4"
 			],
 			"date_open": "2021-04-14",
 			"last_rebuild": "2021-04-14 06:13",
@@ -87,13 +83,13 @@
 				{
 					"date": "2021-04-14",
 					"packetname": "libhogweed4",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.4-1ubuntu0.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed4.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:17:03 -0400'"
 				},
 				{
 					"date": "2021-04-14",
 					"packetname": "libnettle6",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.4-1ubuntu0.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed4.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:17:03 -0400'"
 				},
 				{
@@ -149,10 +145,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libnettle7",
-				"libhogweed5"
 			],
 			"date_open": "2021-04-14",
 			"last_rebuild": "2021-04-14 06:14",
@@ -160,13 +154,13 @@
 				{
 					"date": "2021-04-14",
 					"packetname": "libhogweed5",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				},
 				{
 					"date": "2021-04-14",
 					"packetname": "libnettle7",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				},
 				{
@@ -228,18 +222,30 @@
 				"libhogweed5"
 			],
 			"date_open": "2021-04-14",
-			"last_rebuild": "2021-04-14 06:14",
+			"last_rebuild": "2021-04-15 06:14",
 			"scanLog": [
 				{
-					"date": "2021-04-14",
+					"date": "2021-04-15",
 					"packetname": "libhogweed5",
 					"severity": null,
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				},
 				{
-					"date": "2021-04-14",
+					"date": "2021-04-15",
 					"packetname": "libnettle7",
 					"severity": null,
+					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
+				},
+				{
+					"date": "2021-04-14",
+					"packetname": "libhogweed5",
+					"severity": "",
+					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
+				},
+				{
+					"date": "2021-04-14",
+					"packetname": "libnettle7",
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				},
 				{
@@ -277,21 +283,9 @@
 					"packetname": "libcurl4",
 					"severity": "",
 					"description": "'curl (7.68.0-1ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n  * SECURITY UPDATE: TLS 1.3 session ticket proxy host mixup\n    - debian/patches/CVE-2021-22890.patch: make sure we set and extract the\n      correct session in lib/vtls/*.\n    - CVE-2021-22890\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:04 -0400'"
-				},
-				{
-					"date": "2021-04-01",
-					"packetname": "curl",
-					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n  * SECURITY UPDATE: TLS 1.3 session ticket proxy host mixup\n    - debian/patches/CVE-2021-22890.patch: make sure we set and extract the\n      correct session in lib/vtls/*.\n    - CVE-2021-22890\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:04 -0400'"
-				},
-				{
-					"date": "2021-03-27",
-					"packetname": "openssl",
-					"severity": "",
-					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-04-14 06:14:31"
+	"last_check": "2021-04-15 06:14:49"
 }
