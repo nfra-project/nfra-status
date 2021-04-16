@@ -216,10 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libnettle7",
-				"libhogweed5"
 			],
 			"date_open": "2021-04-14",
 			"last_rebuild": "2021-04-15 06:14",
@@ -227,13 +225,13 @@
 				{
 					"date": "2021-04-15",
 					"packetname": "libhogweed5",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				},
 				{
 					"date": "2021-04-15",
 					"packetname": "libnettle7",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				},
 				{
@@ -287,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-04-15 06:14:49"
+	"last_check": "2021-04-16 06:16:47"
 }
