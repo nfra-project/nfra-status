@@ -216,12 +216,40 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libclamav9",
+				"clamav-freshclam",
+				"clamav-daemon",
+				"clamav-base"
 			],
-			"date_open": "2021-04-14",
-			"last_rebuild": "2021-04-15 06:14",
+			"date_open": "2021-04-20",
+			"last_rebuild": "2021-04-20 06:15",
 			"scanLog": [
+				{
+					"date": "2021-04-20",
+					"packetname": "clamav-base",
+					"severity": null,
+					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
+				},
+				{
+					"date": "2021-04-20",
+					"packetname": "clamav-daemon",
+					"severity": null,
+					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
+				},
+				{
+					"date": "2021-04-20",
+					"packetname": "clamav-freshclam",
+					"severity": null,
+					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
+				},
+				{
+					"date": "2021-04-20",
+					"packetname": "libclamav9",
+					"severity": null,
+					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
+				},
 				{
 					"date": "2021-04-15",
 					"packetname": "libhogweed5",
@@ -257,33 +285,9 @@
 					"packetname": "libcurl3-gnutls",
 					"severity": "",
 					"description": "'curl (7.68.0-1ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n  * SECURITY UPDATE: TLS 1.3 session ticket proxy host mixup\n    - debian/patches/CVE-2021-22890.patch: make sure we set and extract the\n      correct session in lib/vtls/*.\n    - CVE-2021-22890\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:04 -0400'"
-				},
-				{
-					"date": "2021-04-02",
-					"packetname": "libcurl4",
-					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n  * SECURITY UPDATE: TLS 1.3 session ticket proxy host mixup\n    - debian/patches/CVE-2021-22890.patch: make sure we set and extract the\n      correct session in lib/vtls/*.\n    - CVE-2021-22890\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:04 -0400'"
-				},
-				{
-					"date": "2021-04-02",
-					"packetname": "curl",
-					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n  * SECURITY UPDATE: TLS 1.3 session ticket proxy host mixup\n    - debian/patches/CVE-2021-22890.patch: make sure we set and extract the\n      correct session in lib/vtls/*.\n    - CVE-2021-22890\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:04 -0400'"
-				},
-				{
-					"date": "2021-04-01",
-					"packetname": "libcurl3-gnutls",
-					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n  * SECURITY UPDATE: TLS 1.3 session ticket proxy host mixup\n    - debian/patches/CVE-2021-22890.patch: make sure we set and extract the\n      correct session in lib/vtls/*.\n    - CVE-2021-22890\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:04 -0400'"
-				},
-				{
-					"date": "2021-04-01",
-					"packetname": "libcurl4",
-					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n  * SECURITY UPDATE: TLS 1.3 session ticket proxy host mixup\n    - debian/patches/CVE-2021-22890.patch: make sure we set and extract the\n      correct session in lib/vtls/*.\n    - CVE-2021-22890\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:04 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-04-19 06:16:20"
+	"last_check": "2021-04-20 06:15:36"
 }
