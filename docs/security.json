@@ -216,12 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libclamav9",
-				"clamav-freshclam",
-				"clamav-daemon",
-				"clamav-base"
 			],
 			"date_open": "2021-04-20",
 			"last_rebuild": "2021-04-20 06:15",
@@ -229,25 +225,25 @@
 				{
 					"date": "2021-04-20",
 					"packetname": "clamav-base",
-					"severity": null,
+					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
 				},
 				{
 					"date": "2021-04-20",
 					"packetname": "clamav-daemon",
-					"severity": null,
+					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
 				},
 				{
 					"date": "2021-04-20",
 					"packetname": "clamav-freshclam",
-					"severity": null,
+					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
 				},
 				{
 					"date": "2021-04-20",
 					"packetname": "libclamav9",
-					"severity": null,
+					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
 				},
 				{
@@ -289,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-04-20 06:15:36"
+	"last_check": "2021-04-21 06:16:12"
 }
