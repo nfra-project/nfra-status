@@ -216,12 +216,19 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"distro-info-data"
 			],
-			"date_open": "2021-04-20",
-			"last_rebuild": "2021-04-20 06:15",
+			"date_open": "2021-04-23",
+			"last_rebuild": "2021-04-23 06:16",
 			"scanLog": [
+				{
+					"date": "2021-04-23",
+					"packetname": "distro-info-data",
+					"severity": null,
+					"description": "'distro-info-data (0.43ubuntu1.5) focal; urgency=medium\n\n  * Add Ubuntu 21.10, Impish Indri (LP: #1925484)\n\n -- Iain Lane <iain@orangesquash.org.uk>  Thu, 22 Apr 2021 13:15:23 +0100'"
+				},
 				{
 					"date": "2021-04-20",
 					"packetname": "clamav-base",
@@ -275,15 +282,9 @@
 					"packetname": "spamassassin",
 					"severity": "",
 					"description": "'spamassassin (3.4.4-1ubuntu1.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: OS Command Injection in cf file parsing\n    - debian/patches/CVE-2020-1946.patch: fix header rule parsing in\n      lib/Mail/SpamAssassin/Conf/Parser.pm.\n    - CVE-2020-1946\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 29 Mar 2021 12:54:59 -0400'"
-				},
-				{
-					"date": "2021-04-02",
-					"packetname": "libcurl3-gnutls",
-					"severity": "",
-					"description": "'curl (7.68.0-1ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n  * SECURITY UPDATE: TLS 1.3 session ticket proxy host mixup\n    - debian/patches/CVE-2021-22890.patch: make sure we set and extract the\n      correct session in lib/vtls/*.\n    - CVE-2021-22890\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:04 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-04-22 06:16:04"
+	"last_check": "2021-04-23 06:16:26"
 }
