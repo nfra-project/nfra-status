@@ -216,12 +216,40 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libclamav9",
+				"clamav-freshclam",
+				"clamav-daemon",
+				"clamav-base"
 			],
-			"date_open": "2021-04-23",
-			"last_rebuild": "2021-04-23 06:16",
+			"date_open": "2021-05-04",
+			"last_rebuild": "2021-05-04 06:09",
 			"scanLog": [
+				{
+					"date": "2021-05-04",
+					"packetname": "clamav-base",
+					"severity": null,
+					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
+				},
+				{
+					"date": "2021-05-04",
+					"packetname": "clamav-daemon",
+					"severity": null,
+					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
+				},
+				{
+					"date": "2021-05-04",
+					"packetname": "clamav-freshclam",
+					"severity": null,
+					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
+				},
+				{
+					"date": "2021-05-04",
+					"packetname": "libclamav9",
+					"severity": null,
+					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
+				},
 				{
 					"date": "2021-04-23",
 					"packetname": "distro-info-data",
@@ -257,33 +285,9 @@
 					"packetname": "libhogweed5",
 					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
-				},
-				{
-					"date": "2021-04-15",
-					"packetname": "libnettle7",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
-				},
-				{
-					"date": "2021-04-14",
-					"packetname": "libhogweed5",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
-				},
-				{
-					"date": "2021-04-14",
-					"packetname": "libnettle7",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
-				},
-				{
-					"date": "2021-04-02",
-					"packetname": "spamassassin",
-					"severity": "",
-					"description": "'spamassassin (3.4.4-1ubuntu1.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: OS Command Injection in cf file parsing\n    - debian/patches/CVE-2020-1946.patch: fix header rule parsing in\n      lib/Mail/SpamAssassin/Conf/Parser.pm.\n    - CVE-2020-1946\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 29 Mar 2021 12:54:59 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-05-03 06:13:16"
+	"last_check": "2021-05-04 06:09:38"
 }
