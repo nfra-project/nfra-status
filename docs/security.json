@@ -216,12 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libclamav9",
-				"clamav-freshclam",
-				"clamav-daemon",
-				"clamav-base"
 			],
 			"date_open": "2021-05-04",
 			"last_rebuild": "2021-05-04 06:09",
@@ -229,25 +225,25 @@
 				{
 					"date": "2021-05-04",
 					"packetname": "clamav-base",
-					"severity": null,
+					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
 				},
 				{
 					"date": "2021-05-04",
 					"packetname": "clamav-daemon",
-					"severity": null,
+					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
 				},
 				{
 					"date": "2021-05-04",
 					"packetname": "clamav-freshclam",
-					"severity": null,
+					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
 				},
 				{
 					"date": "2021-05-04",
 					"packetname": "libclamav9",
-					"severity": null,
+					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
 				},
 				{
@@ -289,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-05-04 06:09:38"
+	"last_check": "2021-05-05 06:08:46"
 }
