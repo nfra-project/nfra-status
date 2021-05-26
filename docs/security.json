@@ -74,12 +74,26 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libx11-data",
+				"libx11-6"
 			],
-			"date_open": "2021-04-14",
-			"last_rebuild": "2021-04-14 06:13",
+			"date_open": "2021-05-26",
+			"last_rebuild": "2021-05-26 06:44",
 			"scanLog": [
+				{
+					"date": "2021-05-26",
+					"packetname": "libx11-6",
+					"severity": null,
+					"description": "'libx11 (2:1.6.4-3ubuntu0.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:50 -0400'"
+				},
+				{
+					"date": "2021-05-26",
+					"packetname": "libx11-data",
+					"severity": null,
+					"description": "'libx11 (2:1.6.4-3ubuntu0.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:50 -0400'"
+				},
 				{
 					"date": "2021-04-14",
 					"packetname": "libhogweed4",
@@ -127,30 +141,32 @@
 					"packetname": "libglib2.0-data",
 					"severity": "",
 					"description": "'glib2.0 (2.56.4-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-pre1.patch: allow g_test_bug() to be\n      used without g_test_bug_base() in /glib/gtestutils.c.\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 12:27:31 -0500'"
-				},
-				{
-					"date": "2021-03-17",
-					"packetname": "libglib2.0-0",
-					"severity": "",
-					"description": "'glib2.0 (2.56.4-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-pre1.patch: allow g_test_bug() to be\n      used without g_test_bug_base() in /glib/gtestutils.c.\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 12:27:31 -0500'"
-				},
-				{
-					"date": "2021-03-10",
-					"packetname": "git",
-					"severity": "",
-					"description": "'git (1:2.17.1-1ubuntu0.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: remote code exec during clone on case-insensitive FS\n    - debian/patches/CVE-2021-21300.patch: fix bug that makes checkout\n      follow symlinks in leading path in cache.h, compat/mingw.c,\n      git-compat-util.h, run-command.c, symlinks.c, t/t0021-conversion.sh,\n      t/t0021/rot13-filter.pl, t/t2006-checkout-index-basic.sh,\n      unpack-trees.c.\n    - CVE-2021-21300\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 04 Mar 2021 08:02:54 -0500'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libx11-data",
+				"libx11-6"
 			],
-			"date_open": "2021-04-14",
-			"last_rebuild": "2021-04-14 06:14",
+			"date_open": "2021-05-26",
+			"last_rebuild": "2021-05-26 06:45",
 			"scanLog": [
+				{
+					"date": "2021-05-26",
+					"packetname": "libx11-6",
+					"severity": null,
+					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
+				},
+				{
+					"date": "2021-05-26",
+					"packetname": "libx11-data",
+					"severity": null,
+					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
+				},
 				{
 					"date": "2021-04-14",
 					"packetname": "libhogweed5",
@@ -198,30 +214,32 @@
 					"packetname": "libglib2.0-data",
 					"severity": "",
 					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
-				},
-				{
-					"date": "2021-03-17",
-					"packetname": "libglib2.0-0",
-					"severity": "",
-					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
-				},
-				{
-					"date": "2021-03-11",
-					"packetname": "openssh-client",
-					"severity": "",
-					"description": "'openssh (1:8.2p1-4ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: double-free memory corruption in ssh-agent\n    - debian/patches/CVE-2021-28041.patch: set ext_name to NULL after\n      freeing it so it doesn\\'t get freed again later on in ssh-agent.c.\n    - CVE-2021-28041\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 09 Mar 2021 09:17:50 -0500'"
 				}
 			]
 		},
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libx11-data",
+				"libx11-6"
 			],
-			"date_open": "2021-05-04",
-			"last_rebuild": "2021-05-04 06:09",
+			"date_open": "2021-05-26",
+			"last_rebuild": "2021-05-26 06:45",
 			"scanLog": [
+				{
+					"date": "2021-05-26",
+					"packetname": "libx11-6",
+					"severity": null,
+					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
+				},
+				{
+					"date": "2021-05-26",
+					"packetname": "libx11-data",
+					"severity": null,
+					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
+				},
 				{
 					"date": "2021-05-04",
 					"packetname": "clamav-base",
@@ -269,21 +287,9 @@
 					"packetname": "clamav-freshclam",
 					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
-				},
-				{
-					"date": "2021-04-20",
-					"packetname": "libclamav9",
-					"severity": "",
-					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
-				},
-				{
-					"date": "2021-04-15",
-					"packetname": "libhogweed5",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-05-25 06:31:06"
+	"last_check": "2021-05-26 06:45:30"
 }
