@@ -3,12 +3,19 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"liblz4-1"
 			],
-			"date_open": "2021-04-14",
-			"last_rebuild": "2021-04-14 06:13",
+			"date_open": "2021-05-27",
+			"last_rebuild": "2021-05-27 06:52",
 			"scanLog": [
+				{
+					"date": "2021-05-27",
+					"packetname": "liblz4-1",
+					"severity": null,
+					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
+				},
 				{
 					"date": "2021-04-14",
 					"packetname": "libhogweed5",
@@ -62,12 +69,6 @@
 					"packetname": "git",
 					"severity": "",
 					"description": "'git (1:2.25.1-1ubuntu3.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: remote code exec during clone on case-insensitive FS\n    - debian/patches/CVE-2021-21300.patch: fix bug that makes checkout\n      follow symlinks in leading path in cache.h, compat/mingw.c,\n      git-compat-util.h, run-command.c, symlinks.c, t/t0021-conversion.sh,\n      t/t0021/rot13-filter.pl, t/t2006-checkout-index-basic.sh,\n      unpack-trees.c.\n    - CVE-2021-21300\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 04 Mar 2021 08:01:28 -0500'"
-				},
-				{
-					"date": "2021-03-10",
-					"packetname": "git-man",
-					"severity": "",
-					"description": "'git (1:2.25.1-1ubuntu3.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: remote code exec during clone on case-insensitive FS\n    - debian/patches/CVE-2021-21300.patch: fix bug that makes checkout\n      follow symlinks in leading path in cache.h, compat/mingw.c,\n      git-compat-util.h, run-command.c, symlinks.c, t/t0021-conversion.sh,\n      t/t0021/rot13-filter.pl, t/t2006-checkout-index-basic.sh,\n      unpack-trees.c.\n    - CVE-2021-21300\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 04 Mar 2021 08:01:28 -0500'"
 				}
 			]
 		},
@@ -76,22 +77,27 @@
 			"tag": "7.2",
 			"update_required": true,
 			"packages_affected": [
-				"libx11-data",
-				"libx11-6"
+				"liblz4-1"
 			],
 			"date_open": "2021-05-26",
-			"last_rebuild": "2021-05-26 06:44",
+			"last_rebuild": "2021-05-27 06:52",
 			"scanLog": [
+				{
+					"date": "2021-05-27",
+					"packetname": "liblz4-1",
+					"severity": null,
+					"description": "'lz4 (0.0~r131-2ubuntu3.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 13:00:54 -0400'"
+				},
 				{
 					"date": "2021-05-26",
 					"packetname": "libx11-6",
-					"severity": null,
+					"severity": "",
 					"description": "'libx11 (2:1.6.4-3ubuntu0.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:50 -0400'"
 				},
 				{
 					"date": "2021-05-26",
 					"packetname": "libx11-data",
-					"severity": null,
+					"severity": "",
 					"description": "'libx11 (2:1.6.4-3ubuntu0.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:50 -0400'"
 				},
 				{
@@ -135,12 +141,6 @@
 					"packetname": "libssl1.1",
 					"severity": "",
 					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:42:42 -0400'"
-				},
-				{
-					"date": "2021-03-17",
-					"packetname": "libglib2.0-data",
-					"severity": "",
-					"description": "'glib2.0 (2.56.4-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-pre1.patch: allow g_test_bug() to be\n      used without g_test_bug_base() in /glib/gtestutils.c.\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 12:27:31 -0500'"
 				}
 			]
 		},
@@ -149,22 +149,27 @@
 			"tag": "7.4",
 			"update_required": true,
 			"packages_affected": [
-				"libx11-data",
-				"libx11-6"
+				"liblz4-1"
 			],
 			"date_open": "2021-05-26",
-			"last_rebuild": "2021-05-26 06:45",
+			"last_rebuild": "2021-05-27 06:53",
 			"scanLog": [
+				{
+					"date": "2021-05-27",
+					"packetname": "liblz4-1",
+					"severity": null,
+					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
+				},
 				{
 					"date": "2021-05-26",
 					"packetname": "libx11-6",
-					"severity": null,
+					"severity": "",
 					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
 				},
 				{
 					"date": "2021-05-26",
 					"packetname": "libx11-data",
-					"severity": null,
+					"severity": "",
 					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
 				},
 				{
@@ -208,12 +213,6 @@
 					"packetname": "libssl1.1",
 					"severity": "",
 					"description": "'openssl (1.1.1f-1ubuntu2.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:37:17 -0400'"
-				},
-				{
-					"date": "2021-03-17",
-					"packetname": "libglib2.0-data",
-					"severity": "",
-					"description": "'glib2.0 (2.64.6-1~ubuntu20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: incorrect g_file_replace() symlink handling\n    - debian/patches/CVE-2021-28153-1.patch: fix a typo in a comment in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-2.patch: stop using g_test_bug_base()\n      in file tests in gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-3.patch: factor out a flag check in\n      gio/glocalfileoutputstream.c.\n    - debian/patches/CVE-2021-28153-4.patch: fix CREATE_REPLACE_DESTINATION\n      with symlinks in gio/glocalfileoutputstream.c, gio/tests/file.c.\n    - debian/patches/CVE-2021-28153-5.patch: add a missing O_CLOEXEC flag\n      to replace() in gio/glocalfileoutputstream.c.\n    - CVE-2021-28153\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 12 Mar 2021 11:38:38 -0500'"
 				}
 			]
 		},
@@ -222,22 +221,41 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
+				"liblz4-1",
 				"libx11-data",
 				"libx11-6"
 			],
 			"date_open": "2021-05-26",
-			"last_rebuild": "2021-05-26 06:45",
+			"last_rebuild": "2021-05-27 06:53",
 			"scanLog": [
 				{
-					"date": "2021-05-26",
+					"date": "2021-05-27",
 					"packetname": "libx11-6",
 					"severity": null,
 					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
 				},
 				{
-					"date": "2021-05-26",
+					"date": "2021-05-27",
 					"packetname": "libx11-data",
 					"severity": null,
+					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
+				},
+				{
+					"date": "2021-05-27",
+					"packetname": "liblz4-1",
+					"severity": null,
+					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
+				},
+				{
+					"date": "2021-05-26",
+					"packetname": "libx11-6",
+					"severity": "",
+					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
+				},
+				{
+					"date": "2021-05-26",
+					"packetname": "libx11-data",
+					"severity": "",
 					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
 				},
 				{
@@ -269,27 +287,9 @@
 					"packetname": "distro-info-data",
 					"severity": "",
 					"description": "'distro-info-data (0.43ubuntu1.5) focal; urgency=medium\n\n  * Add Ubuntu 21.10, Impish Indri (LP: #1925484)\n\n -- Iain Lane <iain@orangesquash.org.uk>  Thu, 22 Apr 2021 13:15:23 +0100'"
-				},
-				{
-					"date": "2021-04-20",
-					"packetname": "clamav-base",
-					"severity": "",
-					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
-				},
-				{
-					"date": "2021-04-20",
-					"packetname": "clamav-daemon",
-					"severity": "",
-					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
-				},
-				{
-					"date": "2021-04-20",
-					"packetname": "clamav-freshclam",
-					"severity": "",
-					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * Updated to version 0.103.2 to fix security issues.\n    - CVE-2021-1252, CVE-2021-1404, CVE-2021-1405\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 15 Apr 2021 12:39:30 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-05-26 06:45:30"
+	"last_check": "2021-05-27 06:53:48"
 }
