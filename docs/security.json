@@ -3,9 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"liblz4-1"
 			],
 			"date_open": "2021-05-27",
 			"last_rebuild": "2021-05-27 06:52",
@@ -13,7 +12,7 @@
 				{
 					"date": "2021-05-27",
 					"packetname": "liblz4-1",
-					"severity": null,
+					"severity": "",
 					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
 				},
 				{
@@ -75,9 +74,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"liblz4-1"
 			],
 			"date_open": "2021-05-26",
 			"last_rebuild": "2021-05-27 06:52",
@@ -85,7 +83,7 @@
 				{
 					"date": "2021-05-27",
 					"packetname": "liblz4-1",
-					"severity": null,
+					"severity": "",
 					"description": "'lz4 (0.0~r131-2ubuntu3.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 13:00:54 -0400'"
 				},
 				{
@@ -147,9 +145,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"liblz4-1"
 			],
 			"date_open": "2021-05-26",
 			"last_rebuild": "2021-05-27 06:53",
@@ -157,7 +154,7 @@
 				{
 					"date": "2021-05-27",
 					"packetname": "liblz4-1",
-					"severity": null,
+					"severity": "",
 					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
 				},
 				{
@@ -222,28 +219,46 @@
 			"update_required": true,
 			"packages_affected": [
 				"liblz4-1",
-				"libx11-data",
-				"libx11-6"
+				"python3-lib2to3",
+				"python3-distutils"
 			],
 			"date_open": "2021-05-26",
-			"last_rebuild": "2021-05-27 06:53",
+			"last_rebuild": "2021-05-28 07:25",
 			"scanLog": [
+				{
+					"date": "2021-05-28",
+					"packetname": "python3-distutils",
+					"severity": null,
+					"description": "'python3-stdlib-extensions (3.8.10-0ubuntu1~20.04) focal; urgency=medium\n\n  * SRU: LP: #1899159: Backport Python 3.9.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 11 May 2021 10:35:23 +0200'"
+				},
+				{
+					"date": "2021-05-28",
+					"packetname": "python3-lib2to3",
+					"severity": null,
+					"description": "'python3-stdlib-extensions (3.8.10-0ubuntu1~20.04) focal; urgency=medium\n\n  * SRU: LP: #1899159: Backport Python 3.9.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 11 May 2021 10:35:23 +0200'"
+				},
+				{
+					"date": "2021-05-28",
+					"packetname": "liblz4-1",
+					"severity": null,
+					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
+				},
 				{
 					"date": "2021-05-27",
 					"packetname": "libx11-6",
-					"severity": null,
+					"severity": "",
 					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
 				},
 				{
 					"date": "2021-05-27",
 					"packetname": "libx11-data",
-					"severity": null,
+					"severity": "",
 					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
 				},
 				{
 					"date": "2021-05-27",
 					"packetname": "liblz4-1",
-					"severity": null,
+					"severity": "",
 					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
 				},
 				{
@@ -269,27 +284,9 @@
 					"packetname": "clamav-daemon",
 					"severity": "",
 					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
-				},
-				{
-					"date": "2021-05-04",
-					"packetname": "clamav-freshclam",
-					"severity": "",
-					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
-				},
-				{
-					"date": "2021-05-04",
-					"packetname": "libclamav9",
-					"severity": "",
-					"description": "'clamav (0.103.2+dfsg-0ubuntu0.20.04.2) focal-security; urgency=medium\n\n  * SECURITY REGRESSION: clamdscan - MULTISCAN parameter causes\n    Segmentation fault.\n    (LP: #1926300)\n    - debian/patches/lp_1926300_multiscan_param_segfault.patch: fix\n      --fdpass -m & ExcludePath crash in clamd/scanner.c,'"
-				},
-				{
-					"date": "2021-04-23",
-					"packetname": "distro-info-data",
-					"severity": "",
-					"description": "'distro-info-data (0.43ubuntu1.5) focal; urgency=medium\n\n  * Add Ubuntu 21.10, Impish Indri (LP: #1925484)\n\n -- Iain Lane <iain@orangesquash.org.uk>  Thu, 22 Apr 2021 13:15:23 +0100'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-05-27 06:53:48"
+	"last_check": "2021-05-28 07:25:08"
 }
