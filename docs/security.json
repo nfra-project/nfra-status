@@ -216,11 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"liblz4-1",
-				"python3-lib2to3",
-				"python3-distutils"
 			],
 			"date_open": "2021-05-26",
 			"last_rebuild": "2021-05-28 07:25",
@@ -228,19 +225,19 @@
 				{
 					"date": "2021-05-28",
 					"packetname": "python3-distutils",
-					"severity": null,
+					"severity": "",
 					"description": "'python3-stdlib-extensions (3.8.10-0ubuntu1~20.04) focal; urgency=medium\n\n  * SRU: LP: #1899159: Backport Python 3.9.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 11 May 2021 10:35:23 +0200'"
 				},
 				{
 					"date": "2021-05-28",
 					"packetname": "python3-lib2to3",
-					"severity": null,
+					"severity": "",
 					"description": "'python3-stdlib-extensions (3.8.10-0ubuntu1~20.04) focal; urgency=medium\n\n  * SRU: LP: #1899159: Backport Python 3.9.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 11 May 2021 10:35:23 +0200'"
 				},
 				{
 					"date": "2021-05-28",
 					"packetname": "liblz4-1",
-					"severity": null,
+					"severity": "",
 					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
 				},
 				{
@@ -288,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-05-28 07:25:08"
+	"last_check": "2021-05-29 07:54:43"
 }
