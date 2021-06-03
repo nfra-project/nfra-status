@@ -3,11 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.8",
-				"libpython3.8-minimal",
-				"libpython3.8-stdlib"
 			],
 			"date_open": "2021-06-02",
 			"last_rebuild": "2021-06-02 08:00",
@@ -15,19 +12,19 @@
 				{
 					"date": "2021-06-02",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
@@ -77,9 +74,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libwebp6"
 			],
 			"date_open": "2021-06-02",
 			"last_rebuild": "2021-06-02 08:00",
@@ -87,7 +83,7 @@
 				{
 					"date": "2021-06-02",
 					"packetname": "libwebp6",
-					"severity": null,
+					"severity": "",
 					"description": "'libwebp (0.6.1-2ubuntu0.18.04.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
 				},
 				{
@@ -149,13 +145,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.8",
-				"libpython3.8-minimal",
-				"libpython3.8-stdlib",
-				"libwebp6",
-				"libwebpmux3"
 			],
 			"date_open": "2021-06-02",
 			"last_rebuild": "2021-06-02 08:01",
@@ -163,31 +154,31 @@
 				{
 					"date": "2021-06-02",
 					"packetname": "libwebpmux3",
-					"severity": null,
+					"severity": "",
 					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libwebp6",
-					"severity": null,
+					"severity": "",
 					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
@@ -227,57 +218,64 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"libpython3.8",
-				"python3.8",
-				"libpython3.8-stdlib",
-				"python3.8-minimal",
-				"libpython3.8-minimal",
 				"libwebp6",
 				"libwebpmux3"
 			],
 			"date_open": "2021-06-02",
-			"last_rebuild": "2021-06-02 08:01",
+			"last_rebuild": "2021-06-03 07:42",
 			"scanLog": [
 				{
-					"date": "2021-06-02",
+					"date": "2021-06-03",
 					"packetname": "libwebpmux3",
 					"severity": null,
 					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
 				},
 				{
-					"date": "2021-06-02",
+					"date": "2021-06-03",
 					"packetname": "libwebp6",
 					"severity": null,
 					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
 				},
 				{
 					"date": "2021-06-02",
+					"packetname": "libwebpmux3",
+					"severity": "",
+					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
+				},
+				{
+					"date": "2021-06-02",
+					"packetname": "libwebp6",
+					"severity": "",
+					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
+				},
+				{
+					"date": "2021-06-02",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "python3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "python3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				},
 				{
@@ -285,21 +283,9 @@
 					"packetname": "python3-distutils",
 					"severity": "",
 					"description": "'python3-stdlib-extensions (3.8.10-0ubuntu1~20.04) focal; urgency=medium\n\n  * SRU: LP: #1899159: Backport Python 3.9.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 11 May 2021 10:35:23 +0200'"
-				},
-				{
-					"date": "2021-05-28",
-					"packetname": "python3-lib2to3",
-					"severity": "",
-					"description": "'python3-stdlib-extensions (3.8.10-0ubuntu1~20.04) focal; urgency=medium\n\n  * SRU: LP: #1899159: Backport Python 3.9.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 11 May 2021 10:35:23 +0200'"
-				},
-				{
-					"date": "2021-05-28",
-					"packetname": "liblz4-1",
-					"severity": "",
-					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-06-02 08:01:16"
+	"last_check": "2021-06-03 07:42:16"
 }
