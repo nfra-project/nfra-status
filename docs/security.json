@@ -216,10 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libwebp6",
-				"libwebpmux3"
 			],
 			"date_open": "2021-06-02",
 			"last_rebuild": "2021-06-03 07:42",
@@ -227,13 +225,13 @@
 				{
 					"date": "2021-06-03",
 					"packetname": "libwebpmux3",
-					"severity": null,
+					"severity": "",
 					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
 				},
 				{
 					"date": "2021-06-03",
 					"packetname": "libwebp6",
-					"severity": null,
+					"severity": "",
 					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
 				},
 				{
@@ -287,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-06-03 07:42:16"
+	"last_check": "2021-06-04 07:28:39"
 }
