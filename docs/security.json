@@ -74,12 +74,33 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"imagemagick-6-common",
+				"libmagickcore-6.q16-3",
+				"libmagickwand-6.q16-3"
 			],
-			"date_open": "2021-06-02",
-			"last_rebuild": "2021-06-02 08:00",
+			"date_open": "2021-06-16",
+			"last_rebuild": "2021-06-16 06:09",
 			"scanLog": [
+				{
+					"date": "2021-06-16",
+					"packetname": "libmagickwand-6.q16-3",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.11) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2017-14528, CVE-2020-19667, CVE-2020-25665, CVE-2020-25666,\n      CVE-2020-25674, CVE-2020-25675, CVE-2020-25676, CVE-2020-27750,\n      CVE-2020-27751, CVE-2020-27753, CVE-2020-27754, CVE-2020-27755,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 08:14:59 -0400'"
+				},
+				{
+					"date": "2021-06-16",
+					"packetname": "libmagickcore-6.q16-3",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.11) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2017-14528, CVE-2020-19667, CVE-2020-25665, CVE-2020-25666,\n      CVE-2020-25674, CVE-2020-25675, CVE-2020-25676, CVE-2020-27750,\n      CVE-2020-27751, CVE-2020-27753, CVE-2020-27754, CVE-2020-27755,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 08:14:59 -0400'"
+				},
+				{
+					"date": "2021-06-16",
+					"packetname": "imagemagick-6-common",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.11) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2017-14528, CVE-2020-19667, CVE-2020-25665, CVE-2020-25666,\n      CVE-2020-25674, CVE-2020-25675, CVE-2020-25676, CVE-2020-27750,\n      CVE-2020-27751, CVE-2020-27753, CVE-2020-27754, CVE-2020-27755,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 08:14:59 -0400'"
+				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libwebp6",
@@ -121,36 +142,39 @@
 					"packetname": "libcurl3-gnutls",
 					"severity": "",
 					"description": "'curl (7.58.0-2ubuntu3.13) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/urlapi.patch: backport url api support in\n      include/curl/Makefile.am, include/curl/curl.h, include/curl/urlapi.h,\n      lib/Makefile.inc, lib/urlapi-int.h, lib/urlapi.c,\n      lib/curl_setup_once.h, lib/url.c, lib/url.h, lib/escape.c,\n      lib/escape.h, docs/libcurl/symbols-in-versions.\n    - debian/libcurl*.symbols: added new symbols.\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:58 -0400'"
-				},
-				{
-					"date": "2021-04-01",
-					"packetname": "libcurl4",
-					"severity": "",
-					"description": "'curl (7.58.0-2ubuntu3.13) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/urlapi.patch: backport url api support in\n      include/curl/Makefile.am, include/curl/curl.h, include/curl/urlapi.h,\n      lib/Makefile.inc, lib/urlapi-int.h, lib/urlapi.c,\n      lib/curl_setup_once.h, lib/url.c, lib/url.h, lib/escape.c,\n      lib/escape.h, docs/libcurl/symbols-in-versions.\n    - debian/libcurl*.symbols: added new symbols.\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:58 -0400'"
-				},
-				{
-					"date": "2021-04-01",
-					"packetname": "curl",
-					"severity": "",
-					"description": "'curl (7.58.0-2ubuntu3.13) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: data leak via referer header field\n    - debian/patches/urlapi.patch: backport url api support in\n      include/curl/Makefile.am, include/curl/curl.h, include/curl/urlapi.h,\n      lib/Makefile.inc, lib/urlapi-int.h, lib/urlapi.c,\n      lib/curl_setup_once.h, lib/url.c, lib/url.h, lib/escape.c,\n      lib/escape.h, docs/libcurl/symbols-in-versions.\n    - debian/libcurl*.symbols: added new symbols.\n    - debian/patches/CVE-2021-22876.patch: strip credentials from the\n      auto-referer header field in lib/transfer.c.\n    - CVE-2021-22876\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 23 Mar 2021 09:13:58 -0400'"
-				},
-				{
-					"date": "2021-03-26",
-					"packetname": "openssl",
-					"severity": "",
-					"description": "'openssl (1.1.1-1ubuntu2.1~18.04.9) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: NULL pointer deref in signature_algorithms processing\n    - debian/patches/CVE-2021-3449-1.patch: fix NULL pointer dereference in\n      ssl/statem/extensions.c.\n    - debian/patches/CVE-2021-3449-2.patch: teach TLSProxy how to encrypt\n      <= TLSv1.2 ETM records in util/perl/TLSProxy/Message.pm.\n    - debian/patches/CVE-2021-3449-3.patch: add a test to\n      test/recipes/70-test_renegotiation.t.\n    - debian/patches/CVE-2021-3449-4.patch: ensure buffer/length pairs are\n      always in sync in ssl/s3_lib.c, ssl/ssl_lib.c,\n      ssl/statem/extensions.c, ssl/statem/extensions_clnt.c,\n      ssl/statem/statem_clnt.c, ssl/statem/statem_srvr.c.\n    - CVE-2021-3449\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 22 Mar 2021 07:42:42 -0400'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"imagemagick-6-common",
+				"libmagickcore-6.q16-6",
+				"libmagickwand-6.q16-6"
 			],
-			"date_open": "2021-06-02",
-			"last_rebuild": "2021-06-02 08:01",
+			"date_open": "2021-06-16",
+			"last_rebuild": "2021-06-16 06:10",
 			"scanLog": [
+				{
+					"date": "2021-06-16",
+					"packetname": "libmagickwand-6.q16-6",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
+				},
+				{
+					"date": "2021-06-16",
+					"packetname": "libmagickcore-6.q16-6",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
+				},
+				{
+					"date": "2021-06-16",
+					"packetname": "imagemagick-6-common",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
+				},
 				{
 					"date": "2021-06-02",
 					"packetname": "libwebpmux3",
@@ -192,36 +216,39 @@
 					"packetname": "libx11-6",
 					"severity": "",
 					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
-				},
-				{
-					"date": "2021-05-26",
-					"packetname": "libx11-data",
-					"severity": "",
-					"description": "'libx11 (2:1.6.9-2ubuntu1.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:18 -0400'"
-				},
-				{
-					"date": "2021-04-14",
-					"packetname": "libhogweed5",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
-				},
-				{
-					"date": "2021-04-14",
-					"packetname": "libnettle7",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				}
 			]
 		},
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"imagemagick-6-common",
+				"libmagickcore-6.q16-6",
+				"libmagickwand-6.q16-6"
 			],
-			"date_open": "2021-06-02",
-			"last_rebuild": "2021-06-03 07:42",
+			"date_open": "2021-06-16",
+			"last_rebuild": "2021-06-16 06:10",
 			"scanLog": [
+				{
+					"date": "2021-06-16",
+					"packetname": "libmagickwand-6.q16-6",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
+				},
+				{
+					"date": "2021-06-16",
+					"packetname": "libmagickcore-6.q16-6",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
+				},
+				{
+					"date": "2021-06-16",
+					"packetname": "imagemagick-6-common",
+					"severity": null,
+					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
+				},
 				{
 					"date": "2021-06-03",
 					"packetname": "libwebpmux3",
@@ -263,27 +290,9 @@
 					"packetname": "libpython3.8-stdlib",
 					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
-				},
-				{
-					"date": "2021-06-02",
-					"packetname": "python3.8",
-					"severity": "",
-					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
-				},
-				{
-					"date": "2021-06-02",
-					"packetname": "libpython3.8",
-					"severity": "",
-					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
-				},
-				{
-					"date": "2021-05-28",
-					"packetname": "python3-distutils",
-					"severity": "",
-					"description": "'python3-stdlib-extensions (3.8.10-0ubuntu1~20.04) focal; urgency=medium\n\n  * SRU: LP: #1899159: Backport Python 3.9.5 to 20.04 LTS.\n\n -- Matthias Klose <doko@ubuntu.com>  Tue, 11 May 2021 10:35:23 +0200'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-06-15 06:10:38"
+	"last_check": "2021-06-16 06:10:31"
 }
