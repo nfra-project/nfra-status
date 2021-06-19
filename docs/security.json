@@ -3,10 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libnettle7",
-				"libhogweed5"
 			],
 			"date_open": "2021-06-18",
 			"last_rebuild": "2021-06-18 06:09",
@@ -14,13 +12,13 @@
 				{
 					"date": "2021-06-18",
 					"packetname": "libhogweed5",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
 				},
 				{
 					"date": "2021-06-18",
 					"packetname": "libnettle7",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
 				},
 				{
@@ -76,11 +74,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libnettle6",
-				"libhogweed4",
-				"libxml2"
 			],
 			"date_open": "2021-06-18",
 			"last_rebuild": "2021-06-18 06:09",
@@ -88,19 +83,19 @@
 				{
 					"date": "2021-06-18",
 					"packetname": "libxml2",
-					"severity": null,
+					"severity": "",
 					"description": "'libxml2 (2.9.4+dfsg1-6.1ubuntu1.4) bionic-security; urgency=medium\n\n  * debian/patches/fix-error-handler-bug.patch: Add extra missing commit to\n    previous CVE-2017-8872 fix, halt immediately when the error handler\n    attempts to stop the parser.         \n  * SECURITY UPDATE: memory leak\n    - debian/patches/CVE-2019-20388.patch: Memory leak in\n      xmlSchemaValidateStream function in xmlschemas.c.\n    - CVE-2019-20388\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-24977.patch: Make sure that truncated UTF-8\n      sequences don\\'t cause an out-of-bounds array access in xmllint.\n    - CVE-2020-24977\n  * SECURITY UPDATE: use-after-free in xmlEncodeEntitiesInternal\n    - debian/patches/CVE-2021-3516.patch: Call htmlCtxtUseOptions to make sure\n      that names aren\\'t stored in dictionaries.\n    - CVE-2021-3516\n  * SECURITY UPDATE: heap-based buffer overflow in xmlEncodeEntitiesInternal \n    - debian/patches/CVE-2021-3517.patch: Add some checks to validate input is\n      UTF-8 format, supplementing CVE-2020-24977 fix.\n    - CVE-2021-3517\n  * SECURITY UPDATE: use-after-free in xmlXIncludeDoProcess \n    - debian/patches/CVE-2021-3518.patch: Move from a block list to an allow\n      list approach to avoid descending into other node types that can\\'t\n      contain elements.\n    - CVE-2021-3518\n  * SECURITY UPDATE: NULL pointer dereference in xmlValidBuildAContentModel\n    - debian/patches/CVE-2021-3537.patch: Check return value of recursive calls\n      to xmlParseElementChildrenContentDeclPriv and return immediately in case\n      of errors.\n    - CVE-2021-3537\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Thu, 22 Apr 2021 19:26:37 -0400'"
 				},
 				{
 					"date": "2021-06-18",
 					"packetname": "libhogweed4",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.4.1-0ubuntu0.18.04.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Bleichenbacher type side-channel based padding oracle\n    attack in endian conversion of RSA decrypted PKCS#1 v1.5 data\n    - Updated to upstream 3.4.1 tarball.\n    - debian/*symbols: added new 3.4.1 symbols.\n    - CVE-2018-16869\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:33:12 -0400'"
 				},
 				{
 					"date": "2021-06-18",
 					"packetname": "libnettle6",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.4.1-0ubuntu0.18.04.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: Bleichenbacher type side-channel based padding oracle\n    attack in endian conversion of RSA decrypted PKCS#1 v1.5 data\n    - Updated to upstream 3.4.1 tarball.\n    - debian/*symbols: added new 3.4.1 symbols.\n    - CVE-2018-16869\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:33:12 -0400'"
 				},
 				{
@@ -150,11 +145,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libnettle7",
-				"libhogweed5",
-				"libxml2"
 			],
 			"date_open": "2021-06-18",
 			"last_rebuild": "2021-06-18 06:10",
@@ -162,19 +154,19 @@
 				{
 					"date": "2021-06-18",
 					"packetname": "libxml2",
-					"severity": null,
+					"severity": "",
 					"description": "'libxml2 (2.9.10+dfsg-5ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-24977.patch: Make sure that truncated UTF-8\n      sequences don\\'t cause an out-of-bounds array access in xmllint.\n    - CVE-2020-24977\n  * SECURITY UPDATE: use-after-free in xmlEncodeEntitiesInternal\n    - debian/patches/CVE-2021-3516.patch: Call htmlCtxtUseOptions to make sure\n      that names aren\\'t stored in dictionaries.\n    - CVE-2021-3516\n  * SECURITY UPDATE: heap-based buffer overflow in xmlEncodeEntitiesInternal \n    - debian/patches/CVE-2021-3517.patch: Add some checks to validate input is\n      UTF-8 format, supplementing CVE-2020-24977 fix.\n    - CVE-2021-3517\n  * SECURITY UPDATE: use-after-free in xmlXIncludeDoProcess \n    - debian/patches/CVE-2021-3518.patch: Move from a block list to an allow\n      list approach to avoid descending into other node types that can\\'t\n      contain elements.\n    - CVE-2021-3518\n  * SECURITY UPDATE: NULL pointer dereference in xmlValidBuildAContentModel\n    - debian/patches/CVE-2021-3537.patch: Check return value of recursive calls\n      to xmlParseElementChildrenContentDeclPriv and return immediately in case\n      of errors.\n    - CVE-2021-3537\n  * SECURITY UPDATE: Exponential entity expansion \n    - debian/patches/Patch-for-security-issue-CVE-2021-3541.patch: Add check to\n      xmlParserEntityCheck to prevent entity exponential.\n    - CVE-2021-3541\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 26 May 2021 19:51:20 -0400'"
 				},
 				{
 					"date": "2021-06-18",
 					"packetname": "libhogweed5",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
 				},
 				{
 					"date": "2021-06-18",
 					"packetname": "libnettle7",
-					"severity": null,
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
 				},
 				{
@@ -231,24 +223,42 @@
 				"libxml2"
 			],
 			"date_open": "2021-06-16",
-			"last_rebuild": "2021-06-18 06:10",
+			"last_rebuild": "2021-06-19 06:09",
 			"scanLog": [
 				{
-					"date": "2021-06-18",
+					"date": "2021-06-19",
 					"packetname": "libxml2",
 					"severity": null,
 					"description": "'libxml2 (2.9.10+dfsg-5ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-24977.patch: Make sure that truncated UTF-8\n      sequences don\\'t cause an out-of-bounds array access in xmllint.\n    - CVE-2020-24977\n  * SECURITY UPDATE: use-after-free in xmlEncodeEntitiesInternal\n    - debian/patches/CVE-2021-3516.patch: Call htmlCtxtUseOptions to make sure\n      that names aren\\'t stored in dictionaries.\n    - CVE-2021-3516\n  * SECURITY UPDATE: heap-based buffer overflow in xmlEncodeEntitiesInternal \n    - debian/patches/CVE-2021-3517.patch: Add some checks to validate input is\n      UTF-8 format, supplementing CVE-2020-24977 fix.\n    - CVE-2021-3517\n  * SECURITY UPDATE: use-after-free in xmlXIncludeDoProcess \n    - debian/patches/CVE-2021-3518.patch: Move from a block list to an allow\n      list approach to avoid descending into other node types that can\\'t\n      contain elements.\n    - CVE-2021-3518\n  * SECURITY UPDATE: NULL pointer dereference in xmlValidBuildAContentModel\n    - debian/patches/CVE-2021-3537.patch: Check return value of recursive calls\n      to xmlParseElementChildrenContentDeclPriv and return immediately in case\n      of errors.\n    - CVE-2021-3537\n  * SECURITY UPDATE: Exponential entity expansion \n    - debian/patches/Patch-for-security-issue-CVE-2021-3541.patch: Add check to\n      xmlParserEntityCheck to prevent entity exponential.\n    - CVE-2021-3541\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 26 May 2021 19:51:20 -0400'"
 				},
 				{
-					"date": "2021-06-18",
+					"date": "2021-06-19",
 					"packetname": "libhogweed5",
 					"severity": null,
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
 				},
 				{
-					"date": "2021-06-18",
+					"date": "2021-06-19",
 					"packetname": "libnettle7",
 					"severity": null,
+					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
+				},
+				{
+					"date": "2021-06-18",
+					"packetname": "libxml2",
+					"severity": "",
+					"description": "'libxml2 (2.9.10+dfsg-5ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-24977.patch: Make sure that truncated UTF-8\n      sequences don\\'t cause an out-of-bounds array access in xmllint.\n    - CVE-2020-24977\n  * SECURITY UPDATE: use-after-free in xmlEncodeEntitiesInternal\n    - debian/patches/CVE-2021-3516.patch: Call htmlCtxtUseOptions to make sure\n      that names aren\\'t stored in dictionaries.\n    - CVE-2021-3516\n  * SECURITY UPDATE: heap-based buffer overflow in xmlEncodeEntitiesInternal \n    - debian/patches/CVE-2021-3517.patch: Add some checks to validate input is\n      UTF-8 format, supplementing CVE-2020-24977 fix.\n    - CVE-2021-3517\n  * SECURITY UPDATE: use-after-free in xmlXIncludeDoProcess \n    - debian/patches/CVE-2021-3518.patch: Move from a block list to an allow\n      list approach to avoid descending into other node types that can\\'t\n      contain elements.\n    - CVE-2021-3518\n  * SECURITY UPDATE: NULL pointer dereference in xmlValidBuildAContentModel\n    - debian/patches/CVE-2021-3537.patch: Check return value of recursive calls\n      to xmlParseElementChildrenContentDeclPriv and return immediately in case\n      of errors.\n    - CVE-2021-3537\n  * SECURITY UPDATE: Exponential entity expansion \n    - debian/patches/Patch-for-security-issue-CVE-2021-3541.patch: Add check to\n      xmlParserEntityCheck to prevent entity exponential.\n    - CVE-2021-3541\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 26 May 2021 19:51:20 -0400'"
+				},
+				{
+					"date": "2021-06-18",
+					"packetname": "libhogweed5",
+					"severity": "",
+					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
+				},
+				{
+					"date": "2021-06-18",
+					"packetname": "libnettle7",
+					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
 				},
 				{
@@ -274,27 +284,9 @@
 					"packetname": "libmagickwand-6.q16-6",
 					"severity": "",
 					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
-				},
-				{
-					"date": "2021-06-16",
-					"packetname": "libmagickcore-6.q16-6",
-					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
-				},
-				{
-					"date": "2021-06-16",
-					"packetname": "imagemagick-6-common",
-					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
-				},
-				{
-					"date": "2021-06-03",
-					"packetname": "libwebpmux3",
-					"severity": "",
-					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-06-18 06:10:25"
+	"last_check": "2021-06-19 06:09:49"
 }
