@@ -74,12 +74,40 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.2",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"apache2",
+				"apache2-bin",
+				"apache2-utils",
+				"apache2-data"
 			],
-			"date_open": "2021-06-18",
-			"last_rebuild": "2021-06-18 06:09",
+			"date_open": "2021-06-22",
+			"last_rebuild": "2021-06-22 06:09",
 			"scanLog": [
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-data",
+					"severity": null,
+					"description": "'apache2 (2.4.29-1ubuntu4.16) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.29-1ubuntu4.15 in\n    bionic-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 18 Jun 2021 07:06:22 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-utils",
+					"severity": null,
+					"description": "'apache2 (2.4.29-1ubuntu4.16) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.29-1ubuntu4.15 in\n    bionic-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 18 Jun 2021 07:06:22 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-bin",
+					"severity": null,
+					"description": "'apache2 (2.4.29-1ubuntu4.16) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.29-1ubuntu4.15 in\n    bionic-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 18 Jun 2021 07:06:22 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2",
+					"severity": null,
+					"description": "'apache2 (2.4.29-1ubuntu4.16) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.29-1ubuntu4.15 in\n    bionic-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 18 Jun 2021 07:06:22 -0400'"
+				},
 				{
 					"date": "2021-06-18",
 					"packetname": "libxml2",
@@ -115,42 +143,46 @@
 					"packetname": "imagemagick-6-common",
 					"severity": "",
 					"description": "'imagemagick (8:6.9.7.4+dfsg-16ubuntu6.11) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2017-14528, CVE-2020-19667, CVE-2020-25665, CVE-2020-25666,\n      CVE-2020-25674, CVE-2020-25675, CVE-2020-25676, CVE-2020-27750,\n      CVE-2020-27751, CVE-2020-27753, CVE-2020-27754, CVE-2020-27755,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 08:14:59 -0400'"
-				},
-				{
-					"date": "2021-06-02",
-					"packetname": "libwebp6",
-					"severity": "",
-					"description": "'libwebp (0.6.1-2ubuntu0.18.04.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
-				},
-				{
-					"date": "2021-05-27",
-					"packetname": "liblz4-1",
-					"severity": "",
-					"description": "'lz4 (0.0~r131-2ubuntu3.1) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 13:00:54 -0400'"
-				},
-				{
-					"date": "2021-05-26",
-					"packetname": "libx11-6",
-					"severity": "",
-					"description": "'libx11 (2:1.6.4-3ubuntu0.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:50 -0400'"
-				},
-				{
-					"date": "2021-05-26",
-					"packetname": "libx11-data",
-					"severity": "",
-					"description": "'libx11 (2:1.6.4-3ubuntu0.4) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: extra X protocol requests via unchecked string lengths\n    - debian/patches/CVE-2021-31535.patch: reject strings longer than\n      USHRT_MAX before sending them on the wire in src/Font.c,\n      src/FontInfo.c, src/FontNames.c, src/GetColor.c, src/LoadFont.c,\n      src/LookupCol.c, src/ParseCol.c, src/QuExt.c, src/SetFPath.c,\n      src/SetHints.c, src/StNColor.c, src/StName.c .\n    - CVE-2021-31535\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 19 May 2021 13:07:50 -0400'"
 				}
 			]
 		},
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"apache2",
+				"apache2-bin",
+				"apache2-data",
+				"apache2-utils"
 			],
-			"date_open": "2021-06-18",
-			"last_rebuild": "2021-06-18 06:10",
+			"date_open": "2021-06-22",
+			"last_rebuild": "2021-06-22 06:09",
 			"scanLog": [
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-utils",
+					"severity": null,
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-data",
+					"severity": null,
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-bin",
+					"severity": null,
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2",
+					"severity": null,
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
+				},
 				{
 					"date": "2021-06-18",
 					"packetname": "libxml2",
@@ -186,43 +218,68 @@
 					"packetname": "imagemagick-6-common",
 					"severity": "",
 					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
-				},
-				{
-					"date": "2021-06-02",
-					"packetname": "libwebpmux3",
-					"severity": "",
-					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
-				},
-				{
-					"date": "2021-06-02",
-					"packetname": "libwebp6",
-					"severity": "",
-					"description": "'libwebp (0.6.1-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: heap-based buffer overflow in GetLE16() and GetLE24()\n    - debian/patches/CVE-2018-25009.patch: check data_size in\n      src/mux/muxread.c.\n    - CVE-2018-25009\n    - CVE-2018-25012\n  * SECURITY UPDATE: heap-based buffer overflow in ApplyFilter()\n    - debian/patches/CVE-2018-25010.patch: limit the filter size in\n      src/utils/quant_levels_dec_utils.c.\n    - CVE-2018-25010\n  * SECURITY UPDATE: heap-based buffer overflow in PutLE16()\n    - debian/patches/CVE-2018-25011.patch: limit number of image chunks in\n      src/mux/muxread.c.\n    - CVE-2018-25011\n  * SECURITY UPDATE: heap-based buffer overflow in ShiftBytes() and in\n    ReadSymbol()\n    - debian/patches/CVE-2018-25013_4.patch: wait for all threads to be\n      done in DecodeRemaining in src/dec/idec_dec.c.\n    - CVE-2018-25013\n    - CVE-2018-25014\n  * SECURITY UPDATE: heap-based buffer overflow in WebPDecode*Into functions\n    - debian/patches/CVE-2020-36328.patch: fix buffer size check in\n      src/dec/buffer_dec.c.\n    - CVE-2020-36328\n  * SECURITY UPDATE: use-after-free in EmitFancyRGB()\n    - debian/patches/CVE-2020-36329.patch: fix thread race\n      heap-use-after-free in src/dec/idec_dec.c.\n    - CVE-2020-36329\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkVerifyAndAssign()\n    - debian/patches/CVE-2020-36330.patch: fix riff size checks in\n      src/mux/muxread.c.\n    - CVE-2020-36330\n  * SECURITY UPDATE: heap-based buffer overflow in ChunkAssignData()\n    - debian/patches/CVE-2020-36331.patch: validate chunk_size in\n      src/mux/muxi.h, src/mux/muxread.c.\n    - CVE-2020-36331\n  * SECURITY UPDATE: extreme memory allocation when reading a file\n    - debian/patches/CVE-2020-36332-pre1.patch: limit memory allocation\n      when reading invalid Huffman codes in src/dec/vp8l_dec.c.\n    - debian/patches/CVE-2020-36332.patch: better handling of bogus Huffman\n      codes in src/dec/vp8l_dec.c.\n    - CVE-2020-36332\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 07:52:26 -0400'"
-				},
-				{
-					"date": "2021-06-02",
-					"packetname": "libpython3.8-stdlib",
-					"severity": "",
-					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
-				},
-				{
-					"date": "2021-06-02",
-					"packetname": "libpython3.8-minimal",
-					"severity": "",
-					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
 				}
 			]
 		},
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"apache2",
+				"apache2-bin",
+				"apache2-data",
+				"apache2-utils",
+				"dovecot-imapd",
+				"dovecot-lmtpd",
+				"dovecot-core"
 			],
-			"date_open": "2021-06-16",
-			"last_rebuild": "2021-06-19 06:09",
+			"date_open": "2021-06-22",
+			"last_rebuild": "2021-06-22 06:09",
 			"scanLog": [
 				{
+					"date": "2021-06-22",
+					"packetname": "dovecot-core",
+					"severity": null,
+					"description": "'dovecot (1:2.3.7.2-1ubuntu3.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: plaintext command injection before STARTTLS\n    - debian/patches/CVE-2021-33515.patch: properly handle command queue in\n      src/lib-smtp/smtp-server-cmd-starttls.c,\n      src/lib-smtp/smtp-server-connection.c.\n    - CVE-2021-33515\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Jun 2021 09:12:21 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "dovecot-lmtpd",
+					"severity": null,
+					"description": "'dovecot (1:2.3.7.2-1ubuntu3.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: plaintext command injection before STARTTLS\n    - debian/patches/CVE-2021-33515.patch: properly handle command queue in\n      src/lib-smtp/smtp-server-cmd-starttls.c,\n      src/lib-smtp/smtp-server-connection.c.\n    - CVE-2021-33515\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Jun 2021 09:12:21 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "dovecot-imapd",
+					"severity": null,
+					"description": "'dovecot (1:2.3.7.2-1ubuntu3.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: plaintext command injection before STARTTLS\n    - debian/patches/CVE-2021-33515.patch: properly handle command queue in\n      src/lib-smtp/smtp-server-cmd-starttls.c,\n      src/lib-smtp/smtp-server-connection.c.\n    - CVE-2021-33515\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Jun 2021 09:12:21 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-utils",
+					"severity": null,
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-data",
+					"severity": null,
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2-bin",
+					"severity": null,
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
+				},
+				{
+					"date": "2021-06-22",
+					"packetname": "apache2",
+					"severity": null,
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
+				},
+				{
 					"date": "2021-06-19",
 					"packetname": "libxml2",
 					"severity": "",
@@ -239,51 +296,9 @@
 					"packetname": "libnettle7",
 					"severity": "",
 					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
-				},
-				{
-					"date": "2021-06-18",
-					"packetname": "libxml2",
-					"severity": "",
-					"description": "'libxml2 (2.9.10+dfsg-5ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-24977.patch: Make sure that truncated UTF-8\n      sequences don\\'t cause an out-of-bounds array access in xmllint.\n    - CVE-2020-24977\n  * SECURITY UPDATE: use-after-free in xmlEncodeEntitiesInternal\n    - debian/patches/CVE-2021-3516.patch: Call htmlCtxtUseOptions to make sure\n      that names aren\\'t stored in dictionaries.\n    - CVE-2021-3516\n  * SECURITY UPDATE: heap-based buffer overflow in xmlEncodeEntitiesInternal \n    - debian/patches/CVE-2021-3517.patch: Add some checks to validate input is\n      UTF-8 format, supplementing CVE-2020-24977 fix.\n    - CVE-2021-3517\n  * SECURITY UPDATE: use-after-free in xmlXIncludeDoProcess \n    - debian/patches/CVE-2021-3518.patch: Move from a block list to an allow\n      list approach to avoid descending into other node types that can\\'t\n      contain elements.\n    - CVE-2021-3518\n  * SECURITY UPDATE: NULL pointer dereference in xmlValidBuildAContentModel\n    - debian/patches/CVE-2021-3537.patch: Check return value of recursive calls\n      to xmlParseElementChildrenContentDeclPriv and return immediately in case\n      of errors.\n    - CVE-2021-3537\n  * SECURITY UPDATE: Exponential entity expansion \n    - debian/patches/Patch-for-security-issue-CVE-2021-3541.patch: Add check to\n      xmlParserEntityCheck to prevent entity exponential.\n    - CVE-2021-3541\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 26 May 2021 19:51:20 -0400'"
-				},
-				{
-					"date": "2021-06-18",
-					"packetname": "libhogweed5",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
-				},
-				{
-					"date": "2021-06-18",
-					"packetname": "libnettle7",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
-				},
-				{
-					"date": "2021-06-17",
-					"packetname": "libmagickwand-6.q16-6",
-					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
-				},
-				{
-					"date": "2021-06-17",
-					"packetname": "libmagickcore-6.q16-6",
-					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
-				},
-				{
-					"date": "2021-06-17",
-					"packetname": "imagemagick-6-common",
-					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
-				},
-				{
-					"date": "2021-06-16",
-					"packetname": "libmagickwand-6.q16-6",
-					"severity": "",
-					"description": "'imagemagick (8:6.9.10.23+dfsg-2.1ubuntu11.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: multiple security issues\n    - debian/patches/CVE-*.patch: backport multiple upstream commits.\n    - CVE-2020-19667, CVE-2020-25665, CVE-2020-25666, CVE-2020-25674,\n      CVE-2020-25675, CVE-2020-25676, CVE-2020-27750, CVE-2020-27751,\n      CVE-2020-27753, CVE-2020-27754, CVE-2020-27755, CVE-2020-27756,\n      CVE-2020-27757, CVE-2020-27758, CVE-2020-27759, CVE-2020-27754,\n      CVE-2020-27760, CVE-2020-27761, CVE-2020-27762, CVE-2020-27763,\n      CVE-2020-27764, CVE-2020-27765, CVE-2020-27766, CVE-2020-27767,\n      CVE-2020-27768, CVE-2020-27769, CVE-2020-27770, CVE-2020-27771,\n      CVE-2020-27772, CVE-2020-27773, CVE-2020-27774, CVE-2020-27775,\n      CVE-2020-27776, CVE-2021-20176\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 10 Jun 2021 07:52:45 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-06-21 06:09:35"
+	"last_check": "2021-06-22 06:09:54"
 }
