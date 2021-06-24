@@ -3,11 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"gcc-10-base",
-				"libstdc++6",
-				"libgcc-s1"
 			],
 			"date_open": "2021-06-23",
 			"last_rebuild": "2021-06-23 06:08",
@@ -15,19 +12,19 @@
 				{
 					"date": "2021-06-23",
 					"packetname": "libgcc-s1",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-23",
 					"packetname": "libstdc++6",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-23",
 					"packetname": "gcc-10-base",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
@@ -148,12 +145,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"gcc-10-base",
-				"libstdc++6",
-				"libgomp1",
-				"libgcc-s1"
 			],
 			"date_open": "2021-06-22",
 			"last_rebuild": "2021-06-23 06:09",
@@ -161,25 +154,25 @@
 				{
 					"date": "2021-06-23",
 					"packetname": "libgcc-s1",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-23",
 					"packetname": "libgomp1",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-23",
 					"packetname": "libstdc++6",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-23",
 					"packetname": "gcc-10-base",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
@@ -225,80 +218,76 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"apache2",
-				"apache2-bin",
-				"apache2-data",
-				"apache2-utils",
 				"gcc-10-base",
 				"libstdc++6",
 				"libgomp1",
 				"libgcc-s1"
 			],
 			"date_open": "2021-06-22",
-			"last_rebuild": "2021-06-23 06:09",
+			"last_rebuild": "2021-06-24 06:07",
 			"scanLog": [
 				{
-					"date": "2021-06-23",
+					"date": "2021-06-24",
 					"packetname": "libgcc-s1",
 					"severity": null,
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
-					"date": "2021-06-23",
+					"date": "2021-06-24",
 					"packetname": "libgomp1",
 					"severity": null,
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
-					"date": "2021-06-23",
+					"date": "2021-06-24",
 					"packetname": "libstdc++6",
 					"severity": null,
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
-					"date": "2021-06-23",
+					"date": "2021-06-24",
 					"packetname": "gcc-10-base",
 					"severity": null,
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-23",
+					"packetname": "libgcc-s1",
+					"severity": "",
+					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
+				},
+				{
+					"date": "2021-06-23",
+					"packetname": "libgomp1",
+					"severity": "",
+					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
+				},
+				{
+					"date": "2021-06-23",
+					"packetname": "libstdc++6",
+					"severity": "",
+					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
+				},
+				{
+					"date": "2021-06-23",
+					"packetname": "gcc-10-base",
+					"severity": "",
+					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
+				},
+				{
+					"date": "2021-06-23",
 					"packetname": "apache2-utils",
-					"severity": null,
+					"severity": "",
 					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
 				},
 				{
 					"date": "2021-06-23",
 					"packetname": "apache2-data",
-					"severity": null,
-					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "apache2-bin",
-					"severity": null,
-					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "apache2",
-					"severity": null,
-					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
-				},
-				{
-					"date": "2021-06-22",
-					"packetname": "dovecot-core",
 					"severity": "",
-					"description": "'dovecot (1:2.3.7.2-1ubuntu3.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: plaintext command injection before STARTTLS\n    - debian/patches/CVE-2021-33515.patch: properly handle command queue in\n      src/lib-smtp/smtp-server-cmd-starttls.c,\n      src/lib-smtp/smtp-server-connection.c.\n    - CVE-2021-33515\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Jun 2021 09:12:21 -0400'"
-				},
-				{
-					"date": "2021-06-22",
-					"packetname": "dovecot-lmtpd",
-					"severity": "",
-					"description": "'dovecot (1:2.3.7.2-1ubuntu3.4) focal-security; urgency=medium\n\n  * SECURITY UPDATE: plaintext command injection before STARTTLS\n    - debian/patches/CVE-2021-33515.patch: properly handle command queue in\n      src/lib-smtp/smtp-server-cmd-starttls.c,\n      src/lib-smtp/smtp-server-connection.c.\n    - CVE-2021-33515\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 16 Jun 2021 09:12:21 -0400'"
+					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-06-23 06:09:34"
+	"last_check": "2021-06-24 06:07:02"
 }
