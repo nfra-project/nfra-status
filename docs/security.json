@@ -216,12 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"gcc-10-base",
-				"libstdc++6",
-				"libgomp1",
-				"libgcc-s1"
 			],
 			"date_open": "2021-06-22",
 			"last_rebuild": "2021-06-24 06:07",
@@ -229,25 +225,25 @@
 				{
 					"date": "2021-06-24",
 					"packetname": "libgcc-s1",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-24",
 					"packetname": "libgomp1",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-24",
 					"packetname": "libstdc++6",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
 					"date": "2021-06-24",
 					"packetname": "gcc-10-base",
-					"severity": null,
+					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				},
 				{
@@ -289,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-06-24 06:07:02"
+	"last_check": "2021-06-25 06:09:50"
 }
