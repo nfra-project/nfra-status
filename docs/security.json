@@ -3,12 +3,33 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libpython3.8",
+				"libpython3.8-minimal",
+				"libpython3.8-stdlib"
 			],
-			"date_open": "2021-06-23",
-			"last_rebuild": "2021-06-23 06:08",
+			"date_open": "2021-07-01",
+			"last_rebuild": "2021-07-01 06:10",
 			"scanLog": [
+				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8-stdlib",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8-minimal",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
 				{
 					"date": "2021-06-23",
 					"packetname": "libgcc-s1",
@@ -50,24 +71,6 @@
 					"packetname": "libpython3.8-minimal",
 					"severity": "",
 					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
-				},
-				{
-					"date": "2021-06-02",
-					"packetname": "libpython3.8",
-					"severity": "",
-					"description": "'python3.8 (3.8.5-1~20.04.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: improper handling of octal strings in ipaddress\n    - debian/patches/CVE-2021-29921.patch: no longer tolerate leading zeros\n      in IPv4 addresses in Lib/ipaddress.py, Lib/test/test_ipaddress.py.\n    - CVE-2021-29921\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 27 May 2021 09:30:53 -0400'"
-				},
-				{
-					"date": "2021-05-27",
-					"packetname": "liblz4-1",
-					"severity": "",
-					"description": "'lz4 (1.9.2-2ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: memory corruption due to an integer overflow bug\n    - debian/patches/CVE-2021-3520.patch: check outputSize in lib/lz4.c.\n    - CVE-2021-3520\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 20 May 2021 12:38:57 -0400'"
-				},
-				{
-					"date": "2021-04-14",
-					"packetname": "libhogweed5",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: Out of Bound memory access in signature verification\n    - debian/patches/CVE-2021-20305-1.patch: new functions\n      ecc_mod_mul_canonical and ecc_mod_sqr_canonical in\n      curve25519-eh-to-x.c, curve448-eh-to-x.c, ecc-eh-to-a.c,\n      ecc-internal.h, ecc-j-to-a.c, ecc-mod-arith.c, ecc-mul-m.c.\n    - debian/patches/CVE-2021-20305-2.patch: use ecc_mod_mul_canonical for\n      point comparison in eddsa-verify.c.\n    - debian/patches/CVE-2021-20305-3.patch: fix bug in ecc_ecdsa_verify in\n      ecc-ecdsa-verify.c, testsuite/ecdsa-sign-test.c.\n    - debian/patches/CVE-2021-20305-4.patch: ensure ecdsa_sign output is\n      canonically reduced in ecc-ecdsa-sign.c.\n    - debian/patches/CVE-2021-20305-6.patch: similar fix for eddsa in\n      eddsa-hash.c.\n    - debian/libhogweed5.symbols: added new symbols.\n    - CVE-2021-20305\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 07 Apr 2021 10:12:22 -0400'"
 				}
 			]
 		},
@@ -145,12 +148,33 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libpython3.8",
+				"libpython3.8-minimal",
+				"libpython3.8-stdlib"
 			],
-			"date_open": "2021-06-22",
-			"last_rebuild": "2021-06-23 06:09",
+			"date_open": "2021-07-01",
+			"last_rebuild": "2021-07-01 06:11",
 			"scanLog": [
+				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8-stdlib",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8-minimal",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
 				{
 					"date": "2021-06-23",
 					"packetname": "libgcc-s1",
@@ -192,37 +216,54 @@
 					"packetname": "apache2-bin",
 					"severity": "",
 					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
-				},
-				{
-					"date": "2021-06-22",
-					"packetname": "apache2",
-					"severity": "",
-					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
-				},
-				{
-					"date": "2021-06-18",
-					"packetname": "libxml2",
-					"severity": "",
-					"description": "'libxml2 (2.9.10+dfsg-5ubuntu0.20.04.1) focal-security; urgency=medium\n\n  * SECURITY UPDATE: out-of-bounds read\n    - debian/patches/CVE-2020-24977.patch: Make sure that truncated UTF-8\n      sequences don\\'t cause an out-of-bounds array access in xmllint.\n    - CVE-2020-24977\n  * SECURITY UPDATE: use-after-free in xmlEncodeEntitiesInternal\n    - debian/patches/CVE-2021-3516.patch: Call htmlCtxtUseOptions to make sure\n      that names aren\\'t stored in dictionaries.\n    - CVE-2021-3516\n  * SECURITY UPDATE: heap-based buffer overflow in xmlEncodeEntitiesInternal \n    - debian/patches/CVE-2021-3517.patch: Add some checks to validate input is\n      UTF-8 format, supplementing CVE-2020-24977 fix.\n    - CVE-2021-3517\n  * SECURITY UPDATE: use-after-free in xmlXIncludeDoProcess \n    - debian/patches/CVE-2021-3518.patch: Move from a block list to an allow\n      list approach to avoid descending into other node types that can\\'t\n      contain elements.\n    - CVE-2021-3518\n  * SECURITY UPDATE: NULL pointer dereference in xmlValidBuildAContentModel\n    - debian/patches/CVE-2021-3537.patch: Check return value of recursive calls\n      to xmlParseElementChildrenContentDeclPriv and return immediately in case\n      of errors.\n    - CVE-2021-3537\n  * SECURITY UPDATE: Exponential entity expansion \n    - debian/patches/Patch-for-security-issue-CVE-2021-3541.patch: Add check to\n      xmlParserEntityCheck to prevent entity exponential.\n    - CVE-2021-3541\n\n -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 26 May 2021 19:51:20 -0400'"
-				},
-				{
-					"date": "2021-06-18",
-					"packetname": "libhogweed5",
-					"severity": "",
-					"description": "'nettle (3.5.1+really3.5.1-2ubuntu0.2) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash in RSA decryption via manipulated ciphertext\n    - debian/patches/CVE-2021-3580-1.patch: change _rsa_sec_compute_root_tr\n      to take a fixed input size in rsa-decrypt-tr.c, rsa-internal.h,\n      rsa-sec-decrypt.c, rsa-sign-tr.c, testsuite/rsa-encrypt-test.c.\n    - debian/patches/CVE-2021-3580-2.patch: add input check to rsa_decrypt\n      family of functions in rsa-decrypt-tr.c, rsa-decrypt.c,\n      rsa-sec-decrypt.c, rsa.h, testsuite/rsa-encrypt-test.c.\n    - CVE-2021-3580\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 14 Jun 2021 09:18:47 -0400'"
 				}
 			]
 		},
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": false,
+			"update_required": true,
 			"packages_affected": [
+				"libpython3.8",
+				"python3.8",
+				"libpython3.8-stdlib",
+				"python3.8-minimal",
+				"libpython3.8-minimal"
 			],
-			"date_open": "2021-06-22",
-			"last_rebuild": "2021-06-24 06:07",
+			"date_open": "2021-07-01",
+			"last_rebuild": "2021-07-01 06:11",
 			"scanLog": [
 				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8-minimal",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
+					"date": "2021-07-01",
+					"packetname": "python3.8-minimal",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8-stdlib",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
+					"date": "2021-07-01",
+					"packetname": "python3.8",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
+					"date": "2021-07-01",
+					"packetname": "libpython3.8",
+					"severity": null,
+					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
+				},
+				{
 					"date": "2021-06-24",
 					"packetname": "libgcc-s1",
 					"severity": "",
@@ -251,39 +292,9 @@
 					"packetname": "libgcc-s1",
 					"severity": "",
 					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "libgomp1",
-					"severity": "",
-					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "libstdc++6",
-					"severity": "",
-					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "gcc-10-base",
-					"severity": "",
-					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "apache2-utils",
-					"severity": "",
-					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "apache2-data",
-					"severity": "",
-					"description": "'apache2 (2.4.41-4ubuntu3.3) focal-security; urgency=medium\n\n  * SECURITY UPDATE: mod_proxy_http denial of service.\n    - debian/patches/CVE-2020-13950.patch: don\\'t dereference NULL proxy\n      connection in modules/proxy/mod_proxy_http.c.\n    - CVE-2020-13950\n  * SECURITY UPDATE: stack overflow via Digest nonce in mod_auth_digest\n    - debian/patches/CVE-2020-35452.patch: fast validation of the nonce\\'s\n      base64 to fail early if the format can\\'t match anyway in\n      modules/aaa/mod_auth_digest.c.\n    - CVE-2020-35452\n  * SECURITY UPDATE: DoS via cookie header in mod_session\n    - debian/patches/CVE-2021-26690.patch: save one apr_strtok() in\n      session_identity_decode() in modules/session/mod_session.c.\n    - CVE-2021-26690\n  * SECURITY UPDATE: heap overflow via SessionHeader\n    - debian/patches/CVE-2021-26691.patch: account for the \\'&\\' in\n      identity_concat() in modules/session/mod_session.c.\n    - CVE-2021-26691\n  * SECURITY UPDATE: Unexpected matching behavior with \\'MergeSlashes OFF\\'\n    - debian/patches/CVE-2021-30641.patch: change default behavior in\n      server/request.c.\n    - CVE-2021-30641\n  * This update does _not_ include the changes from 2.4.41-4ubuntu3.2 in\n    focal-proposed.\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 17 Jun 2021 14:27:53 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-06-30 06:10:08"
+	"last_check": "2021-07-01 06:11:28"
 }
