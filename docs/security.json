@@ -3,11 +3,8 @@
 		{
 			"name": "nfra/kickstart-flavor-bare",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.8",
-				"libpython3.8-minimal",
-				"libpython3.8-stdlib"
 			],
 			"date_open": "2021-07-01",
 			"last_rebuild": "2021-07-01 06:10",
@@ -15,19 +12,19 @@
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
@@ -148,11 +145,8 @@
 		{
 			"name": "nfra/kickstart-flavor-php",
 			"tag": "7.4",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.8",
-				"libpython3.8-minimal",
-				"libpython3.8-stdlib"
 			],
 			"date_open": "2021-07-01",
 			"last_rebuild": "2021-07-01 06:11",
@@ -160,19 +154,19 @@
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
@@ -222,13 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"libpython3.8",
-				"python3.8",
-				"libpython3.8-stdlib",
-				"python3.8-minimal",
-				"libpython3.8-minimal"
 			],
 			"date_open": "2021-07-01",
 			"last_rebuild": "2021-07-01 06:11",
@@ -236,31 +225,31 @@
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
 					"date": "2021-07-01",
 					"packetname": "python3.8-minimal",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8-stdlib",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
 					"date": "2021-07-01",
 					"packetname": "python3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
 					"date": "2021-07-01",
 					"packetname": "libpython3.8",
-					"severity": null,
+					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
 				},
 				{
@@ -296,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-07-01 06:11:28"
+	"last_check": "2021-07-02 06:09:45"
 }
