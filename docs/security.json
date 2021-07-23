@@ -5,22 +5,41 @@
 			"tag": "1.0",
 			"update_required": true,
 			"packages_affected": [
-				"libsystemd0",
-				"libudev1"
+				"curl",
+				"libcurl4",
+				"libcurl3-gnutls"
 			],
 			"date_open": "2021-07-21",
-			"last_rebuild": "2021-07-22 06:09",
+			"last_rebuild": "2021-07-23 06:09",
 			"scanLog": [
+				{
+					"date": "2021-07-23",
+					"packetname": "libcurl3-gnutls",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
+				{
+					"date": "2021-07-23",
+					"packetname": "libcurl4",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
+				{
+					"date": "2021-07-23",
+					"packetname": "curl",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
 				{
 					"date": "2021-07-22",
 					"packetname": "libudev1",
-					"severity": null,
+					"severity": "",
 					"description": "'systemd (245.4-4ubuntu3.11) focal-security; urgency=medium\n\n  * d/p/lp1937117/0001-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch,\n    d/p/lp1937117/0002-avoid-changing-interface-master-if-interface-already-up.patch:\n    - Don\\'t change interface master if interface is already up,\n      due to users expecting previous buggy behavior (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 15:00:21 -0400'"
 				},
 				{
 					"date": "2021-07-22",
 					"packetname": "libsystemd0",
-					"severity": null,
+					"severity": "",
 					"description": "'systemd (245.4-4ubuntu3.11) focal-security; urgency=medium\n\n  * d/p/lp1937117/0001-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch,\n    d/p/lp1937117/0002-avoid-changing-interface-master-if-interface-already-up.patch:\n    - Don\\'t change interface master if interface is already up,\n      due to users expecting previous buggy behavior (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 15:00:21 -0400'"
 				},
 				{
@@ -52,24 +71,6 @@
 					"packetname": "libpython3.8",
 					"severity": "",
 					"description": "'python3.8 (3.8.10-0ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1928057. Backport Python 3.8.10 to 20.04 LTS.\n  * Python 3.8.10 release.\n  * Refresh patches.\n  * Call python with -S when checking the minimal set of modules.\n  * Try to detect whether python3-venv is missing (Stefano Rivera).\n    Addresses: #977887.\n  * Build a python3.8-full package.\n\n -- Matthias Klose <doko@ubuntu.com>  Wed, 02 Jun 2021 12:49:15 +0200'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "libgcc-s1",
-					"severity": "",
-					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "libstdc++6",
-					"severity": "",
-					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
-				},
-				{
-					"date": "2021-06-23",
-					"packetname": "gcc-10-base",
-					"severity": "",
-					"description": "'gcc-10 (10.3.0-1ubuntu1~20.04) focal-proposed; urgency=medium\n\n  * SRU: LP: #1930125: Update to the GCC 10.3.0 release.\n\n -- Matthias Klose <doko@ubuntu.com>  Sat, 29 May 2021 09:49:27 +0200'"
 				}
 			]
 		},
@@ -78,22 +79,41 @@
 			"tag": "7.2",
 			"update_required": true,
 			"packages_affected": [
-				"libsystemd0",
-				"libudev1"
+				"curl",
+				"libcurl4",
+				"libcurl3-gnutls"
 			],
 			"date_open": "2021-07-21",
-			"last_rebuild": "2021-07-22 06:09",
+			"last_rebuild": "2021-07-23 06:09",
 			"scanLog": [
+				{
+					"date": "2021-07-23",
+					"packetname": "libcurl3-gnutls",
+					"severity": null,
+					"description": "'curl (7.58.0-2ubuntu3.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:37:41 -0400'"
+				},
+				{
+					"date": "2021-07-23",
+					"packetname": "libcurl4",
+					"severity": null,
+					"description": "'curl (7.58.0-2ubuntu3.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:37:41 -0400'"
+				},
+				{
+					"date": "2021-07-23",
+					"packetname": "curl",
+					"severity": null,
+					"description": "'curl (7.58.0-2ubuntu3.14) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:37:41 -0400'"
+				},
 				{
 					"date": "2021-07-22",
 					"packetname": "libudev1",
-					"severity": null,
+					"severity": "",
 					"description": "'systemd (237-3ubuntu10.50) bionic-security; urgency=medium\n\n  * d/p/lp1937117-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch:\n    Revert patch due to users expecting previous buggy behavior\n    (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 14:51:38 -0400'"
 				},
 				{
 					"date": "2021-07-22",
 					"packetname": "libsystemd0",
-					"severity": null,
+					"severity": "",
 					"description": "'systemd (237-3ubuntu10.50) bionic-security; urgency=medium\n\n  * d/p/lp1937117-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch:\n    Revert patch due to users expecting previous buggy behavior\n    (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 14:51:38 -0400'"
 				},
 				{
@@ -125,24 +145,6 @@
 					"packetname": "php7.2-curl",
 					"severity": "",
 					"description": "'php7.2 (7.2.24-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 13:41:32 -0400'"
-				},
-				{
-					"date": "2021-07-08",
-					"packetname": "php7.2-mbstring",
-					"severity": "",
-					"description": "'php7.2 (7.2.24-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 13:41:32 -0400'"
-				},
-				{
-					"date": "2021-07-08",
-					"packetname": "php7.2-soap",
-					"severity": "",
-					"description": "'php7.2 (7.2.24-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 13:41:32 -0400'"
-				},
-				{
-					"date": "2021-07-08",
-					"packetname": "php7.2-readline",
-					"severity": "",
-					"description": "'php7.2 (7.2.24-0ubuntu0.18.04.8) bionic-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 13:41:32 -0400'"
 				}
 			]
 		},
@@ -151,22 +153,41 @@
 			"tag": "7.4",
 			"update_required": true,
 			"packages_affected": [
-				"libsystemd0",
-				"libudev1"
+				"curl",
+				"libcurl4",
+				"libcurl3-gnutls"
 			],
 			"date_open": "2021-07-21",
-			"last_rebuild": "2021-07-22 06:10",
+			"last_rebuild": "2021-07-23 06:09",
 			"scanLog": [
+				{
+					"date": "2021-07-23",
+					"packetname": "libcurl3-gnutls",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
+				{
+					"date": "2021-07-23",
+					"packetname": "libcurl4",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
+				{
+					"date": "2021-07-23",
+					"packetname": "curl",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
 				{
 					"date": "2021-07-22",
 					"packetname": "libudev1",
-					"severity": null,
+					"severity": "",
 					"description": "'systemd (245.4-4ubuntu3.11) focal-security; urgency=medium\n\n  * d/p/lp1937117/0001-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch,\n    d/p/lp1937117/0002-avoid-changing-interface-master-if-interface-already-up.patch:\n    - Don\\'t change interface master if interface is already up,\n      due to users expecting previous buggy behavior (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 15:00:21 -0400'"
 				},
 				{
 					"date": "2021-07-22",
 					"packetname": "libsystemd0",
-					"severity": null,
+					"severity": "",
 					"description": "'systemd (245.4-4ubuntu3.11) focal-security; urgency=medium\n\n  * d/p/lp1937117/0001-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch,\n    d/p/lp1937117/0002-avoid-changing-interface-master-if-interface-already-up.patch:\n    - Don\\'t change interface master if interface is already up,\n      due to users expecting previous buggy behavior (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 15:00:21 -0400'"
 				},
 				{
@@ -196,24 +217,6 @@
 				{
 					"date": "2021-07-08",
 					"packetname": "php7.4-mbstring",
-					"severity": "",
-					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
-				},
-				{
-					"date": "2021-07-08",
-					"packetname": "php7.4-mysql",
-					"severity": "",
-					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
-				},
-				{
-					"date": "2021-07-08",
-					"packetname": "php7.4-opcache",
-					"severity": "",
-					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
-				},
-				{
-					"date": "2021-07-08",
-					"packetname": "php7.4-readline",
 					"severity": "",
 					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
 				}
@@ -225,21 +228,54 @@
 			"update_required": true,
 			"packages_affected": [
 				"libsystemd0",
-				"libudev1"
+				"libudev1",
+				"curl",
+				"libcurl4",
+				"libcurl3-gnutls"
 			],
 			"date_open": "2021-07-21",
-			"last_rebuild": "2021-07-22 06:10",
+			"last_rebuild": "2021-07-23 06:10",
 			"scanLog": [
 				{
-					"date": "2021-07-22",
+					"date": "2021-07-23",
+					"packetname": "libcurl3-gnutls",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
+				{
+					"date": "2021-07-23",
+					"packetname": "libcurl4",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
+				{
+					"date": "2021-07-23",
+					"packetname": "curl",
+					"severity": null,
+					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
+				},
+				{
+					"date": "2021-07-23",
 					"packetname": "libudev1",
 					"severity": null,
 					"description": "'systemd (245.4-4ubuntu3.11) focal-security; urgency=medium\n\n  * d/p/lp1937117/0001-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch,\n    d/p/lp1937117/0002-avoid-changing-interface-master-if-interface-already-up.patch:\n    - Don\\'t change interface master if interface is already up,\n      due to users expecting previous buggy behavior (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 15:00:21 -0400'"
 				},
 				{
-					"date": "2021-07-22",
+					"date": "2021-07-23",
 					"packetname": "libsystemd0",
 					"severity": null,
+					"description": "'systemd (245.4-4ubuntu3.11) focal-security; urgency=medium\n\n  * d/p/lp1937117/0001-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch,\n    d/p/lp1937117/0002-avoid-changing-interface-master-if-interface-already-up.patch:\n    - Don\\'t change interface master if interface is already up,\n      due to users expecting previous buggy behavior (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 15:00:21 -0400'"
+				},
+				{
+					"date": "2021-07-22",
+					"packetname": "libudev1",
+					"severity": "",
+					"description": "'systemd (245.4-4ubuntu3.11) focal-security; urgency=medium\n\n  * d/p/lp1937117/0001-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch,\n    d/p/lp1937117/0002-avoid-changing-interface-master-if-interface-already-up.patch:\n    - Don\\'t change interface master if interface is already up,\n      due to users expecting previous buggy behavior (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 15:00:21 -0400'"
+				},
+				{
+					"date": "2021-07-22",
+					"packetname": "libsystemd0",
+					"severity": "",
 					"description": "'systemd (245.4-4ubuntu3.11) focal-security; urgency=medium\n\n  * d/p/lp1937117/0001-revert-lp1929560-network-move-set-MAC-and-set-nomaster-operations-out.patch,\n    d/p/lp1937117/0002-avoid-changing-interface-master-if-interface-already-up.patch:\n    - Don\\'t change interface master if interface is already up,\n      due to users expecting previous buggy behavior (LP: #1937117)\n\n -- Dan Streetman <ddstreet@canonical.com>  Wed, 21 Jul 2021 15:00:21 -0400'"
 				},
 				{
@@ -259,39 +295,9 @@
 					"packetname": "php7.4-intl",
 					"severity": "",
 					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
-				},
-				{
-					"date": "2021-07-09",
-					"packetname": "php7.4-json",
-					"severity": "",
-					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
-				},
-				{
-					"date": "2021-07-09",
-					"packetname": "php7.4-mbstring",
-					"severity": "",
-					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
-				},
-				{
-					"date": "2021-07-09",
-					"packetname": "php7.4-mysql",
-					"severity": "",
-					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
-				},
-				{
-					"date": "2021-07-09",
-					"packetname": "php7.4-opcache",
-					"severity": "",
-					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
-				},
-				{
-					"date": "2021-07-09",
-					"packetname": "php7.4-readline",
-					"severity": "",
-					"description": "'php7.4 (7.4.3-4ubuntu2.5) focal-security; urgency=medium\n\n  * SECURITY UPDATE: crash or info disclosure via PHAR zip file\n    - debian/patches/CVE-2020-7068.patch: fix use after free in\n      ext/phar/zip.c.\n    - CVE-2020-7068\n  * SECURITY UPDATE: incorrect URL validation\n    - debian/patches/CVE-2020-7071-1.patch: make sure userinfo is valid\n      according to RFC 3986 in ext/filter/tests/bug77423.phpt,\n      ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-2.patch: revert previous fix and use a\n      better one in ext/filter/logical_filters.c,\n      ext/filter/tests/bug77423.phpt, ext/standard/url.c.\n    - debian/patches/CVE-2020-7071-3.patch: remove unneeded function in\n      ext/standard/url.c.\n    - CVE-2020-7071\n  * SECURITY UPDATE: crash via malformed XML data in SOAP extension\n    - debian/patches/CVE-2021-21702-1.patch: check strings in\n      ext/soap/php_sdl.c, ext/soap/php_xml.c, ext/soap/tests/bug80672.phpt,\n      ext/soap/tests/bug80672.xml.\n    - debian/patches/CVE-2021-21702-2.patch: fix compiler warning in\n      ext/soap/php_sdl.c.\n    - CVE-2021-21702\n  * SECURITY UPDATE: multiple issues in the pdo_firebase module\n    - debian/patches/CVE-2021-21704-1.patch: prevent overflow in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-2.patch: verify result_size in\n      ext/pdo_firebird/firebird_statement.c.\n    - debian/patches/CVE-2021-21704-3.patch: verify result_size in\n      ext/pdo_firebird/firebird_driver.c.\n    - debian/patches/CVE-2021-21704-4.patch: don\\'t overflow stack in\n      ext/pdo_firebird/firebird_driver.c.\n    - CVE-2021-21704\n  * SECURITY UPDATE: SSRF bypass\n    - debian/patches/CVE-2021-21705.patch: check password in\n      ext/filter/logical_filters.c, ext/filter/tests/bug81122.phpt.\n    - debian/patches/CVE-2021-21705-2.patch: fix compiler warning in\n      ext/filter/logical_filters.c.\n    - CVE-2021-21705\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 05 Jul 2021 11:13:35 -0400'"
 				}
 			]
 		}
 	],
-	"last_check": "2021-07-22 06:10:27"
+	"last_check": "2021-07-23 06:10:26"
 }
