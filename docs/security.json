@@ -216,11 +216,8 @@
 		{
 			"name": "infracamp/mailtainer",
 			"tag": "1.0",
-			"update_required": true,
+			"update_required": false,
 			"packages_affected": [
-				"curl",
-				"libcurl4",
-				"libcurl3-gnutls"
 			],
 			"date_open": "2021-07-21",
 			"last_rebuild": "2021-07-24 06:10",
@@ -228,19 +225,19 @@
 				{
 					"date": "2021-07-24",
 					"packetname": "libcurl3-gnutls",
-					"severity": null,
+					"severity": "",
 					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
 				},
 				{
 					"date": "2021-07-24",
 					"packetname": "libcurl4",
-					"severity": null,
+					"severity": "",
 					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
 				},
 				{
 					"date": "2021-07-24",
 					"packetname": "curl",
-					"severity": null,
+					"severity": "",
 					"description": "'curl (7.68.0-1ubuntu2.6) focal-security; urgency=medium\n\n  * SECURITY UPDATE: TELNET stack contents disclosure\n    - debian/patches/CVE-2021-22898.patch: check sscanf() for correct\n      number of matches in lib/telnet.c.\n    - CVE-2021-22898\n  * SECURITY UPDATE: Bad connection reuse due to flawed path name checks\n    - debian/patches/CVE-2021-22924.patch: fix connection reuse checks for\n      issuer cert and case sensitivity in lib/url.c, lib/urldata.h,\n      lib/vtls/gtls.c, lib/vtls/nss.c, lib/vtls/openssl.c, lib/vtls/vtls.c.\n    - CVE-2021-22924\n  * SECURITY UPDATE: TELNET stack contents disclosure again\n    - debian/patches/CVE-2021-22925.patch: fix option parser to not send\n      uninitialized contents in lib/telnet.c.\n    - CVE-2021-22925\n\n -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 21 Jul 2021 08:35:58 -0400'"
 				},
 				{
@@ -288,5 +285,5 @@
 			]
 		}
 	],
-	"last_check": "2021-07-24 06:10:10"
+	"last_check": "2021-07-25 06:09:59"
 }
